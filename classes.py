@@ -1,3 +1,5 @@
+"creating basic classes for every element used"
+
 class Depot:
     def __init__(self,name,lon,lat):
         self.name = name
