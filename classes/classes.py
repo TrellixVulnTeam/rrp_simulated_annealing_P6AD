@@ -1,4 +1,4 @@
-#creating basic classes for every element used
+# creating basic classes for every element used
 
 class Depot:
     def __init__(self, name, lon, lat):
@@ -18,17 +18,17 @@ class Plant:
 
 ##########################################################################
 
-class Site: 
+class Site:
     def __init__(self, zipcode, lon, lat):
         self.key = str(zipcode) + str(lon) + str(lat)
         self.zip = zipcode
         self.lon = lon
         self.lat = lat
 
+
 ##########################################################################
 
 class Job:
-
     def __init__(self, id, key, plant, silo, material, start, duration, site):
         self.id = id
         self.key = key
@@ -38,5 +38,3 @@ class Job:
         self.start = start
         self.duration = duration
         self.site = site
-
-
