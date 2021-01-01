@@ -3,8 +3,8 @@
 class Depot:
     def __init__(self,name,lon,lat):
         self.name = name
-        self lon = lon
-        self lat = lat 
+        self.lon = lon
+        self.lat = lat 
 
 ##########################################################################
 
