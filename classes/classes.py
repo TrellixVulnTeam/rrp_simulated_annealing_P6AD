@@ -1,10 +1,10 @@
 # creating basic classes for every element used
 
 class Depot:
-    def __init__(self, name, lon, lat):
+    def __init__(self, name, lon, lat1):
         self.name = name
         self.lon = lon
-        self.lat = lat
+        self.lat = lat1
 
 
 ##########################################################################
