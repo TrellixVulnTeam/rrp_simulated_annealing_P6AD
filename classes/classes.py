@@ -3,9 +3,8 @@
 class Depot:
     def __init__(self, name, lon, lat):
         self.name = name
-        self.lat = lon
-        self.lon = lat
-
+        self.lon = lon
+        self.lat = lat
 
 
 ##########################################################################
@@ -21,7 +20,7 @@ class Plant:
 
 class Site:
     def __init__(self, zipcode, lon, lat):
-        self.name = str(round(zipcode)) + '/' + str(lon) + '/' + str(lat)  #concat key
+        self.name = str(round(zipcode)) + '/' + str(lon) + '/' + str(lat)  # concat key
         self.zip = zipcode
         self.lon = lon
         self.lat = lat
