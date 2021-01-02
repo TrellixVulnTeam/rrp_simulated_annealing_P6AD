@@ -30,12 +30,13 @@ class Site:
 ##########################################################################
 
 class Job:
-    def __init__(self, id, key, plant, silo, material, start, duration, site):
+    def __init__(self, id, key, plant, silo, material, start, end, duration, site):
         self.id = id
         self.key = key
         self.plant = plant
         self.silo = silo
         self.material = material
         self.start = start
+        self.end = end
         self.duration = duration
         self.site = site
