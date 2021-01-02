@@ -11,10 +11,10 @@ class Depot:
 ##########################################################################
 
 class Plant:
-    def __init__(self, name, lan, lon):
+    def __init__(self, name, lon, lat):
         self.name = name
-        self.lon = lan
-        self.lat = lon
+        self.lon = lon
+        self.lat = lat
 
 
 ##########################################################################
