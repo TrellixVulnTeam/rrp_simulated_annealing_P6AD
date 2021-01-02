@@ -46,3 +46,11 @@ class Job:
         self.pickup_tour = ''
         self.pickup_depot = ''
         self.prox_depot = prox_depot
+
+
+##########################################################################
+class Tour:
+    def __init__(self,depot,day):
+        self.day = day,
+        self.depot = depot,
+        self.list_nodes = []
