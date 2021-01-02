@@ -1,19 +1,20 @@
 # creating basic classes for every element used
 
 class Depot:
-    def __init__(self, name, lon, lat):
+    def __init__(self, name, lat, lon):
         self.name = name
-        self.lon = lon
         self.lat = lat
+        self.lon = lon
+
 
 
 ##########################################################################
 
 class Plant:
-    def __init__(self, name, lon, lat):
+    def __init__(self, name, lan, lon):
         self.name = name
-        self.lon = lon
-        self.lat = lat
+        self.lon = lan
+        self.lat = lon
 
 
 ##########################################################################
