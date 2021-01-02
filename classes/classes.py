@@ -20,9 +20,8 @@ class Plant:
 ##########################################################################
 
 class Site:
-    def __init__(self,name, zipcode, lon, lat):
-        self.name = name
-        self.key = str(zipcode) + str(lon) + str(lat) #concat key
+    def __init__(self, zipcode, lon, lat):
+        self.name = str(zipcode) + str(lon) + str(lat) #concat key
         self.zip = zipcode
         self.lon = lon
         self.lat = lat
