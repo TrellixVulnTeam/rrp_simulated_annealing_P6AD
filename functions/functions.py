@@ -1,3 +1,6 @@
+import math
+
+
 def get_distance(point1,point2):
     #source : https://www.kite.com/python/answers/how-to-find-the-distance-between-two-lat-long-coordinates-in-python
     R = 6373.0 #radius of the earth
@@ -16,4 +19,3 @@ def get_distance(point1,point2):
     distance = R * c
 
     return(distance)
-}
