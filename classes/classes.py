@@ -1,10 +1,10 @@
 # creating basic classes for every element used
 
 class Depot:
-    def __init__(self, name, lat, lon):
+    def __init__(self, name, lon, lat):
         self.name = name
-        self.lat = lat
-        self.lon = lon
+        self.lat = lon
+        self.lon = lat
 
 
 
@@ -21,7 +21,7 @@ class Plant:
 
 class Site:
     def __init__(self, zipcode, lon, lat):
-        self.key = str(zipcode) + str(lon) + str(lat)
+        self.name = str(zipcode) + str(lon) + str(lat) #concat key
         self.zip = zipcode
         self.lon = lon
         self.lat = lat
