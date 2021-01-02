@@ -39,3 +39,7 @@ class Job:
         self.end = end
         self.duration = duration
         self.site = site
+        self.dropoff = 0
+        self.pickup = 0
+        self.truck = ''
+
