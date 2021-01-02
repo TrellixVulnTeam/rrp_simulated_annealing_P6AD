@@ -29,7 +29,7 @@ class Site:
 ##########################################################################
 
 class Job:
-    def __init__(self, id, key, plant, silo, material, start, end, duration, site):
+    def __init__(self, id, key, plant, silo, material, start, end, duration, site, prox_depot):
         self.id = id
         self.key = key
         self.plant = plant
@@ -39,8 +39,10 @@ class Job:
         self.end = end
         self.duration = duration
         self.site = site
-        self.dropoff = 0
-        self.pickup = 0
-        self.truck = ''
-        self.depot = ''
-
+        self.dropoff_day = 0
+        self.dropoff_tour = ''
+        self.dropoff_depot = ''
+        self.pickup_day = 0
+        self.pickup_tour = ''
+        self.pickup_depot = ''
+        self.prox_depot = prox_depot
