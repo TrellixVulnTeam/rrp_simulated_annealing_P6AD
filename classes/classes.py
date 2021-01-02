@@ -21,7 +21,7 @@ class Plant:
 
 class Site:
     def __init__(self, zipcode, lon, lat):
-        self.name = str(round(zipcode,int)) + '/' + str(lon) + '/' + str(lat)  #concat key
+        self.name = str(round(zipcode)) + '/' + str(lon) + '/' + str(lat)  #concat key
         self.zip = zipcode
         self.lon = lon
         self.lat = lat
