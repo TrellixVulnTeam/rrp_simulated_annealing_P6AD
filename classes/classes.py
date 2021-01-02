@@ -42,4 +42,5 @@ class Job:
         self.dropoff = 0
         self.pickup = 0
         self.truck = ''
+        self.depot = ''
 
