@@ -54,3 +54,7 @@ class Tour:
         self.day = day,
         self.depot = depot,
         self.list_nodes = []
+        self.list_pickups = []
+        self.list_dropoffs = []
+        self.total_distance = 0
+        self.distance_uptodate = True
