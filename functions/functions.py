@@ -60,7 +60,5 @@ def get_map(list_depots, list_plants, list_sites):
 
 def get_time():
     now = datetime.now()
-
     current_time = now.strftime("%H:%M:%S")
-    print("Current Time =", current_time)
     return current_time
