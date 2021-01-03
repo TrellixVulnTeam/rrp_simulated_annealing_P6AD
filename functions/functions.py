@@ -1,4 +1,5 @@
 import math
+from datetime import datetime
 
 
 def get_distance(point1, point2):
@@ -53,3 +54,13 @@ def get_map(list_depots, list_plants, list_sites):
     plt.scatter(list_plant_lon, list_plant_lat, 100, marker='X', color='green')
 
     plt.show()
+
+
+######################################################################
+
+def getTime():
+    now = datetime.now()
+
+    current_time = now.strftime("%H:%M:%S")
+    print("Current Time =", current_time)
+    return current_time
