@@ -46,14 +46,14 @@ class Job:
         self.pickup_tour = ''
         self.pickup_depot = ''
         self.prox_depot = prox_depot
-
+        self.assigned = False
 
 ##########################################################################
 class Tour:
     def __init__(self,depot,day):
         self.day = day,
         self.depot = depot,
-        self.list_nodes = []
+        self.list_plants = []
         self.list_pickups = []
         self.list_dropoffs = []
         self.total_distance = 0
