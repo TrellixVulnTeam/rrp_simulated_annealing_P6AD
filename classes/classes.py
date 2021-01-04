@@ -59,17 +59,40 @@ class Tour:
         self.total_jobs = 0
         self.total_distance = 0
         self.routing_sequence = []
+        self.edges = 0
         self.distance_uptodate = True
 
     def return_colums(self):
-        return(['day', 'depot', 'distance',
-                'distance_uptodate', 'list_dropoffs', 'list_pickups',
-                'list_plants', 'routing_sequence', 'total_distance'])
+        return(['day', 'depot', 'list_plants',  'list_pickups',
+                'list_dropoffs', 'total_jobs', 'total_distance', 'routing_sequence' ,'edges','distance_uptodate'])
 
     def return_all_values(self):
-        return(self.day, self.depot, self.distance, self.distance_uptodate,
-               self.list_dropoffs, self.list_pickups, self.list_plants,
-               self.routing_sequence, self.total_distance)
+        return(self.day, self.depot,
+               self.list_plants, self.list_pickups,  self.list_dropoffs,
+               self.total_distance, self.routing_sequence, self.edges,self.distance_uptodate)
+
+    def return_all_value_readable(self):
+        read_depot = self.depot.name
+
+        read_plants = []
+        for p in self.list_plants:
+            read_plants.append(p.name)
+
+        read_pickups = []
+        for j in self.list_pickups:
+            read_pickups.append(j.name)
+
+        read_dropoffs = []
+        for j in self.list_dropoffs:
+            read_dropoffs.append(j.name)
+
+        read_routing = []
+        for wn in self.routing_sequence:
+            read_routing.apped(wn.name)
+
+        return (self.day, self.depot.name,
+                self.list_plants, self.list_pickups, self.list_dropoffs,
+                self.total_distance, self.routing_sequence, self.distance_uptodate)
 
 ###############################################################################
 class Worknode:

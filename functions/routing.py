@@ -173,6 +173,7 @@ def routing(tour: cl.Tour):
     m.solve()
     # print(LpStatus[m.status])
 
+    routing_sequence = []
     edges = 0
     for t in timeslots:
         for i in all_nodes:
@@ -180,9 +181,13 @@ def routing(tour: cl.Tour):
                 if i != j:
                     if x[i][j][t].varValue > 0:
                         # print("from {} to {} at {} - truck: {} - silo: {}".format(i.node_type,j.name,t,y[t].varValue,z[t].varValue))
+                        routing_sequene.append(i)
                         edges += 1
 
     distance = m.objective.value()
     ################################### write back to tour ###################################
+
+    tour.edges = edges
+    tour.routing_sequence = routing_sequence
     tour.total_distance = distance
     tour.distance_uptodate = True
