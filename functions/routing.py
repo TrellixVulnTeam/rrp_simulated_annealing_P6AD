@@ -25,5 +25,6 @@ def get_distance(point1, point2):
 
 #######################################################################
 
-def routing(Tour):
+def routing(tour):
+    print(tour.day)
     #create distance dict
