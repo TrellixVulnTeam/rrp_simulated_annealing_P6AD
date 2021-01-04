@@ -26,28 +26,47 @@ def get_distance(point1, point2):
 
 #######################################################################
 
+#!pip install pulp
+from pulp import *
+
 def routing(tour: cl.Tour):
     #double plants need to be handled
-
     depot_node = tour.depot
     plant_node = tour.list_plants[0] #only first plant is selected
 
-    list_dropoff_nodes = tour.list_dropoffs
-    list_pickup_nodes = tour.list_pickups
+    dropoff_nodes = tour.list_dropoffs
+    pickup_nodes = tour.list_pickups
 
     #combined lists
-    list_site_nodes = list_dropoff_nodes + list_pickup_nodes
-    list_visitable_nodes = list_site_nodes
-    list_visitable_nodes.append(plant_node)
-    list_all_nodes = list_visitable_nodes
-    list_all_nodes.append(depot_node)
+    site_nodes = dropoff_nodes + pickup_nodes
+    vis_nodes = site_nodes
+    vis_nodes.append(plant_node)
+    all_nodes = vis_nodes
+    all_nodes.append(depot_node)
 
     #create enough timeslots at least one plantslot after each site
-    i_timeslots = len(list_site_nodes) * 2
-    list_timeslots = []
+    i_timeslots = len(site_nodes) * 2
+    timeslots = []
 
     for i in range(i_timeslots):
-        list_timeslots.append(i)
+        timeslots.append(i)
+
+    #create model
+    m = LpProblem("Routing", LpMinimize)
 
     # create Variables
-    x = LpVariable.dicts('edge',)
+    x = LpVariable.dicts('edge', (all_nodes, all_nodes, timeslots), cat='Binary')
+
+
+
+    # Objective
+    m += LpAffineExpression([(x[i][j][t], 1) for i in all_nodes for j in all_nodes for t in timeslots])
+
+
+
+    m.solve()
+    print(m.status)
+
+
+
+routing(dict_tours['Embsen'][17042])
