@@ -67,5 +67,3 @@ def routing(tour: cl.Tour):
     print(m.status)
 
 
-
-routing(dict_tours['Embsen'][17042])
