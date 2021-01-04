@@ -68,7 +68,7 @@ class Tour:
 
     def get_all_values(self):
         return [self.day, self.depot,
-               self.list_plants, self.list_pickups,  self.list_dropoffs,
+               self.list_plants, self.list_pickups,  self.list_dropoffs, self.total_jobs
                self.total_distance, self.routing_sequence, self.edges,self.distance_uptodate]
 
     def get_all_value_readable(self):
