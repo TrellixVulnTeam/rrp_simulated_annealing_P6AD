@@ -61,7 +61,7 @@ class Tour:
 
 
 ###############################################################################
-class worknode:
+class Worknode:
     def __init__(self,id:  str,type:  str,object):
         self.key = type + '_' + id
         self.lat = object.lat
