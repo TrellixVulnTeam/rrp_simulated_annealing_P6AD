@@ -67,9 +67,9 @@ class Tour:
                 'list_dropoffs', 'total_jobs', 'total_distance', 'routing_sequence' ,'edges','distance_uptodate'])
 
     def get_all_values(self):
-        return(self.day, self.depot,
+        return([self.day, self.depot,
                self.list_plants, self.list_pickups,  self.list_dropoffs,
-               self.total_distance, self.routing_sequence, self.edges,self.distance_uptodate)
+               self.total_distance, self.routing_sequence, self.edges,self.distance_uptodate])
 
     def get_all_value_readable(self):
         read_depot = self.depot.name
@@ -90,9 +90,9 @@ class Tour:
         for wn in self.routing_sequence:
             read_routing.apped(wn.name)
 
-        return (self.day, self.depot.name,
+        return ([self.day, self.depot.name,
                 read_plants, read_pickups, read_dropoffs,
-                self.total_distance, read_routing, self.edges, self.distance_uptodate)
+                self.total_distance, read_routing, self.edges, self.distance_uptodate])
 
 ###############################################################################
 class Worknode:
