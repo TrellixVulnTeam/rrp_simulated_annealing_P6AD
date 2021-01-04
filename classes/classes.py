@@ -58,3 +58,11 @@ class Tour:
         self.list_dropoffs = []
         self.total_distance = 0
         self.distance_uptodate = True
+
+
+###############################################################################
+class worknode:
+    def __init__(self,id:  str,type:  str,object):
+        self.key = type + '_' + id
+        self.lat = object.lat
+        self.lon = object.lon
