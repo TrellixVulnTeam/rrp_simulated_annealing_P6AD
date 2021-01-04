@@ -1,5 +1,4 @@
 import pandas as pd
-!pip install pulp
 from pulp import *
 import math
 from classes import classes as cl
