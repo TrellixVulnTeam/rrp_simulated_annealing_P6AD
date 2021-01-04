@@ -30,7 +30,7 @@ class Site:
 
 class Job:
     def __init__(self, id, key, plant, silo, material, start, end, duration, site, prox_depot):
-        self.id = id
+        self.name = id
         self.key = key
         self.plant = plant
         self.silo = silo
