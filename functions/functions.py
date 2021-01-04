@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import cPickle as pickle
 
 #######################################################################
 def get_map(list_depots, list_plants, list_sites):
@@ -43,3 +43,9 @@ def get_time():
     current_time = now.strftime("%H:%M:%S")
     return current_time
 
+########################################################################
+https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
+
+def save_object(obj, filename):
+    with open(filename, 'wb') as output:  # Overwrites any existing file.
+        pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
