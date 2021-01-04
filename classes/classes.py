@@ -57,6 +57,7 @@ class Tour:
         self.list_pickups = []
         self.list_dropoffs = []
         self.total_distance = 0
+        self.routing_sequence = []
         self.distance_uptodate = True
 
 
