@@ -181,7 +181,7 @@ def routing(tour: cl.Tour):
                 if i != j:
                     if x[i][j][t].varValue > 0:
                         # print("from {} to {} at {} - truck: {} - silo: {}".format(i.node_type,j.name,t,y[t].varValue,z[t].varValue))
-                        routing_sequene.append(i)
+                        routing_sequence.append(i)
                         edges += 1
 
     distance = m.objective.value()
