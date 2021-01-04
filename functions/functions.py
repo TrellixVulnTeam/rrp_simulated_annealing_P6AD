@@ -44,7 +44,7 @@ def get_time():
     return current_time
 
 ########################################################################
-https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
+#from https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
 
 def save_object(obj, filename):
     with open(filename, 'wb') as output:  # Overwrites any existing file.
