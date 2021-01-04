@@ -1,5 +1,6 @@
 from datetime import datetime
-import cPickle as pickle
+import pickle as pickle
+
 
 #######################################################################
 def get_map(list_depots, list_plants, list_sites):
