@@ -88,7 +88,7 @@ class Tour:
 
         read_routing = []
         for wn in self.routing_sequence:
-            read_routing.apped(wn.name)
+            read_routing.append(wn.name)
 
         return [self.day, self.depot.name,
                 read_plants, read_pickups, read_dropoffs, self.total_jobs,
