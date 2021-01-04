@@ -91,8 +91,8 @@ class Tour:
             read_routing.apped(wn.name)
 
         return (self.day, self.depot.name,
-                self.list_plants, self.list_pickups, self.list_dropoffs,
-                self.total_distance, self.routing_sequence, self.distance_uptodate)
+                read_plants, read_pickups, read_dropoffs,
+                self.total_distance, read_routing, self.edges, self.distance_uptodate)
 
 ###############################################################################
 class Worknode:
