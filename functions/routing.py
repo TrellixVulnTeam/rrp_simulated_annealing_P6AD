@@ -184,5 +184,5 @@ def routing(tour: cl.Tour):
 
     distance = m.objective.value()
     ################################### write back to tour ###################################
-    tour.distance = distance
+    tour.total_distance = distance
     tour.distance_uptodate = True

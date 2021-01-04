@@ -56,10 +56,20 @@ class Tour:
         self.list_plants = []
         self.list_pickups = []
         self.list_dropoffs = []
+        self.total_jobs = 0
         self.total_distance = 0
         self.routing_sequence = []
         self.distance_uptodate = True
 
+    def return_colums(self):
+        return(['day', 'depot', 'distance',
+                'distance_uptodate', 'list_dropoffs', 'list_pickups',
+                'list_plants', 'routing_sequence', 'total_distance'])
+
+    def return_all_values(self):
+        return(self.day, self.depot, self.distance, self.distance_uptodate,
+               self.list_dropoffs, self.list_pickups, self.list_plants,
+               self.routing_sequence, self.total_distance)
 
 ###############################################################################
 class Worknode:
