@@ -62,16 +62,16 @@ class Tour:
         self.edges = 0
         self.distance_uptodate = True
 
-    def return_colums(self):
+    def get_colums(self):
         return(['day', 'depot', 'list_plants',  'list_pickups',
                 'list_dropoffs', 'total_jobs', 'total_distance', 'routing_sequence' ,'edges','distance_uptodate'])
 
-    def return_all_values(self):
+    def get_all_values(self):
         return(self.day, self.depot,
                self.list_plants, self.list_pickups,  self.list_dropoffs,
                self.total_distance, self.routing_sequence, self.edges,self.distance_uptodate)
 
-    def return_all_value_readable(self):
+    def get_all_value_readable(self):
         read_depot = self.depot.name
 
         read_plants = []
