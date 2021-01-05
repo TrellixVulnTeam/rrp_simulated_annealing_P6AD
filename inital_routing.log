@@ -12576,3 +12576,171 @@ INFO:root:Starting with Data Import at 14:16:24
 INFO:root:15 depots created
 INFO:root:8 plants created
 INFO:root:6166 sites created
+INFO:root:53178 jobs created
+INFO:root:Working with 895 relevant days
+INFO:root:13425 tours created
+INFO:root:Done with Data Import at 14:16:37
+INFO:root:Starting with inital solution at 14:16:38
+INFO:root:Warning at Tour from Neuherberg and day 16882 - 2 plants listed
+INFO:root:Warning at Tour from Neuherberg and day 16900 - 2 plants listed
+INFO:root:Warning at Tour from Embsen and day 17031 - 2 plants listed
+INFO:root:Warning at Tour from Embsen and day 17042 - 2 plants listed
+INFO:root:Distance for depot Neuherberg on day 16485 is 440.9737572296146 - 0/13425 done - 0 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16535 is 360.3612028506617 - 3/13425 done - 1 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16544 is 413.4179901394699 - 4/13425 done - 2 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16581 is 355.5379614245813 - 8/13425 done - 3 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16607 is 306.2972587608777 - 15/13425 done - 4 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16617 is 524.2236739422596 - 19/13425 done - 5 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16618 is 109.65936570438451 - 20/13425 done - 6 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16626 is 306.2972587608777 - 23/13425 done - 7 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16635 is 334.0136698532937 - 27/13425 done - 8 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16642 is 261.32278541977684 - 31/13425 done - 9 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16644 is 335.9302053590271 - 32/13425 done - 10 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16645 is 269.10385490559605 - 33/13425 done - 11 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16649 is 293.96257697101953 - 35/13425 done - 12 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16652 is 293.96257697101953 - 36/13425 done - 13 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16656 is 269.10385490559605 - 37/13425 done - 14 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16658 is 99.21473020446253 - 38/13425 done - 15 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16659 is 109.60108665730961 - 39/13425 done - 16 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16666 is 266.11401235050374 - 42/13425 done - 17 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16667 is 581.3726983457728 - 43/13425 done - 18 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16668 is 783.5410104863188 - 44/13425 done - 19 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16671 is 58.35684867538498 - 45/13425 done - 20 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16675 is 270.00133022731956 - 48/13425 done - 21 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16677 is 368.32409983779667 - 49/13425 done - 22 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16678 is 530.767436404146 - 50/13425 done - 23 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16680 is 256.84994049577614 - 52/13425 done - 24 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16682 is 368.32409983779667 - 53/13425 done - 25 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16683 is 259.2026180337733 - 54/13425 done - 26 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16688 is 232.52419409467637 - 56/13425 done - 27 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16690 is 586.1462494390299 - 58/13425 done - 28 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16691 is 368.32409983779667 - 59/13425 done - 29 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16692 is 354.26911605161905 - 60/13425 done - 30 filled - 1 plant(s) detected - t: 14:16:38
+INFO:root:Distance for depot Neuherberg on day 16694 is 309.76687871967385 - 62/13425 done - 31 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16700 is 176.33813640809498 - 67/13425 done - 32 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16702 is 702.9777603841163 - 69/13425 done - 33 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16703 is 277.544827133735 - 70/13425 done - 34 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16704 is 232.88352116433435 - 71/13425 done - 35 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16712 is 1024.3468589995732 - 72/13425 done - 36 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16713 is 1048.4190806555591 - 73/13425 done - 37 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16714 is 251.06716196185332 - 74/13425 done - 38 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16715 is 2162.1194441376406 - 75/13425 done - 39 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16716 is 1789.2769689225654 - 76/13425 done - 40 filled - 1 plant(s) detected - t: 14:16:39
+INFO:root:Distance for depot Neuherberg on day 16717 is 3274.1381313248658 - 77/13425 done - 41 filled - 1 plant(s) detected - t: 14:16:43
+INFO:root:Distance for depot Neuherberg on day 16718 is 4214.070441483867 - 78/13425 done - 42 filled - 1 plant(s) detected - t: 14:16:45
+INFO:root:Distance for depot Neuherberg on day 16719 is 4756.203404939655 - 79/13425 done - 43 filled - 1 plant(s) detected - t: 14:16:48
+INFO:root:Distance for depot Neuherberg on day 16720 is 3464.0250151345176 - 80/13425 done - 44 filled - 1 plant(s) detected - t: 14:16:50
+INFO:root:Distance for depot Neuherberg on day 16721 is 1035.4528592388265 - 81/13425 done - 45 filled - 1 plant(s) detected - t: 14:16:50
+INFO:root:Starting with Data Import at 14:17:11
+INFO:root:15 depots created
+INFO:root:8 plants created
+INFO:root:6166 sites created
+INFO:root:53178 jobs created
+INFO:root:Working with 895 relevant days
+INFO:root:13425 tours created
+INFO:root:Done with Data Import at 14:17:24
+INFO:root:Starting with inital solution at 14:17:24
+INFO:root:Warning at Tour from Neuherberg and day 16882 - 2 plants listed
+INFO:root:Warning at Tour from Neuherberg and day 16900 - 2 plants listed
+INFO:root:Warning at Tour from Embsen and day 17031 - 2 plants listed
+INFO:root:Warning at Tour from Embsen and day 17042 - 2 plants listed
+INFO:root:Distance for depot Neuherberg on day 16485 is 440.9737572296146 - 0/13425 done - 0 filled - 1 plant(s) detected - t: 14:17:24
+INFO:root:Distance for depot Neuherberg on day 16535 is 360.3612028506617 - 3/13425 done - 1 filled - 1 plant(s) detected - t: 14:17:24
+INFO:root:Distance for depot Neuherberg on day 16544 is 413.4179901394699 - 4/13425 done - 2 filled - 1 plant(s) detected - t: 14:17:24
+INFO:root:Distance for depot Neuherberg on day 16581 is 355.5379614245813 - 8/13425 done - 3 filled - 1 plant(s) detected - t: 14:17:24
+INFO:root:Distance for depot Neuherberg on day 16607 is 306.2972587608777 - 15/13425 done - 4 filled - 1 plant(s) detected - t: 14:17:24
+INFO:root:Distance for depot Neuherberg on day 16617 is 524.2236739422596 - 19/13425 done - 5 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16618 is 109.65936570438451 - 20/13425 done - 6 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16626 is 306.2972587608777 - 23/13425 done - 7 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16635 is 334.0136698532937 - 27/13425 done - 8 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16642 is 261.32278541977684 - 31/13425 done - 9 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16644 is 335.9302053590271 - 32/13425 done - 10 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16645 is 269.10385490559605 - 33/13425 done - 11 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16649 is 293.96257697101953 - 35/13425 done - 12 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16652 is 293.96257697101953 - 36/13425 done - 13 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16656 is 269.10385490559605 - 37/13425 done - 14 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16658 is 99.21473020446253 - 38/13425 done - 15 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16659 is 109.60108665730961 - 39/13425 done - 16 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16666 is 266.11401235050374 - 42/13425 done - 17 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16667 is 581.3726983457728 - 43/13425 done - 18 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16668 is 783.5410104863188 - 44/13425 done - 19 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16671 is 58.35684867538498 - 45/13425 done - 20 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16675 is 270.00133022731956 - 48/13425 done - 21 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16677 is 368.32409983779667 - 49/13425 done - 22 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16678 is 530.767436404146 - 50/13425 done - 23 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16680 is 256.84994049577614 - 52/13425 done - 24 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16682 is 368.32409983779667 - 53/13425 done - 25 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16683 is 259.2026180337733 - 54/13425 done - 26 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16688 is 232.52419409467637 - 56/13425 done - 27 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16690 is 586.1462494390299 - 58/13425 done - 28 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16691 is 368.32409983779667 - 59/13425 done - 29 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16692 is 354.26911605161905 - 60/13425 done - 30 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16694 is 309.76687871967385 - 62/13425 done - 31 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16700 is 176.33813640809498 - 67/13425 done - 32 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16702 is 702.9777603841163 - 69/13425 done - 33 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16703 is 277.544827133735 - 70/13425 done - 34 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16704 is 232.88352116433435 - 71/13425 done - 35 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16712 is 1024.3468589995732 - 72/13425 done - 36 filled - 1 plant(s) detected - t: 14:17:25
+INFO:root:Distance for depot Neuherberg on day 16713 is 1048.4190806555591 - 73/13425 done - 37 filled - 1 plant(s) detected - t: 14:17:26
+INFO:root:Distance for depot Neuherberg on day 16714 is 251.06716196185332 - 74/13425 done - 38 filled - 1 plant(s) detected - t: 14:17:26
+INFO:root:Distance for depot Neuherberg on day 16715 is 2162.1194441376406 - 75/13425 done - 39 filled - 1 plant(s) detected - t: 14:17:26
+INFO:root:Distance for depot Neuherberg on day 16716 is 1789.2769689225654 - 76/13425 done - 40 filled - 1 plant(s) detected - t: 14:17:26
+INFO:root:Distance for depot Neuherberg on day 16717 is 3274.1381313248658 - 77/13425 done - 41 filled - 1 plant(s) detected - t: 14:17:29
+INFO:root:Distance for depot Neuherberg on day 16718 is 4214.070441483867 - 78/13425 done - 42 filled - 1 plant(s) detected - t: 14:17:31
+INFO:root:Distance for depot Neuherberg on day 16719 is 4756.203404939655 - 79/13425 done - 43 filled - 1 plant(s) detected - t: 14:17:34
+INFO:root:Distance for depot Neuherberg on day 16720 is 3464.0250151345176 - 80/13425 done - 44 filled - 1 plant(s) detected - t: 14:17:36
+INFO:root:Distance for depot Neuherberg on day 16721 is 1035.4528592388265 - 81/13425 done - 45 filled - 1 plant(s) detected - t: 14:17:36
+INFO:root:Distance for depot Neuherberg on day 16722 is 4595.101608749194 - 82/13425 done - 46 filled - 1 plant(s) detected - t: 14:18:06
+INFO:root:Distance for depot Neuherberg on day 16723 is 2042.9942212300887 - 83/13425 done - 47 filled - 1 plant(s) detected - t: 14:18:06
+INFO:root:Distance for depot Neuherberg on day 16724 is 1609.064900025061 - 84/13425 done - 48 filled - 1 plant(s) detected - t: 14:18:07
+INFO:root:Distance for depot Neuherberg on day 16725 is 1262.8169700176072 - 85/13425 done - 49 filled - 1 plant(s) detected - t: 14:18:07
+INFO:root:Distance for depot Neuherberg on day 16726 is 914.428458111303 - 86/13425 done - 50 filled - 1 plant(s) detected - t: 14:18:07
+INFO:root:Distance for depot Neuherberg on day 16727 is 4067.184169440698 - 87/13425 done - 51 filled - 1 plant(s) detected - t: 14:18:23
+INFO:root:Distance for depot Neuherberg on day 16728 is 5524.182436852035 - 88/13425 done - 52 filled - 1 plant(s) detected - t: 14:19:00
+INFO:root:Distance for depot Neuherberg on day 16729 is 2892.998626505001 - 89/13425 done - 53 filled - 1 plant(s) detected - t: 14:19:26
+INFO:root:Distance for depot Neuherberg on day 16730 is 3209.099139455992 - 90/13425 done - 54 filled - 1 plant(s) detected - t: 14:19:33
+INFO:root:Distance for depot Neuherberg on day 16731 is 5024.8445591426635 - 91/13425 done - 55 filled - 1 plant(s) detected - t: 14:19:44
+INFO:root:Distance for depot Neuherberg on day 16732 is 6267.342016552068 - 92/13425 done - 56 filled - 1 plant(s) detected - t: 14:21:47
+INFO:root:Distance for depot Neuherberg on day 16733 is 3562.09357295275 - 93/13425 done - 57 filled - 1 plant(s) detected - t: 14:21:54
+INFO:root:Distance for depot Neuherberg on day 16734 is 3996.1175031655357 - 94/13425 done - 58 filled - 1 plant(s) detected - t: 14:22:05
+INFO:root:Distance for depot Neuherberg on day 16735 is 4141.46676634594 - 95/13425 done - 59 filled - 1 plant(s) detected - t: 14:24:07
+INFO:root:Distance for depot Neuherberg on day 16736 is 4796.877945040696 - 96/13425 done - 60 filled - 1 plant(s) detected - t: 14:25:58
+INFO:root:Distance for depot Neuherberg on day 16737 is 3739.5704277880423 - 97/13425 done - 61 filled - 1 plant(s) detected - t: 14:26:30
+INFO:root:Distance for depot Neuherberg on day 16738 is 4384.346578726802 - 98/13425 done - 62 filled - 1 plant(s) detected - t: 14:26:37
+INFO:root:Distance for depot Neuherberg on day 16739 is 4985.870884179937 - 99/13425 done - 63 filled - 1 plant(s) detected - t: 14:27:21
+INFO:root:Distance for depot Neuherberg on day 16740 is 3421.8652109260865 - 100/13425 done - 64 filled - 1 plant(s) detected - t: 14:27:29
+INFO:root:Distance for depot Neuherberg on day 16741 is 4797.488061740275 - 101/13425 done - 65 filled - 1 plant(s) detected - t: 14:36:25
+INFO:root:Distance for depot Neuherberg on day 16742 is 6097.381209738961 - 102/13425 done - 66 filled - 1 plant(s) detected - t: 14:41:48
+INFO:root:Distance for depot Neuherberg on day 16743 is 6834.226545744694 - 103/13425 done - 67 filled - 1 plant(s) detected - t: 14:49:27
+INFO:root:Distance for depot Neuherberg on day 16744 is 5696.031231325717 - 104/13425 done - 68 filled - 1 plant(s) detected - t: 14:50:58
+INFO:root:Distance for depot Neuherberg on day 16745 is 4104.432615916133 - 105/13425 done - 69 filled - 1 plant(s) detected - t: 14:53:19
+INFO:root:Distance for depot Neuherberg on day 16746 is 3945.516734072552 - 106/13425 done - 70 filled - 1 plant(s) detected - t: 14:53:40
+INFO:root:Distance for depot Neuherberg on day 16747 is 5394.3134554363905 - 107/13425 done - 71 filled - 1 plant(s) detected - t: 14:55:39
+INFO:root:Distance for depot Neuherberg on day 16748 is 4480.109927894679 - 108/13425 done - 72 filled - 1 plant(s) detected - t: 14:57:22
+INFO:root:Distance for depot Neuherberg on day 16749 is 6552.514838742153 - 109/13425 done - 73 filled - 1 plant(s) detected - t: 15:00:57
+INFO:root:Distance for depot Neuherberg on day 16750 is 4073.4371872793586 - 110/13425 done - 74 filled - 1 plant(s) detected - t: 15:02:08
+INFO:root:Distance for depot Neuherberg on day 16751 is 4113.564123583876 - 111/13425 done - 75 filled - 1 plant(s) detected - t: 15:03:17
+INFO:root:Distance for depot Neuherberg on day 16752 is 6811.762164948196 - 112/13425 done - 76 filled - 1 plant(s) detected - t: 15:08:25
+INFO:root:Distance for depot Neuherberg on day 16753 is 4717.068781484802 - 113/13425 done - 77 filled - 1 plant(s) detected - t: 15:09:14
+INFO:root:Distance for depot Neuherberg on day 16754 is 5581.356482622582 - 114/13425 done - 78 filled - 1 plant(s) detected - t: 15:09:46
+INFO:root:Distance for depot Neuherberg on day 16755 is 4268.580420746221 - 115/13425 done - 79 filled - 1 plant(s) detected - t: 15:11:31
+INFO:root:Distance for depot Neuherberg on day 16756 is 4330.541145537104 - 116/13425 done - 80 filled - 1 plant(s) detected - t: 15:12:19
+INFO:root:Distance for depot Neuherberg on day 16757 is 6896.42805146741 - 117/13425 done - 81 filled - 1 plant(s) detected - t: 15:26:37
+INFO:root:Distance for depot Neuherberg on day 16758 is 6471.735380437212 - 118/13425 done - 82 filled - 1 plant(s) detected - t: 15:37:14
+INFO:root:Distance for depot Neuherberg on day 16759 is 5934.051679049085 - 119/13425 done - 83 filled - 1 plant(s) detected - t: 15:40:08
+INFO:root:Distance for depot Neuherberg on day 16760 is 3952.4563205246254 - 120/13425 done - 84 filled - 1 plant(s) detected - t: 15:40:57
+INFO:root:Distance for depot Neuherberg on day 16761 is 4667.898330591557 - 121/13425 done - 85 filled - 1 plant(s) detected - t: 15:43:25
+INFO:root:Distance for depot Neuherberg on day 16762 is 6711.772793885017 - 122/13425 done - 86 filled - 1 plant(s) detected - t: 15:49:20
+INFO:root:Distance for depot Neuherberg on day 16763 is 5735.274550501714 - 123/13425 done - 87 filled - 1 plant(s) detected - t: 15:52:57
+INFO:root:Distance for depot Neuherberg on day 16764 is 4713.931638082469 - 124/13425 done - 88 filled - 1 plant(s) detected - t: 15:55:11
+INFO:root:Distance for depot Neuherberg on day 16765 is 4655.1188196031435 - 125/13425 done - 89 filled - 1 plant(s) detected - t: 15:56:26
+INFO:root:Distance for depot Neuherberg on day 16766 is 5078.273113102673 - 126/13425 done - 90 filled - 1 plant(s) detected - t: 15:57:30
+INFO:root:Distance for depot Neuherberg on day 16767 is 3486.0187668333874 - 127/13425 done - 91 filled - 1 plant(s) detected - t: 15:58:08
+INFO:root:Distance for depot Neuherberg on day 16768 is 6268.6737565355215 - 128/13425 done - 92 filled - 1 plant(s) detected - t: 16:02:47
+INFO:root:Distance for depot Neuherberg on day 16769 is 4420.047180690954 - 129/13425 done - 93 filled - 1 plant(s) detected - t: 16:05:15
+INFO:root:Distance for depot Neuherberg on day 16770 is 5571.359469358466 - 130/13425 done - 94 filled - 1 plant(s) detected - t: 16:07:38
+INFO:root:Distance for depot Neuherberg on day 16773 is 5294.355343918114 - 131/13425 done - 95 filled - 1 plant(s) detected - t: 16:09:14
+INFO:root:Distance for depot Neuherberg on day 16774 is 5541.249776421789 - 132/13425 done - 96 filled - 1 plant(s) detected - t: 16:12:15
+INFO:root:Distance for depot Neuherberg on day 16775 is 4706.864444181543 - 133/13425 done - 97 filled - 1 plant(s) detected - t: 16:13:22
+INFO:root:Distance for depot Neuherberg on day 16776 is 4306.054975898227 - 134/13425 done - 98 filled - 1 plant(s) detected - t: 16:16:04
+INFO:root:Distance for depot Neuherberg on day 16777 is 8483.234921060548 - 135/13425 done - 99 filled - 1 plant(s) detected - t: 16:17:21
