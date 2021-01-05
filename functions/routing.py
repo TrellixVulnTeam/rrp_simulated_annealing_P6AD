@@ -177,6 +177,7 @@ def routing(tour: cl.Tour):
     worst_edge_pickup = ''
     worst_edge_dropoff = ''
 
+    routing_sequence = []
 
     edges = 0
     for t in timeslots:
