@@ -67,16 +67,16 @@ class Tour:
 
     def get_colums(self):
         return['day', 'depot', 'list_plants',  'list_pickups',
-                'list_dropoffs', 'total_jobs', 'total_distance', 'routing_sequence' ,'edges','distance_uptodate']
+                'list_dropoffs', 'total_jobs', 'total_distance', 'routing_sequence' ,'worst_edge_pickup',
+               'worst_edge_distance', 'worst_edge_dropoff', 'edges','distance_uptodate']
 
     def get_all_values(self):
         return [self.day, self.depot,
                self.list_plants, self.list_pickups,  self.list_dropoffs, self.total_jobs,
-               self.total_distance, self.routing_sequence, self.edges,self.distance_uptodate]
+               self.total_distance, self.routing_sequence, self.worst_edge_pickup, self.worst_edge_dropoff ,
+                self.worst_edge_distance, self.edges,self.distance_uptodate]
 
     def get_all_value_readable(self):
-        read_depot = self.depot.name
-
         read_plants = []
         for p in self.list_plants:
             read_plants.append(p.name)
@@ -95,7 +95,8 @@ class Tour:
 
         return [self.day, self.depot.name,
                 read_plants, read_pickups, read_dropoffs, self.total_jobs,
-                self.total_distance, read_routing, self.edges, self.distance_uptodate]
+                self.total_distance, read_routing, self.worst_edge_pickup.name, self.worst_edge_dropoff.name,
+                self.worst_edge_distance, self.edges, self.distance_uptodate]
 
 ###############################################################################
 class Worknode:
