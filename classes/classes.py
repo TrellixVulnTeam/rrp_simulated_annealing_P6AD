@@ -59,6 +59,9 @@ class Tour:
         self.total_jobs = 0
         self.total_distance = 0
         self.routing_sequence = []
+        self.worst_edge_pickup = ''
+        self.worst_edge_dropoff = ''
+        self.worst_edge_distance = 0
         self.edges = 0
         self.distance_uptodate = True
 

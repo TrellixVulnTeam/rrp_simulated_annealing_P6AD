@@ -173,7 +173,11 @@ def routing(tour: cl.Tour):
     m.solve()
     # print(LpStatus[m.status])
 
-    routing_sequence = []
+    worst_edge_distance = 0
+    worst_edge_pickup = ''
+    worst_edge_dropoff = ''
+
+
     edges = 0
     for t in timeslots:
         for i in all_nodes:
@@ -182,6 +186,17 @@ def routing(tour: cl.Tour):
                     if x[i][j][t].varValue > 0:
                         # print("from {} to {} at {} - truck: {} - silo: {}".format(i.node_type,j.name,t,y[t].varValue,z[t].varValue))
                         routing_sequence.append(i)
+                        #get the worst edge between to site nodes to reassign later
+                        if distances[i][j] > worst_edge_distance:
+                            if i.node_type == 'pickup_job' and  j.node_type == 'dropoff_job':
+                                worst_edge_distance = distances[i][j]
+                                worst_edge_pickup = i
+                                worst_edge_dropoff = j
+                            elif i.node_type == 'dropoff_job' and  j.node_type == 'pickup_job':
+                                worst_edge_distance = distances[i][j]
+                                worst_edge_pickup = i
+                                worst_edge_dropoff = j
+
                         edges += 1
 
     distance = m.objective.value()
@@ -191,3 +206,6 @@ def routing(tour: cl.Tour):
     tour.routing_sequence = routing_sequence
     tour.total_distance = distance
     tour.distance_uptodate = True
+    tour.worst_edge_distance = worst_edge_distance
+    tour.worst_edge_pickup = worst_edge_pickup
+    tour.worst_edge_dropoff = worst_edge_dropoff
