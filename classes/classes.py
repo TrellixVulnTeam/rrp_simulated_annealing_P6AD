@@ -77,6 +77,8 @@ class Tour:
                 self.worst_edge_distance, self.edges,self.distance_uptodate]
 
     def get_all_value_readable(self):
+
+        #read element names from object list
         read_plants = []
         for p in self.list_plants:
             read_plants.append(p.name)
@@ -93,9 +95,20 @@ class Tour:
         for wn in self.routing_sequence:
             read_routing.append(wn.name)
 
+        #read nodenames if nodes are filled
+        if self.worst_edge_pickup != '':
+            read_worst_edge_pickup = self.worst_edge_pickup.name
+        else:
+            read_worst_edge_pickup = ''
+
+        if self.worst_edge_dropoff != '':
+            read_worst_edge_dropoff = self.worst_edge_dropoff.name
+        else :
+            read_worst_edge_dropoff = ''
+
         return [self.day, self.depot.name,
                 read_plants, read_pickups, read_dropoffs, self.total_jobs,
-                self.total_distance, read_routing, self.worst_edge_pickup.name, self.worst_edge_dropoff.name,
+                self.total_distance, read_routing, read_worst_edge_pickup, read_worst_edge_dropoff,
                 self.worst_edge_distance, self.edges, self.distance_uptodate]
 
 ###############################################################################
