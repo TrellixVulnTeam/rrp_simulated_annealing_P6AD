@@ -110,7 +110,7 @@ class Tour:
             read_worst_edge_dropoff = ''
 
         return [self.day, self.depot.name,
-                read_plants, read_pickups, read_dropoffs, self.total_jobs, self.total_pickups, self.total_dropoffs,
+                read_plants, read_pickups, read_dropoffs, self.total_pickups, self.total_dropoffs, self.total_jobs,
                 self.total_distance, read_routing, read_worst_edge_pickup, read_worst_edge_dropoff,
                 self.worst_edge_distance, self.edges, self.distance_uptodate]
 

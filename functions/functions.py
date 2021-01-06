@@ -48,7 +48,7 @@ def get_time():
 ########################################################################
 #from https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
 
-def save_object(obj, filename):
+def save_object(obj, filename) -> object:
     with open(filename, 'wb') as output:  # Overwrites any existing file.
         pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
 
@@ -57,9 +57,28 @@ def load_object(filename):
         loaded_object = pickle.load(input)
     return loaded_object
 
+def quick_save(file_prefix, string_exp_path :str,dict_depots: dict,dict_sites: dict,dict_plants: dict,dict_jobs: dict,dict_tours: dict):
+    #specified quicksafe for all dicts
+    save_object(dict_depots, string_exp_path + '/quicksave/{}_dict_depots.pkl'.format(file_prefix))
+    save_object(dict_sites, string_exp_path + '/quicksave/{}_dict_sites.pkl'.format(file_prefix))
+    save_object(dict_plants, string_exp_path + '/quicksave/{}_dict_plants.pkl'.format(file_prefix))
+    save_object(dict_jobs, string_exp_path + '/quicksave/{}_dict_jobs.pkl'.format(file_prefix))
+    save_object(dict_tours, string_exp_path + '/quicksave/{}_dict_tours.pkl'.format(file_prefix))
+
+
 ########################################################################
 def print_log(info :str):
     logging.info(info)
     print(info)
 
 ########################################################################
+def day_navigation(day: int,index_delta: int, list_days: list):
+    #to be able to navigate in the days
+    day_index = list_days.index(day)
+    new_index = day_index + index_delta
+
+    return(list_days[new_index])
+
+########################################################################
+
+
