@@ -47,12 +47,18 @@ def routing(tour: cl.Tour):
     dropoff_nodes = []
     pickup_nodes = []
 
+    i = 0
     for j in tour.list_dropoffs:
-        wn_j = cl.Worknode('dropoff_job', j.name, j.site)
+        wn_j = cl.Worknode('dropoff_job_nr_{}__'.format(i), j.name, j.site)
         dropoff_nodes.append(wn_j)
+        i += 1
+
+    i = 0
     for j in tour.list_pickups:
-        wn_j = cl.Worknode('pickup_job', j.name, j.site)
+        wn_j = cl.Worknode('pickup_job_nr_{}__'.format(i), j.name, j.site)
         pickup_nodes.append(wn_j)
+
+        i += 1
 
     # combined lists
     site_nodes = dropoff_nodes + pickup_nodes
@@ -73,7 +79,7 @@ def routing(tour: cl.Tour):
         tri_distance[a] = {}
 
     for a in site_nodes:
-        for b in site_nodes:
+        for b in all_end_nodes:
             tri_distance[a][b] = distance[a][b] + distance[a][p] + distance[p][b]
 
     ################################### create model ###################################
@@ -86,7 +92,6 @@ def routing(tour: cl.Tour):
 
     ################################### basic constraints ###################################
 
-    # a node cannot have an edge with itself
     for a in dropoff_nodes:
         m += LpAffineExpression([(x[a][b], 1) for b in pickup_nodes]) + x[a][d] + x[a][
             p] == 1, 'every_dropoff_handled%s' % a
@@ -95,14 +100,17 @@ def routing(tour: cl.Tour):
         m += LpAffineExpression([(x[a][b], 1) for a in dropoff_nodes]) + x[b][d] + x[b][
             p] == 1, 'every_pickup_handled%s' % b
 
+    # a node cannot have an edge with itself
+    m += LpAffineExpression([(x[a][a], 1) for a in site_nodes]) == 0, 'no self edges'
+
     m += LpAffineExpression([(x[a][d], 1) for a in dropoff_nodes]) == 1 - ya, 'site-depot-detection'
     m += LpAffineExpression([(x[b][d], 1) for b in pickup_nodes]) == 1 - yb, 'depot-site-detection'
 
     ################################### Objective function ###################################
-    m += LpAffineExpression([(x[a][b], tri_distance[a][b]) for a in dropoff_nodes for b in pickup_nodes])\
-         + LpAffineExpression([(x[n][p], 2*distance[n][p]) for n in site_nodes]) + \
-    LpAffineExpression([(x[n][d] , distance[n][d] + distance[n][p]) for n in site_nodes]) +(ya + yb) * distance[d][p]
-
+    m += LpAffineExpression(
+        [(x[a][b], tri_distance[a][b]) for a in site_nodes for b in all_end_nodes]) + LpAffineExpression(
+        [(x[n][p], 2 * distance[n][p]) for n in site_nodes]) + LpAffineExpression(
+        [(x[n][d], distance[n][d] + distance[n][p]) for n in site_nodes]) + (ya + yb) * distance[d][p]
     ################################### Evaluate  results ###################################
     m.solve()
     # print(LpStatus[m.status])
@@ -117,10 +125,10 @@ def routing(tour: cl.Tour):
 
     for a in site_nodes:
         for b in all_end_nodes:
-            if i != j:
-                if x[a][b].varValue > 0:
-                    print("from {} to {}".format(a.name,b.name)
-                    edges += 1
+            # print("from {} to {} is {}".format(a.name, b.name, x[a][b].varValue))
+            if x[a][b].varValue > 0:
+                #print("from {} to {}".format(a.name, b.name))
+                edges += 1
 
     distance = m.objective.value()
     ################################### write back to tour ###################################
@@ -129,8 +137,6 @@ def routing(tour: cl.Tour):
     tour.routing_sequence = routing_sequence
     tour.distance = distance
     tour.distance_uptodate = True
-
-    #######################################################################
 
 
 def routing_extended(tour: cl.Tour):
