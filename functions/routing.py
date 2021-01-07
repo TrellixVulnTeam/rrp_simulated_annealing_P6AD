@@ -24,6 +24,7 @@ def get_distance(point1, point2):
     distance = R * c
     return distance
 
+
 #######################################################################
 def get_proxdepot(site, plant, list_depots):
     distance_min = 10000000000000
@@ -35,8 +36,9 @@ def get_proxdepot(site, plant, list_depots):
             depot_min = d
     return depot_min
 
+
 #######################################################################
-def routing_simple(tour: cl.Tour):
+def routing(tour: cl.Tour):
     # create working nodes to level different object types
     d = cl.Worknode('depot', tour.depot.name, tour.depot)
     p = cl.Worknode('plant', tour.list_plants[0].name, tour.list_plants[0])  # only first plant is selected
@@ -65,14 +67,14 @@ def routing_simple(tour: cl.Tour):
         for j in all_end_nodes:
             distance[i][j] = get_distance(i, j)
 
-    #create and fill triangular distances dict with plant
+    # create and fill triangular distances dict with plant
     tri_distance = {}
-    for n in site_nodes:
-        tri_distance[n] = {}
+    for a in site_nodes:
+        tri_distance[a] = {}
 
     for a in site_nodes:
         for b in site_nodes:
-            tri_distance[a][b] = distance[i][j] + distance[i][p] + distance[p][j]
+            tri_distance[a][b] = distance[a][b] + distance[a][p] + distance[p][b]
 
     ################################### create model ###################################
     m = LpProblem("Routing_simple", LpMinimize)
@@ -86,17 +88,20 @@ def routing_simple(tour: cl.Tour):
 
     # a node cannot have an edge with itself
     for a in dropoff_nodes:
-        m += LpAffineExpression([(x[a][b], 1) for b in pickup_nodes]) + x[a][d]  + x[a][p] == 1, 'every_dropoff_handled%s' % a
+        m += LpAffineExpression([(x[a][b], 1) for b in pickup_nodes]) + x[a][d] + x[a][
+            p] == 1, 'every_dropoff_handled%s' % a
 
     for b in pickup_nodes:
-        m += LpAffineExpression([(x[a][b], 1) for a in dropoff_nodes]) + x[b][d]  + x[b][p] == 1, 'every_pickup_handled%s' % b
+        m += LpAffineExpression([(x[a][b], 1) for a in dropoff_nodes]) + x[b][d] + x[b][
+            p] == 1, 'every_pickup_handled%s' % b
 
-    m += LpAffineExpression([x[a][d] for a in dropoff_nodes]) == 1 - ya, 'site-depot-detection'
-    m += LpAffineExpression([x[b][d] for b in pickup_nodes])  == 1 - yb, 'depot-site-detection'
+    m += LpAffineExpression([(x[a][d], 1) for a in dropoff_nodes]) == 1 - ya, 'site-depot-detection'
+    m += LpAffineExpression([(x[b][d], 1) for b in pickup_nodes]) == 1 - yb, 'depot-site-detection'
 
     ################################### Objective function ###################################
     m += LpAffineExpression([(x[a][b], tri_distance[a][b]) for a in dropoff_nodes for b in pickup_nodes])\
-         + LpAffineExpression([((x[n][p] * 2 * distance[n][p] + x[n][d] *(distance[n][p] + distance[n][d])),1) for n in all_end_nodes]) + (ya+yb) * distance[d][p]
+         + LpAffineExpression([(x[n][p], 2*distance[n][p]) for n in site_nodes]) + \
+    LpAffineExpression([(x[n][d] , distance[n][d] + distance[n][p]) for n in site_nodes]) +(ya + yb) * distance[d][p]
 
     ################################### Evaluate  results ###################################
     m.solve()
@@ -110,13 +115,12 @@ def routing_simple(tour: cl.Tour):
 
     edges = 0
 
-    for i in all_end_nodes:
-        for j in all_end_nodes:
+    for a in site_nodes:
+        for b in all_end_nodes:
             if i != j:
-                if x[i][j].varValue > 0:
-                    print("from {} to {} at {} - truck: {} - silo: {}".format(i.node_type, j.nodetype, ))
-                    edges +=1
-
+                if x[a][b].varValue > 0:
+                    print("from {} to {}".format(a.name,b.name)
+                    edges += 1
 
     distance = m.objective.value()
     ################################### write back to tour ###################################
@@ -128,7 +132,8 @@ def routing_simple(tour: cl.Tour):
 
     #######################################################################
 
-def routing(tour: cl.Tour):
+
+def routing_extended(tour: cl.Tour):
     # double plants need to be handled
 
     # create working nodes to level different object types
@@ -287,13 +292,13 @@ def routing(tour: cl.Tour):
                     if x[i][j][t].varValue > 0:
                         # print("from {} to {} at {} - truck: {} - silo: {}".format(i.node_type,j.name,t,y[t].varValue,z[t].varValue))
                         routing_sequence.append(i)
-                        #get the worst edge between to site nodes to reassign later
+                        # get the worst edge between to site nodes to reassign later
                         if distances[i][j] > worst_edge_distance:
-                            if i.node_type == 'pickup_task' and  j.node_type == 'dropoff_job':
+                            if i.node_type == 'pickup_task' and j.node_type == 'dropoff_job':
                                 worst_edge_distance = distances[i][j]
                                 worst_edge_pickup = i
                                 worst_edge_dropoff = j
-                            elif i.node_type == 'dropoff_task' and  j.node_type == 'pickup_job':
+                            elif i.node_type == 'dropoff_task' and j.node_type == 'pickup_job':
                                 worst_edge_distance = distances[i][j]
                                 worst_edge_pickup = i
                                 worst_edge_dropoff = j

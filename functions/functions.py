@@ -82,7 +82,7 @@ def persistate(dict_objects: dict, path: str, prefix):
         if 'list_days' in dict_objects:
             if 'dict_tours' in dict_objects:
 
-                tour_cols = dict_objects['dict_depots']['Embsen'][17042].get_colums()
+                tour_cols = dict_objects['dict_tours']['Embsen'][17042].get_colums()
 
                 # create df with objects and readable df for solution
                 i = 0
