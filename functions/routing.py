@@ -34,15 +34,12 @@ def get_proxdepot(site, plant, list_depots):
             distance_min = distance_ges
             depot_min = d
     return depot_min
+
 #######################################################################
-
-
-def routing(tour: cl.Tour):
-    # double plants need to be handled
-
+def routing_simple(tour: cl.Tour):
     # create working nodes to level different object types
-    depot_node = cl.Worknode('depot', tour.depot.name, tour.depot)
-    plant_node = cl.Worknode('plant', tour.list_plants[0].name, tour.list_plants[0])  # only first plant is selected
+    d = cl.Worknode('depot', tour.depot.name, tour.depot)
+    p = cl.Worknode('plant', tour.list_plants[0].name, tour.list_plants[0])  # only first plant is selected
 
     # format jobs to sites
     dropoff_nodes = []
@@ -53,6 +50,100 @@ def routing(tour: cl.Tour):
         dropoff_nodes.append(wn_j)
     for j in tour.list_pickups:
         wn_j = cl.Worknode('pickup_job', j.name, j.site)
+        pickup_nodes.append(wn_j)
+
+    # combined lists
+    site_nodes = dropoff_nodes + pickup_nodes
+    all_end_nodes = site_nodes + [d] + [p]
+
+    # create and fill distance dict
+    distance = {}
+    for n in all_end_nodes:
+        distance[n] = {}
+
+    for i in all_end_nodes:
+        for j in all_end_nodes:
+            distance[i][j] = get_distance(i, j)
+
+    #create and fill triangular distances dict with plant
+    tri_distance = {}
+    for n in site_nodes:
+        tri_distance[n] = {}
+
+    for a in site_nodes:
+        for b in site_nodes:
+            tri_distance[a][b] = distance[i][j] + distance[i][p] + distance[p][j]
+
+    ################################### create model ###################################
+    m = LpProblem("Routing_simple", LpMinimize)
+
+    ################################### create Variables ###################################
+    x = LpVariable.dicts('assignment', (site_nodes, all_end_nodes), cat='Binary')
+    ya = LpVariable('site-depot-detector', cat='Binary')
+    yb = LpVariable('depot-site-detector', cat='Binary')
+
+    ################################### basic constraints ###################################
+
+    # a node cannot have an edge with itself
+    for a in dropoff_nodes:
+        m += LpAffineExpression([(x[a][b], 1) for b in pickup_nodes]) + x[a][d]  + x[a][p] == 1, 'every_dropoff_handled%s' % a
+
+    for b in pickup_nodes:
+        m += LpAffineExpression([(x[a][b], 1) for a in dropoff_nodes]) + x[b][d]  + x[b][p] == 1, 'every_pickup_handled%s' % b
+
+    m += LpAffineExpression([x[a][d] for a in dropoff_nodes]) == 1 - ya, 'site-depot-detection'
+    m += LpAffineExpression([x[b][d] for b in pickup_nodes])  == 1 - yb, 'depot-site-detection'
+
+    ################################### Objective function ###################################
+    m += LpAffineExpression([(x[a][b], tri_distance[a][b]) for a in dropoff_nodes for b in pickup_nodes])\
+         + LpAffineExpression([((x[n][p] * 2 * distance[n][p] + x[n][d] *(distance[n][p] + distance[n][d])),1) for n in all_end_nodes]) + (ya+yb) * distance[d][p]
+
+    ################################### Evaluate  results ###################################
+    m.solve()
+    # print(LpStatus[m.status])
+
+    worst_edge_distance = 0
+    worst_edge_pickup = ''
+    worst_edge_dropoff = ''
+
+    routing_sequence = []
+
+    edges = 0
+
+    for i in all_end_nodes:
+        for j in all_end_nodes:
+            if i != j:
+                if x[i][j].varValue > 0:
+                    print("from {} to {} at {} - truck: {} - silo: {}".format(i.node_type, j.nodetype, ))
+                    edges +=1
+
+
+    distance = m.objective.value()
+    ################################### write back to tour ###################################
+
+    tour.edges = edges
+    tour.routing_sequence = routing_sequence
+    tour.distance = distance
+    tour.distance_uptodate = True
+
+    #######################################################################
+
+def routing(tour: cl.Tour):
+    # double plants need to be handled
+
+    # create working nodes to level different object types
+    depot_node = cl.Worknode('depot', tour.depot.name, tour.depot)
+    plant_node = cl.Worknode('plant', tour.list_plants[0].name, tour.list_plants[0])  # only first plant is selected
+
+    # format jobs to task working nodes
+    dropoff_nodes = []
+    pickup_nodes = []
+
+    for j in tour.list_dropoffs:
+        wn_j = cl.Worknode('dropoff_task', j.name, j.site)
+        dropoff_nodes.append(wn_j)
+    for j in tour.list_pickups:
+        wn_j = cl.Worknode('pickup_task', j.name, j.site)
         pickup_nodes.append(wn_j)
 
     # combined lists
@@ -198,11 +289,11 @@ def routing(tour: cl.Tour):
                         routing_sequence.append(i)
                         #get the worst edge between to site nodes to reassign later
                         if distances[i][j] > worst_edge_distance:
-                            if i.node_type == 'pickup_job' and  j.node_type == 'dropoff_job':
+                            if i.node_type == 'pickup_task' and  j.node_type == 'dropoff_job':
                                 worst_edge_distance = distances[i][j]
                                 worst_edge_pickup = i
                                 worst_edge_dropoff = j
-                            elif i.node_type == 'dropoff_job' and  j.node_type == 'pickup_job':
+                            elif i.node_type == 'dropoff_task' and  j.node_type == 'pickup_job':
                                 worst_edge_distance = distances[i][j]
                                 worst_edge_pickup = i
                                 worst_edge_dropoff = j

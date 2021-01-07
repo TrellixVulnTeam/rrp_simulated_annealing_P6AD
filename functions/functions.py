@@ -49,7 +49,7 @@ def get_time():
 
 
 ########################################################################
-# from https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
+# adapted from https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
 
 def save_object(obj, filename) -> object:
     with open(filename, 'wb') as output:  # Overwrites any existing file.
@@ -69,7 +69,7 @@ def quick_save(dict_objects: dict, path: str, prefix):
     for object in dict_objects:
         # export all data objects
 
-        save_object(object, path + '/quicksave/' + prefix + '{}.pkl'.format(object))
+        save_object(object, path + '/quicksave/{}{}.pkl'.format(prefix,object))
 
     print_log("Done with persitation at {}".format(get_time()))
 
@@ -110,9 +110,12 @@ def persistate(dict_objects: dict, path: str, prefix):
 
 
 ########################################################################
-def print_log(info: str):
+def print_log(info: str, overwrite_inline=False):
     logging.info(info)
-    print(info)
+    if overwrite_inline:
+        print(info,end='\x1b[1K\r')
+    else:
+        print(info)
 
 
 ########################################################################

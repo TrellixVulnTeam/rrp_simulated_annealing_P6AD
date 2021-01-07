@@ -60,7 +60,7 @@ class Tour:
         self.total_pickups = 0
         self.total_dropoffs = 0
         self.total_tasks = 0
-        self.total_distance = 0
+        self.distance = 0
         self.routing_sequence = []
         self.worst_edge_pickup = ''
         self.worst_edge_dropoff = ''
@@ -69,21 +69,21 @@ class Tour:
         self.distance_uptodate = True
 
     def update_totals(self):
-        self.total_pickups = len(list_pickups)
-        self.total_dropoffs = len(list_dropoffs)
+        self.total_pickups = len(self.list_pickups)
+        self.total_dropoffs = len(self.list_dropoffs)
         self.total_tasks = self.total_pickups + self.total_dropoffs
 
 
     def get_colums(self):
         return['day', 'depot', 'list_plants',  'list_pickups',
                 'list_dropoffs', 'total_pickups', 'total_dropoffs','total_tasks',
-               'total_distance', 'routing_sequence' ,'worst_edge_pickup',
+               'distance', 'routing_sequence' ,'worst_edge_pickup',
                'worst_edge_distance', 'worst_edge_dropoff', 'edges','distance_uptodate']
 
     def get_all_values(self):
         return [self.day, self.depot,
                self.list_plants, self.list_pickups,  self.list_dropoffs, self.total_pickups, self.total_dropoffs, self.total_tasks,
-               self.total_distance, self.routing_sequence, self.worst_edge_pickup, self.worst_edge_dropoff ,
+               self.distance, self.routing_sequence, self.worst_edge_pickup, self.worst_edge_dropoff ,
                 self.worst_edge_distance, self.edges,self.distance_uptodate]
 
     def get_all_value_readable(self):
@@ -118,7 +118,7 @@ class Tour:
 
         return [self.day, self.depot.name,
                 read_plants, read_pickups, read_dropoffs, self.total_pickups, self.total_dropoffs, self.total_tasks,
-                self.total_distance, read_routing, read_worst_edge_pickup, read_worst_edge_dropoff,
+                self.distance, read_routing, read_worst_edge_pickup, read_worst_edge_dropoff,
                 self.worst_edge_distance, self.edges, self.distance_uptodate]
 
 ###############################################################################
