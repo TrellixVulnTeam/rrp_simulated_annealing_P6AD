@@ -48,6 +48,7 @@ class Job:
         self.prox_depot = prox_depot
         self.assigned = False
 
+
 ##########################################################################
 class Tour:
     def __init__(self,depot,day):
@@ -56,9 +57,9 @@ class Tour:
         self.list_plants = []
         self.list_pickups = []
         self.list_dropoffs = []
-        self.total_pickups = []
-        self.total_dropoffs = []
-        self.total_jobs = 0
+        self.total_pickups = 0
+        self.total_dropoffs = 0
+        self.total_tasks = 0
         self.total_distance = 0
         self.routing_sequence = []
         self.worst_edge_pickup = ''
@@ -67,15 +68,21 @@ class Tour:
         self.edges = 0
         self.distance_uptodate = True
 
+    def update_totals(self):
+        self.total_pickups = len(list_pickups)
+        self.total_dropoffs = len(list_dropoffs)
+        self.total_tasks = self.total_pickups + self.total_dropoffs
+
+
     def get_colums(self):
         return['day', 'depot', 'list_plants',  'list_pickups',
-                'list_dropoffs', 'total_pickups', 'total_dropoffs','total_jobs',
+                'list_dropoffs', 'total_pickups', 'total_dropoffs','total_tasks',
                'total_distance', 'routing_sequence' ,'worst_edge_pickup',
                'worst_edge_distance', 'worst_edge_dropoff', 'edges','distance_uptodate']
 
     def get_all_values(self):
         return [self.day, self.depot,
-               self.list_plants, self.list_pickups,  self.list_dropoffs, self.total_pickups, self.total_dropoffs, self.total_jobs,
+               self.list_plants, self.list_pickups,  self.list_dropoffs, self.total_pickups, self.total_dropoffs, self.total_tasks,
                self.total_distance, self.routing_sequence, self.worst_edge_pickup, self.worst_edge_dropoff ,
                 self.worst_edge_distance, self.edges,self.distance_uptodate]
 
@@ -110,7 +117,7 @@ class Tour:
             read_worst_edge_dropoff = ''
 
         return [self.day, self.depot.name,
-                read_plants, read_pickups, read_dropoffs, self.total_pickups, self.total_dropoffs, self.total_jobs,
+                read_plants, read_pickups, read_dropoffs, self.total_pickups, self.total_dropoffs, self.total_tasks,
                 self.total_distance, read_routing, read_worst_edge_pickup, read_worst_edge_dropoff,
                 self.worst_edge_distance, self.edges, self.distance_uptodate]
 

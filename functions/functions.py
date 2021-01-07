@@ -1,6 +1,8 @@
 from datetime import datetime
 import pickle as pickle
 import logging
+import sys
+import pandas as pd
 
 
 #######################################################################
@@ -45,40 +47,80 @@ def get_time():
     current_time = now.strftime("%H:%M:%S")
     return current_time
 
+
 ########################################################################
-#from https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
+# from https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
 
 def save_object(obj, filename) -> object:
     with open(filename, 'wb') as output:  # Overwrites any existing file.
         pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
+
 
 def load_object(filename):
     with open(filename, 'rb') as input:
         loaded_object = pickle.load(input)
     return loaded_object
 
-def quick_save(file_prefix, string_exp_path :str,dict_depots: dict,dict_sites: dict,dict_plants: dict,dict_jobs: dict,dict_tours: dict):
-    #specified quicksafe for all dicts
-    save_object(dict_depots, string_exp_path + '/quicksave/{}_dict_depots.pkl'.format(file_prefix))
-    save_object(dict_sites, string_exp_path + '/quicksave/{}_dict_sites.pkl'.format(file_prefix))
-    save_object(dict_plants, string_exp_path + '/quicksave/{}_dict_plants.pkl'.format(file_prefix))
-    save_object(dict_jobs, string_exp_path + '/quicksave/{}_dict_jobs.pkl'.format(file_prefix))
-    save_object(dict_tours, string_exp_path + '/quicksave/{}_dict_tours.pkl'.format(file_prefix))
+
+def quick_save(dict_objects: dict, path: str, prefix):
+    print_log("Starting quicksave at {}".format(get_time()))
+    sys.setrecursionlimit(100000)
+
+    for object in dict_objects:
+        # export all data objects
+
+        save_object(object, path + '/quicksave/' + prefix + '{}.pkl'.format(object))
+
+    print_log("Done with persitation at {}".format(get_time()))
+
+def persistate(dict_objects: dict, path: str, prefix):
+    print_log("Starting persitation at {}".format(get_time()))
+    sys.setrecursionlimit(100000)
+
+    # if everything is handed over, create tour_df
+    if 'dict_depot' in dict_objects:
+        if 'list_days' in dict_objects:
+            if 'dict_tours' in dict_objects:
+
+                tour_cols = dict_objects['dict_depots']['Embsen'][17042].get_colums()
+
+                # create df with objects and readable df for solution
+                i = 0
+                tour_df = pd.DataFrame([tour_cols])
+                tour_df.columns = tour_cols
+                tour_df_readable = pd.DataFrame([tour_cols])
+                tour_df_readable.columns = tour_cols
+
+                for depot in dict_objects['dict_depots']:
+                    for day in dict_objects['list_days']:
+                        t = dict_objects['dict_depots'][depot][day]
+                        tour_df.loc[i] = t.get_all_values()
+                        tour_df_readable.loc[i] = t.get_all_value_readable()
+                        i += 1
+
+                # export tabular tour data
+                tour_df.to_csv(path + '/tour_df.csv')
+                tour_df_readable.to_csv(path + '/tour_df_readable.csv')
+
+    for object in dict_objects:
+        # export all data objects
+        save_object(object, path + '/' + prefix + '{}.pkl'.format(object))
+
+    print_log("Done with persitation at {}".format(get_time()))
 
 
 ########################################################################
-def print_log(info :str):
+def print_log(info: str):
     logging.info(info)
     print(info)
 
+
 ########################################################################
-def day_navigation(day: int,index_delta: int, list_days: list):
-    #to be able to navigate in the days
+def day_navigation(day: int, index_delta: int, list_days: list):
+    # to be able to navigate in the days
     day_index = list_days.index(day)
     new_index = day_index + index_delta
 
-    return(list_days[new_index])
+    return (list_days[new_index])
 
 ########################################################################
-
-

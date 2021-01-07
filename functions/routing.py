@@ -24,7 +24,16 @@ def get_distance(point1, point2):
     distance = R * c
     return distance
 
-
+#######################################################################
+def get_proxdepot(site, plant, list_depots):
+    distance_min = 10000000000000
+    depot_min = ''
+    for d in list_depots:
+        distance_ges = get_distance(d, site) + get_distance(d, plant)
+        if distance_ges < distance_min:
+            distance_min = distance_ges
+            depot_min = d
+    return depot_min
 #######################################################################
 
 
