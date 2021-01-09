@@ -62,11 +62,15 @@ class Tour:
         self.total_tasks = 0
         self.distance = 0
         self.routing_sequence = []
+        self.dict_worst_edge_pair = {}
         self.worst_edge_pickup = ''
         self.worst_edge_dropoff = ''
         self.worst_edge_distance = 0
+        self.worst_edge_pickup_distance = 0
+        self.worst_edge_dropoff_distance = 0
         self.edges = 0
         self.distance_uptodate = True
+
 
     def update_totals(self):
         self.total_pickups = len(self.list_pickups)
