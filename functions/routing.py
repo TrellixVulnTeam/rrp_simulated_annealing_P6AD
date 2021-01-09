@@ -148,7 +148,7 @@ def routing(tour: cl.Tour):
         for b in pickup_nodes:
             #print("from {} to {} is {}".format(a.name, b.name, x[a][b].varValue))
             if x[a][b].varValue > 0:
-                print("from {} to {}".format(a.name, b.name))
+                #print("from {} to {}".format(a.name, b.name))
                 edges += 3
                 routing_sequence += [a,b,p] #append triangular sequence
 
