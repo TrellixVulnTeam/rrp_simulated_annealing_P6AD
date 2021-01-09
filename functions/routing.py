@@ -37,6 +37,12 @@ def get_proxdepot(site, plant, list_depots):
     return depot_min
 
 
+
+
+#######################################################################
+#def visualize_tour(tour: cl.Tour):
+
+
 #######################################################################
 def routing(tour: cl.Tour):
     # create working nodes to level different object types
@@ -119,16 +125,40 @@ def routing(tour: cl.Tour):
     worst_edge_pickup = ''
     worst_edge_dropoff = ''
 
-    routing_sequence = []
-
     edges = 0
 
-    for a in site_nodes:
-        for b in all_end_nodes:
+
+    ## fill routing sequence:
+    #depot as start_node
+
+    routing_sequence = [d]
+
+    for b in pickup_nodes:
+        if x[b][d].varValue > 0:
+            routing_sequence += [b,p]
+        elif ya.varValue > 0:
+            routing_sequence.append(p)
+    edges += 1
+
+    for a in dropoff_nodes:
+        for b in pickup_nodes:
             # print("from {} to {} is {}".format(a.name, b.name, x[a][b].varValue))
             if x[a][b].varValue > 0:
                 #print("from {} to {}".format(a.name, b.name))
-                edges += 1
+                edges += 3
+                routing_sequence += [a,b,p] #append triangular sequence
+
+    for n in site_nodes:
+        if x[n][p].varValue > 0:
+            routing_sequence += [n, p]
+
+    for a in dropoff_nodes:
+        if x[a][d].varValue > 0:
+            routing_sequence += [a,d]
+        elif yb.varValie > 0:
+            routing_sequence.append(d)
+
+
 
     distance = m.objective.value()
     ################################### write back to tour ###################################
@@ -138,15 +168,15 @@ def routing(tour: cl.Tour):
     tour.distance = distance
     tour.distance_uptodate = True
 
-
+########################################################################################################################
+#original routing with time windows
+########################################################################################################################
 def routing_extended(tour: cl.Tour):
     # double plants need to be handled
 
     # create working nodes to level different object types
     depot_node = cl.Worknode('depot', tour.depot.name, tour.depot)
     plant_node = cl.Worknode('plant', tour.list_plants[0].name, tour.list_plants[0])  # only first plant is selected
-
-    # format jobs to task working nodes
     dropoff_nodes = []
     pickup_nodes = []
 
@@ -321,3 +351,4 @@ def routing_extended(tour: cl.Tour):
     tour.worst_edge_distance = worst_edge_distance
     tour.worst_edge_pickup = worst_edge_pickup
     tour.worst_edge_dropoff = worst_edge_dropoff
+
