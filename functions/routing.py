@@ -51,13 +51,13 @@ def routing(tour: cl.Tour):
 
     i = 0
     for j in tour.list_dropoffs:
-        wn_j = cl.Worknode('dropoff_job_nr_{}__'.format(i), j.name, j.site)
+        wn_j = cl.Worknode('dropoff_job', j.name, j.site)
         dropoff_nodes.append(wn_j)
         i += 1
 
     i = 0
     for j in tour.list_pickups:
-        wn_j = cl.Worknode('pickup_job_nr_{}__'.format(i), j.name, j.site)
+        wn_j = cl.Worknode('pickup_job'.format(i), j.name, j.site)
         pickup_nodes.append(wn_j)
 
         i += 1
@@ -137,17 +137,18 @@ def routing(tour: cl.Tour):
     for b in pickup_nodes:
         if x[b][d].varValue > 0:
             routing_sequence += [b,p]
-    if ya.varValue > 0:
+    if ya.varValue == 0:
         routing_sequence.append(p)
     edges += 1
+
 
 
     #node pairs
     for a in dropoff_nodes:
         for b in pickup_nodes:
-            # print("from {} to {} is {}".format(a.name, b.name, x[a][b].varValue))
+            #print("from {} to {} is {}".format(a.name, b.name, x[a][b].varValue))
             if x[a][b].varValue > 0:
-                #print("from {} to {}".format(a.name, b.name))
+                print("from {} to {}".format(a.name, b.name))
                 edges += 3
                 routing_sequence += [a,b,p] #append triangular sequence
 
@@ -174,10 +175,8 @@ def routing(tour: cl.Tour):
     for a in dropoff_nodes:
         if x[a][d].varValue > 0:
             routing_sequence += [a,d]
-    if yb.varValue > 0:
+    if yb.varValue == 0:
         routing_sequence.append(d)
-
-
 
     distance = m.objective.value()
     ################################### write back to tour ###################################

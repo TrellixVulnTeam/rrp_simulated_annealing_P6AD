@@ -4,7 +4,9 @@ import logging
 import sys
 import pandas as pd
 from classes import classes as cl
+import plotly.graph_objects as go
 
+import networkx as nx
 
 #######################################################################
 def get_map(list_depots, list_plants, list_sites):
@@ -45,8 +47,29 @@ def get_map(list_depots, list_plants, list_sites):
 
 
 #######################################################################
-def visualize_tour(tour: cl.Tour):
+def get_tour_node_scatter(node_type: str, plot_name: str, color: str, tour: cl.Tour):
+    node_x = []
+    node_y = []
+    for node in tour.routing_sequence:
+        if node.node_type == node_type:
+            x, y = node.lon, node.lat
+            node_x.append(x)
+            node_y.append(y)
 
+    node_trace = go.Scatter(
+        x=node_x, y=node_y,
+        name=plot_name,
+        mode='markers',
+        hoverinfo='text',
+        marker=dict(
+            reversescale=True,
+            color=color,
+            size=10,
+            line_width=2))
+    return node_trace
+
+######################################################################
+def visualize_tour(tour: cl.Tour):
     last_node = tour.routing_sequence[0]
 
     edge_x = []
@@ -60,67 +83,44 @@ def visualize_tour(tour: cl.Tour):
         edge_y.append(y0)
         edge_y.append(y1)
         edge_y.append(None)
+        last_node = node
 
     edge_trace = go.Scatter(
         x=edge_x, y=edge_y,
         line=dict(width=0.5, color='#888'),
         hoverinfo='none',
+        name='Route',
         mode='lines')
 
-    node_x = []
-    node_y = []
-    for node in tour.routing_sequence:
-        x, y = node.lon, node.lat
-        node_x.append(x)
-        node_y.append(y)
-
-    node_trace = go.Scatter(
-        x=node_x, y=node_y,
-        mode='markers',
-        hoverinfo='text',
-        marker=dict(
-            showscale=True,
-            # colorscale options
-            # 'Greys' | 'YlGnBu' | 'Greens' | 'YlOrRd' | 'Bluered' | 'RdBu' |
-            # 'Reds' | 'Blues' | 'Picnic' | 'Rainbow' | 'Portland' | 'Jet' |
-            # 'Hot' | 'Blackbody' | 'Earth' | 'Electric' | 'Viridis' |
-            colorscale='YlGnBu',
-            reversescale=True,
-            color=[],
-            size=10,
-            colorbar=dict(
-                thickness=15,
-                title='Node Connections',
-                xanchor='left',
-                titleside='right'
-            ),
-            line_width=2))
+    node_trace_pi = get_tour_node_scatter('pickup_job', 'Pickups', 'black', tour)
+    node_trace_do = get_tour_node_scatter('dropoff_job', 'Dropoffs', 'red', tour)
+    node_trace_p = get_tour_node_scatter('plant', 'Plant/Depot', 'green', tour)
+    # node_trace_d = get_tour_node_scatter('depot','Depot','blue',tour)
 
     node_adjacencies = []
     node_text = []
-    for node, adjacencies in enumerate(G.adjacency()):
-        node_adjacencies.append(len(adjacencies[1]))
-        node_text.append('# of connections: ' + str(len(adjacencies[1])))
 
-    node_trace.marker.color = node_adjacencies
-    node_trace.text = node_text
-
-    fig = go.Figure(data=[edge_trace, node_trace],
+    fig = go.Figure(data=[edge_trace, node_trace_pi, node_trace_do, node_trace_p],
                     layout=go.Layout(
-                        title='<br>Network graph made with Python',
+                        title=None,
                         titlefont_size=16,
-                        showlegend=False,
+                        showlegend=True,
+                        legend_font={"size": 20},
                         hovermode='closest',
                         margin=dict(b=20, l=5, r=5, t=40),
                         annotations=[dict(
-                            text="Python code: <a href='https://plotly.com/ipython-notebooks/network-graphs/'> https://plotly.com/ipython-notebooks/network-graphs/</a>",
-                            showarrow=False,
+                            showarrow=True,
                             xref="paper", yref="paper",
                             x=0.005, y=-0.002)],
-                        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
+                        xaxis=dict(showgrid=True, zeroline=True, showticklabels=True, gridcolor='lightgrey',
+                                   title_text="Longitude", title_font={"size": 20}),
+                        yaxis=dict(showgrid=True, zeroline=True, showticklabels=True, gridcolor='lightgrey',
+                                   title_text="Latitude", title_font={"size": 20}),
+                        paper_bgcolor='rgba(255,255,255,1)',
+                        plot_bgcolor='rgba(255,255,255,1)')
                     )
     fig.show()
+
 
 ######################################################################
 
