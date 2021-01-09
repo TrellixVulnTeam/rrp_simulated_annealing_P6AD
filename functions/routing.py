@@ -40,10 +40,6 @@ def get_proxdepot(site, plant, list_depots):
 
 
 #######################################################################
-#def visualize_tour(tour: cl.Tour):
-
-
-#######################################################################
 def routing(tour: cl.Tour):
     # create working nodes to level different object types
     d = cl.Worknode('depot', tour.depot.name, tour.depot)
@@ -121,14 +117,19 @@ def routing(tour: cl.Tour):
     m.solve()
     # print(LpStatus[m.status])
 
-    worst_edge_distance = 0
+    worst_edge_pair_distance = 0
+    dict_worst_edge_pair = {}
+    dict_worst_edge_pair['dropoff'] = ''
+    dict_worst_edge_pair['pickup'] = ''
+    worst_edge_pickup_distance = 0
     worst_edge_pickup = ''
+    worst_edge_dropoff_distance = 0
     worst_edge_dropoff = ''
+
 
     edges = 0
 
-
-    ## fill routing sequence:
+    ## fill routing sequence, edges value and worst edge data - the actual order doesn't matter
     #depot as start_node
 
     routing_sequence = [d]
@@ -136,10 +137,12 @@ def routing(tour: cl.Tour):
     for b in pickup_nodes:
         if x[b][d].varValue > 0:
             routing_sequence += [b,p]
-        elif ya.varValue > 0:
-            routing_sequence.append(p)
+    if ya.varValue > 0:
+        routing_sequence.append(p)
     edges += 1
 
+
+    #node pairs
     for a in dropoff_nodes:
         for b in pickup_nodes:
             # print("from {} to {} is {}".format(a.name, b.name, x[a][b].varValue))
@@ -148,25 +151,52 @@ def routing(tour: cl.Tour):
                 edges += 3
                 routing_sequence += [a,b,p] #append triangular sequence
 
+                if distance[a][b] > worst_edge_pair_distance:
+                    dict_worst_edge_pair['dropoff'] = a
+                    dict_worst_edge_pair['pickup'] = b
+                    worst_edge_pair_distance = distance[a][b]
+
+
+    #single nodes
     for n in site_nodes:
         if x[n][p].varValue > 0:
             routing_sequence += [n, p]
 
+            if distance[n][p] > worst_edge_pickup_distance and n in pickup_nodes:
+                worst_edge_pickup = n
+                worst_edge_pickup_distance = distance[n][p]
+            elif distance[n][p] > worst_edge_dropoff_distance and n in dropoff_nodes:
+                worst_edge_dropoff = n
+                worst_edge_dropoff_distance = distance[n][p]
+
+
+    #depot as end_note
     for a in dropoff_nodes:
         if x[a][d].varValue > 0:
             routing_sequence += [a,d]
-        elif yb.varValie > 0:
-            routing_sequence.append(d)
+    if yb.varValue > 0:
+        routing_sequence.append(d)
 
 
 
     distance = m.objective.value()
     ################################### write back to tour ###################################
 
+    #key values
     tour.edges = edges
     tour.routing_sequence = routing_sequence
     tour.distance = distance
     tour.distance_uptodate = True
+
+    #worst edge data
+    tour.worst_edge_pair_distance = worst_edge_pair_distance
+    tour.dict_worst_edge_pair = dict_worst_edge_pair
+    tour.worst_edge_pickup_distance = worst_edge_pickup_distance
+    tour.worst_edge_pickup = worst_edge_pickup
+    tour.worst_edge_dropoff_distance = worst_edge_dropoff_distance
+    tour.worst_edge_dropoff = worst_edge_dropoff
+
+
 
 ########################################################################################################################
 #original routing with time windows
