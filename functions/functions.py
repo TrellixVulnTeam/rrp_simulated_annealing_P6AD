@@ -203,7 +203,6 @@ def initiate(dict_objects: dict, path: str,prefix: str):
         # load all data objects
         with open('{}/{}{}.pkl'.format(path,prefix,object), 'rb') as f:
             dict_objects[object] = pickle.load(f)
-            print(dict_objects[object])
     return(dict_objects)
 
     print_log("Done with initiation at {}".format(get_time()))
