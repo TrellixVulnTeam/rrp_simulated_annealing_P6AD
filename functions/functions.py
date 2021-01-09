@@ -156,7 +156,6 @@ def quick_save(dict_objects: dict, path: str, prefix):
 
     for object in dict_objects:
         # export all data objects
-
         save_object(object, path + '/quicksave/{}{}.pkl'.format(prefix,object))
 
     print_log("Done with persitation at {}".format(get_time()))
@@ -192,11 +191,22 @@ def persistate(dict_objects: dict, path: str, prefix):
 
     for object in dict_objects:
         # export all data objects
-        save_object(object, path + '/' + prefix + '{}.pkl'.format(object))
+        save_object(dict_objects[object], path + '/' + prefix + '{}.pkl'.format(object))
 
     print_log("Done with persitation at {}".format(get_time()))
 
 
+def initiate(dict_objects: dict, path: str,prefix: str):
+    print_log("Starting initiation at {}".format(get_time()))
+
+    for object in dict_objects:
+        # load all data objects
+        with open('{}/{}{}.pkl'.format(path,prefix,object), 'rb') as f:
+            dict_objects[object] = pickle.load(f)
+            print(dict_objects[object])
+    return(dict_objects)
+
+    print_log("Done with initiation at {}".format(get_time()))
 ########################################################################
 def print_log(info: str, overwrite_inline=False):
     logging.info(info)
