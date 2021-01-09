@@ -70,6 +70,11 @@ def get_tour_node_scatter(node_type: str, plot_name: str, color: str, tour: cl.T
 
 ######################################################################
 def visualize_tour(tour: cl.Tour):
+
+    if tour.total_tasks == 0:
+        print("Tour empty")
+        return None
+
     last_node = tour.routing_sequence[0]
 
     edge_x = []
