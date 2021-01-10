@@ -210,9 +210,9 @@ def initiate(dict_objects: dict, path: str,prefix: str):
 def print_log(info: str, overwrite_inline=False):
     logging.info(info)
     if overwrite_inline:
-        print(info,end='\x1b[1K\r')
+        print(info + "- t: {}".format(get_time()),end='\x1b[1K\r')
     else:
-        print(info)
+        print(info+ "- t: {}".format(get_time())
 
 
 ########################################################################

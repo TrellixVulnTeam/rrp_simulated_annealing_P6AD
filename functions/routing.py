@@ -48,18 +48,21 @@ def routing(tour: cl.Tour):
     # format jobs to sites
     dropoff_nodes = []
     pickup_nodes = []
+    #to resolve nodes later
+    dict_node_job = {}
 
     i = 0
     for j in tour.list_dropoffs:
         wn_j = cl.Worknode('dropoff_job', j.name, j.site)
         dropoff_nodes.append(wn_j)
+        dict_node_job[wn_j] = j
         i += 1
 
     i = 0
     for j in tour.list_pickups:
         wn_j = cl.Worknode('pickup_job'.format(i), j.name, j.site)
         pickup_nodes.append(wn_j)
-
+        dict_node_job[wn_j] = j
         i += 1
 
     # combined lists
@@ -153,8 +156,9 @@ def routing(tour: cl.Tour):
                 routing_sequence += [a,b,p] #append triangular sequence
 
                 if distance[a][b] > worst_edge_pair_distance:
-                    dict_worst_edge_pair['dropoff'] = a
-                    dict_worst_edge_pair['pickup'] = b
+                    #resolve job into dict
+                    dict_worst_edge_pair['dropoff'] = dict_node_job[a]
+                    dict_worst_edge_pair['pickup'] = dict_node_job[b]
                     worst_edge_pair_distance = distance[a][b]
 
 
@@ -164,10 +168,10 @@ def routing(tour: cl.Tour):
             routing_sequence += [n, p]
 
             if distance[n][p] > worst_edge_pickup_distance and n in pickup_nodes:
-                worst_edge_pickup = n
+                worst_edge_pickup = dict_node_job[n]
                 worst_edge_pickup_distance = distance[n][p]
             elif distance[n][p] > worst_edge_dropoff_distance and n in dropoff_nodes:
-                worst_edge_dropoff = n
+                worst_edge_dropoff = dict_node_job[n]
                 worst_edge_dropoff_distance = distance[n][p]
 
 
@@ -185,7 +189,7 @@ def routing(tour: cl.Tour):
     tour.edges = edges
     tour.routing_sequence = routing_sequence
     tour.distance = distance
-    tour.distance_uptodate = True
+
 
     #worst edge data
     tour.worst_edge_pair_distance = worst_edge_pair_distance
@@ -195,6 +199,9 @@ def routing(tour: cl.Tour):
     tour.worst_edge_dropoff_distance = worst_edge_dropoff_distance
     tour.worst_edge_dropoff = worst_edge_dropoff
 
+    #update value
+    tour.update_totals
+    tour.distance_uptodate = True
 
 
 ########################################################################################################################
@@ -372,6 +379,7 @@ def routing_extended(tour: cl.Tour):
 
     distance = m.objective.value()
     ################################### write back to tour ###################################
+
 
     tour.edges = edges
     tour.routing_sequence = routing_sequence

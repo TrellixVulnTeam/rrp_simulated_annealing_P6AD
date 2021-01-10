@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
+import copy
 
 
 class Depot:
@@ -74,7 +75,6 @@ class Tour:
         self.edges = 0
         self.distance_uptodate = True
 
-
     def update_totals(self):
         self.total_pickups = len(self.list_pickups)
         self.total_dropoffs = len(self.list_dropoffs)
@@ -141,7 +141,7 @@ class Worknode:
 class Solution:
     def __init__(self,depot,dict_tours: dict, list_days):
         self.depot = depot
-        self.dict_tours = dict_tours
+        self.dict_tours = copy.deepcopy(dict_tours)
         self.list_days = list_days
         #distance
         self.total_distance = 0
