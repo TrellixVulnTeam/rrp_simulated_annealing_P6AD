@@ -1,4 +1,7 @@
 # creating basic classes for every element used
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
 
 class Depot:
     def __init__(self, name, lon, lat):
@@ -132,3 +135,50 @@ class Worknode:
         self.node_type = node_type
         self.lat = object.lat
         self.lon = object.lon
+
+#################################################################################
+class Solution:
+    def __init__(self,depot,dict_tours: dict, list_days):
+        self.depot = depot
+        self.dict_tours = dict_tours
+        self.list_days = list_days
+
+        self.total_distance = 0
+        self.dict_distance_daily = {}
+        self.total_tasks = 0
+        self.dict_tasks_daily = {}
+        self.dict_dropoffs_daily = {}
+        self.dict_pickups_daily = {}
+
+        self.update_values()
+
+
+    def update_values(self):
+        for day in self.list_days:
+            self.total_distance += self.dict_tours[self.depot.name][day].distance
+            self.dict_distance_daily[day] = self.dict_tours[self.depot.name][day].distance
+            self.total_tasks += self.dict_tours[self.depot.name][day].total_tasks
+            self.dict_tasks_daily[day] = self.dict_tours[self.depot.name][day].total_tasks
+            self.dict_dropoffs_daily[day] = self.dict_tours[self.depot.name][day].total_dropoffs
+            self.dict_pickups_daily[day] = self.dict_tours[self.depot.name][day].total_pickups
+
+    def plot_tasks(self):
+
+        days = self.list_days
+        dropoffs = [self.dict_dropoffs_daily[day] for day in days]
+        pickups = [self.dict_pickups_daily[day] for day in days]
+
+        width = 1  # the width of the bars: can also be len(x) sequence
+
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
+        p2 = plt.bar(np.arange(len(days)), pickups, width,
+                     bottom=dropoffs)
+
+        plt.ylabel('Tasks')
+        plt.title('Tasks per day')
+        plt.xticks(np.arange(0, len(days), 100))
+        plt.yticks(np.arange(0, 100, 10))
+        plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
+
+        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
+        plt.show()
