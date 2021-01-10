@@ -188,7 +188,7 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='fuchsia' )
         p2 = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=dropoffs)
 
@@ -224,14 +224,14 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='tab:red' )
         p2 = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=dropoffs)
 
         plt.ylabel('Proportion of tasks')
         plt.xlabel('Days from Day 0')
-        plt.title('Tasks per day')
-        plt.yticks(np.arange(0, 1.05, 0.1))
+        plt.title('Proportion of Tasks per Day')
+        plt.yticks(np.arange(0, 1.05, 0.2))
         plt.xticks(np.arange(0, len(days), 100))
         plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
 
