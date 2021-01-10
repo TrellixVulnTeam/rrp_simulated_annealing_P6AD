@@ -188,8 +188,8 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width,color='royalblue')
-        p2 = plt.bar(np.arange(len(days)), pickups, width, color = 'grey',
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
+        p2 = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=dropoffs)
 
         plt.ylabel('Tasks')
@@ -197,7 +197,7 @@ class Solution:
         plt.title('Tasks per day')
         plt.xticks(np.arange(0, len(days), 100))
         plt.yticks(np.arange(0, y_max, y_max/10))
-        plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
+        plt.legend((p1[0], p2[0]), ('Dropoffs', 'Pickups'))
 
         plt.show()
 
@@ -224,7 +224,7 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='royalblue' )
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='cornflowerblue' )
         p2 = plt.bar(np.arange(len(days)), pickups, width, color='grey',
                      bottom=dropoffs)
 
@@ -233,7 +233,7 @@ class Solution:
         plt.title('Proportion of Tasks per Day')
         plt.yticks(np.arange(0, 1.05, 0.1))
         plt.xticks(np.arange(0, len(days), 100))
-        plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
+        plt.legend((p1[0], p2[0]), ('Dropoffs', 'Pickups'))
 
         plt.show()
 
@@ -248,10 +248,10 @@ class Solution:
         fig, ax1 = plt.subplots(figsize=(16,12),dpi=160, facecolor='w', edgecolor='k')
         #p1 = plt.bar(np.arange(len(days)), distances, width)
 
-        color = 'royalblue'
+        color = 'cornflowerblue'
         ax1.set_xlabel('Days from Day 0')
         ax1.set_ylabel('Tour Distance', color=color)
-        ax1.bar(np.arange(len(days)), distances, width)
+        ax1.bar(np.arange(len(days)), distances, width, color=color)
         ax1.tick_params(axis='y', labelcolor=color)
         ax1.set_yticks(np.arange(0, y_tot_max, y_tot_max/10))
         plt.xticks(np.arange(0, len(days), 100))
@@ -268,38 +268,29 @@ class Solution:
         plt.title('Distances per Day day')
         plt.show()
 
-        """
-        plt.ylabel('Tour Distance')
-        plt.xlabel('Days from Day 0')
-        plt.title('Tour Distances per day')
-        plt.xticks(np.arange(0, len(days), 100))
-        plt.yticks(np.arange(0, 20000, 1000))
-
-        plt.show()
-        """
     def plot_worst_edges(self,y_max: int):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
         pickups = [self.dict_worst_edge_pickup_distance[day] for day in days]
         dropoffs = [self.dict_worst_edge_dropoff_distance[day] for day in days]
-        combined = [self.dict_worst_edge_pickup_distance[day] + self.dict_worst_edge_distance[day] for day in days]
+        combined = [self.dict_worst_edge_dropoff_distance[day] + self.dict_worst_edge_distance[day] for day in days]
         pairs = [self.dict_worst_edge_distance[day] for day in days]
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), pairs, width), color='g',
-        p3 = plt.bar(np.arange(len(days)), pickups, width, color='royalblue',
+        p1 = plt.bar(np.arange(len(days)), pairs, width,color='g')
+        p2 = plt.bar(np.arange(len(days)), dropoffs, width, color='cornflowerblue',
                      bottom=pairs)
-        p2 = plt.bar(np.arange(len(days)), dropoffs,  width, color='grey',
+        p3 = plt.bar(np.arange(len(days)), pickups, width, color='grey',
                      bottom=combined)
 
         plt.ylabel('Tasks')
         plt.xlabel('Days from Day 0')
-        plt.title('Tasks per day')
+        plt.title('Worst Edges per day')
         plt.xticks(np.arange(0, len(days), 100))
         plt.yticks(np.arange(0, y_max, y_max/10))
-        plt.legend((p1[0], p2[0], p3[0]), ('Dropoffs', 'Pickups','Pairs'))
+        plt.legend((p1[0], p2[0], p3[0]), ('Worst Pairs', 'Worst Dropoffs','Worst Pickups'))
 
         plt.show()
 
