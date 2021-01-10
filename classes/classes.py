@@ -188,8 +188,8 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
-        p2 = plt.bar(np.arange(len(days)), pickups, width,
+        p_do = plt.bar(np.arange(len(days)), dropoffs, width)
+        p_pi = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=dropoffs)
 
         plt.ylabel('Tasks')
@@ -197,7 +197,7 @@ class Solution:
         plt.title('Tasks per day')
         plt.xticks(np.arange(0, len(days), 100))
         plt.yticks(np.arange(0, y_max, y_max/10))
-        plt.legend((p1[0], p2[0]), ('Dropoffs', 'Pickups'))
+        plt.legend((p_pi[0], p_do[0]), ('Pickups', 'Dropoffs'))
 
         plt.show()
 
@@ -224,8 +224,8 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
-        p2 = plt.bar(np.arange(len(days)), pickups, width,
+        p_do = plt.bar(np.arange(len(days)), dropoffs, width)
+        p_pi = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=dropoffs)
 
         plt.ylabel('Proportion of tasks')
@@ -233,7 +233,7 @@ class Solution:
         plt.title('Proportion of Tasks per Day')
         plt.yticks(np.arange(0, 1.05, 0.1))
         plt.xticks(np.arange(0, len(days), 100))
-        plt.legend((p1[0], p2[0]), ('Dropoffs', 'Pickups'))
+        plt.legend((p_pi[0], p_do[0]), ('Pickups', 'Dropoffs'))
 
         plt.show()
 
@@ -281,10 +281,10 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), pairs, width)
-        p2 = plt.bar(np.arange(len(days)), dropoffs, width,
+        p_pa = plt.bar(np.arange(len(days)), pairs, width)
+        p_do = plt.bar(np.arange(len(days)), dropoffs, width,
                      bottom=pairs)
-        p3 = plt.bar(np.arange(len(days)), pickups, width,
+        p_pi = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=combined)
 
         plt.ylabel('Tasks')
@@ -292,7 +292,7 @@ class Solution:
         plt.title('Worst Edges per day')
         plt.xticks(np.arange(0, len(days), 100))
         plt.yticks(np.arange(0, y_max, y_max/10))
-        plt.legend((p1[0], p2[0], p3[0]), ('Worst Pairs', 'Worst Dropoffs','Worst Pickups'))
+        plt.legend((p_pi[0], p_do[0], p_pa[0]), ('Worst Pickups', 'Worst Dropoffs','Worst Pairs'))
 
         plt.show()
 
