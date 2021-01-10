@@ -237,7 +237,7 @@ class Solution:
 
         plt.show()
 
-
+        print("test")
     def plot_distances(self,y_tot_max: int, y_avg_max: int):
         days = self.list_days
         distances = [self.dict_distance_daily[day] for day in days]
@@ -267,6 +267,8 @@ class Solution:
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
         plt.title('Distances per Day day')
         plt.show()
+
+        print("test")
 
     def plot_worst_edges(self,y_max: int):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
