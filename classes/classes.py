@@ -225,7 +225,7 @@ class Solution:
         width = 1  # the width of the bars: can also be len(x) sequence
 
         p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='royalblue' )
-        p2 = plt.bar(np.arange(len(days)), pickups, width, color='grey'
+        p2 = plt.bar(np.arange(len(days)), pickups, width, color='grey',
                      bottom=dropoffs)
 
         plt.ylabel('Proportion of tasks')
