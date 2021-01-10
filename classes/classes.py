@@ -3,12 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 
+
 class Depot:
     def __init__(self, name, lon, lat):
         self.name = name
         self.lon = lon
         self.lat = lat
-
 
 ##########################################################################
 
@@ -137,6 +137,7 @@ class Worknode:
         self.lon = object.lon
 
 #################################################################################
+
 class Solution:
     def __init__(self,depot,dict_tours: dict, list_days):
         self.depot = depot
@@ -237,7 +238,8 @@ class Solution:
 
         plt.show()
 
-        print("test")
+
+
     def plot_distances(self,y_tot_max: int, y_avg_max: int):
         days = self.list_days
         distances = [self.dict_distance_daily[day] for day in days]
@@ -264,11 +266,13 @@ class Solution:
         ax2.tick_params(axis='y', labelcolor=color)
         ax2.set_yticks(np.arange(0, y_avg_max, y_avg_max/10))
 
-        fig.tight_layout()  # otherwise the right y-label is slightly clipped
         plt.title('Distances per Day day')
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+
+        ax2.set_ylim(0, y_avg_max)
+
         plt.show()
 
-        print("test")
 
     def plot_worst_edges(self,y_max: int):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
