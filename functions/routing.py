@@ -190,7 +190,6 @@ def routing(tour: cl.Tour):
     tour.routing_sequence = routing_sequence
     tour.distance = distance
 
-
     #worst edge data
     tour.worst_edge_pair_distance = worst_edge_pair_distance
     tour.dict_worst_edge_pair = dict_worst_edge_pair

@@ -1,0 +1,65 @@
+######################################################################################################
+#reassign to fit max tours constrai
+
+#not set to max tour size too leave room for local moves
+max_inital_toursize = 100
+#run as long as max value is exceeded
+max_exceeded = True
+#log iteration
+i_loop_iteration = 0
+total_reassignments = 0
+max_overflow = 
+
+fc.print_log("Starting reassignmentat {}".format(fc.get_time()))
+
+while max_exceeded:
+    i_loop_iteration += 1 
+    max_exceeded = False
+    for depot in dict_depots:
+      for tour_day in list_days:
+        if dict_tours[depot][tour_day].total_tasks > max_inital_toursize:
+            if dict_tours[depot][tour_day].total_tasks > max_overflow:
+                max_exceeded = True
+                #get difference between max value and tour
+                difference = dict_tours[depot][tour_day].total_tasks - max_inital_toursize
+
+                #define pickups and dropoffs to be moved to another tour
+                list_moveable_pickups = []
+                list_moveable_dropoffs = []
+                #later the worst elements should be moved(when the routing is done, now it doesnt matter)
+                #while selecting tasks, flatten out pickups and dropoff difference
+                print("iteration: {} difference: {}, total_tasks: {}, day: {}, depot: {} ".format(i_loop_iteration,difference,dict_tours[depot][tour_day].total_tasks,tour_day,depot))
+                for iteration in range(difference):
+                    if dict_tours[depot][tour_day].total_dropoffs > dict_tours[depot][tour_day].total_pickups:
+                        #pop the first task, so appended don't get handed down
+                        list_moveable_pickups.append(dict_tours[depot][tour_day].list_dropoffs.pop(0))
+                    else: #else, bc if equal it doesn't matter and pickup can be popped
+                        list_moveable_pickups.append(dict_tours[depot][tour_day].list_pickups.pop(0))  
+
+                dict_tours[depot][tour_day].update_totals()
+                #now assign all tasks to the next tour - this might create another overflow, but keeps 
+                #the tasks as close to the original date as possible
+
+                #days are can not just be added or substracted so the index is determined
+                tour_day_index = list_days.index(tour_day)
+
+                #move dropoffs to tour before:    
+                for task in list_moveable_dropoffs:
+                    #read the day before from the days list and append entry
+                    day_before = list_days[tour_day_index-1]
+                    dict_tours[depot][day_before].list_dropoffs.append(task)
+                    dict_tours[depot][day_before].update_totals()
+
+
+                #move pickups to tour after:    
+                for task in list_moveable_pickups:
+                    #read the day before from the days list and append entry
+                    day_after = list_days[tour_day_index+1]
+                    dict_tours[depot][day_after].list_dropoffs.append(task)
+                    dict_tours[depot][day_after].update_totals()
+
+                total_reassignments += (len(list_moveable_dropoffs)+len(list_moveable_pickups))       
+
+        
+    
+fc.print_log("Done with reassignment at {} - {} tasks reassigned".format(fc.get_time(),total_reassignments)) 

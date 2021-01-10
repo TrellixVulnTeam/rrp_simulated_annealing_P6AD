@@ -139,9 +139,9 @@ class Worknode:
 #################################################################################
 
 class Solution:
-    def __init__(self,depot,dict_tours: dict, list_days):
+    def __init__(self,depot,dict_tours: dict, list_days, dev_curr='', dev_tot = ''):
         self.depot = depot
-        self.dict_tours = copy.deepcopy(dict_tours)
+        self.dict_tours = dict_tours
         self.list_days = list_days
         #distance
         self.total_distance = 0
@@ -156,6 +156,9 @@ class Solution:
         self.dict_worst_edge_distance = {}
         self.dict_worst_edge_pickup_distance = {}
         self.dict_worst_edge_dropoff_distance = {}
+        #statistics
+        self.dict_development_current = dev
+        self.dict_development_total = dev_tot
         #update
         self.update_values()
 
