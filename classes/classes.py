@@ -201,6 +201,43 @@ class Solution:
 
         plt.show()
 
+
+    def plot_task_proportion(self):
+        figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
+
+        days = self.list_days
+        dropoffs = []
+        pickups = []
+
+        for day in days:
+            dropoff_value = self.dict_dropoffs_daily[day]
+            pickup_value = self.dict_pickups_daily[day]
+            total_value = dropoff_value + pickup_value
+
+            if total_value > 0:
+                dropoffs.append(dropoff_value/total_value)
+                pickups.append(pickup_value/total_value)
+            else:
+                dropoffs.append(0)
+                pickups.append(0)
+
+
+        width = 1  # the width of the bars: can also be len(x) sequence
+
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
+        p2 = plt.bar(np.arange(len(days)), pickups, width,
+                     bottom=dropoffs)
+
+        plt.ylabel('Proportion of tasks')
+        plt.xlabel('Days from Day 0')
+        plt.title('Tasks per day')
+        plt.yticks(np.arange(0, 1.05, 0.1))
+        plt.xticks(np.arange(0, len(days), 100))
+        plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
+
+        plt.show()
+
+
     def plot_distances(self,y_tot_max: int, y_avg_max: int):
         days = self.list_days
         distances = [self.dict_distance_daily[day] for day in days]
