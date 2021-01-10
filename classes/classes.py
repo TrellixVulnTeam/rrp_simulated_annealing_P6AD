@@ -179,8 +179,8 @@ class Solution:
             self.dict_worst_edge_pickup_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_pickup_distance
             self.dict_worst_edge_dropoff_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_dropoff_distance
 
-    def plot_tasks(self):
-        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
+    def plot_tasks(self,y_max: int):
+        figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
         dropoffs = [self.dict_dropoffs_daily[day] for day in days]
@@ -196,22 +196,19 @@ class Solution:
         plt.xlabel('Days from Day 0')
         plt.title('Tasks per day')
         plt.xticks(np.arange(0, len(days), 100))
-        plt.yticks(np.arange(0, 100, 10))
+        plt.yticks(np.arange(0, y_max, y_max/10))
         plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
 
         plt.show()
 
-    def plot_distances(self):
-        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
-
+    def plot_distances(self,y_tot_max: int, y_avg_max: int):
         days = self.list_days
         distances = [self.dict_distance_daily[day] for day in days]
         avg_distance_task = [self.dict_avg_distance_per_task[day] for day in days]
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        fig, ax1 = plt.subplots()
-
+        fig, ax1 = plt.subplots(figsize=(16,12),dpi=160, facecolor='w', edgecolor='k')
         #p1 = plt.bar(np.arange(len(days)), distances, width)
 
         color = 'tab:blue'
@@ -219,15 +216,19 @@ class Solution:
         ax1.set_ylabel('Tour Distance', color=color)
         ax1.bar(np.arange(len(days)), distances, width)
         ax1.tick_params(axis='y', labelcolor=color)
+        ax1.set_yticks(np.arange(0, y_tot_max, y_tot_max/10))
+        plt.xticks(np.arange(0, len(days), 100))
 
         ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
         color = 'tab:red'
         ax2.set_ylabel('Avg. Distance per Task', color=color)  # we already handled the x-label with ax1
-        ax2.plot(np.arange(len(days), avg_distance_task, color=color))
+        ax2.plot(np.arange(len(days)), avg_distance_task, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
+        ax2.set_yticks(np.arange(0, y_avg_max, y_avg_max/10))
 
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        plt.title('Distances per Day day')
         plt.show()
 
         """
@@ -239,8 +240,8 @@ class Solution:
 
         plt.show()
         """
-    def plot_worst_edges(self):
-        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
+    def plot_worst_edges(self,y_max: int):
+        figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
         pickups = [self.dict_worst_edge_pickup_distance[day] for day in days]
@@ -260,7 +261,7 @@ class Solution:
         plt.xlabel('Days from Day 0')
         plt.title('Tasks per day')
         plt.xticks(np.arange(0, len(days), 100))
-        plt.yticks(np.arange(0, 500, 50))
+        plt.yticks(np.arange(0, y_max, y_max/10))
         plt.legend((p1[0], p2[0], p3[0]), ('Dropoffs', 'Pickups','Pairs'))
 
         plt.show()
