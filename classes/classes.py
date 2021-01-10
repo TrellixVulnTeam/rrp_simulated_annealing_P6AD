@@ -224,8 +224,8 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='cornflowerblue' )
-        p2 = plt.bar(np.arange(len(days)), pickups, width, color='grey',
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width)
+        p2 = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=dropoffs)
 
         plt.ylabel('Proportion of tasks')
@@ -248,7 +248,7 @@ class Solution:
         fig, ax1 = plt.subplots(figsize=(16,12),dpi=160, facecolor='w', edgecolor='k')
         #p1 = plt.bar(np.arange(len(days)), distances, width)
 
-        color = 'cornflowerblue'
+        color = 'tab:blue'
         ax1.set_xlabel('Days from Day 0')
         ax1.set_ylabel('Tour Distance', color=color)
         ax1.bar(np.arange(len(days)), distances, width, color=color)
@@ -258,7 +258,7 @@ class Solution:
 
         ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
-        color = 'grey'
+        color = 'tab:orange'
         ax2.set_ylabel('Avg. Distance per Task', color=color)  # we already handled the x-label with ax1
         ax2.plot(np.arange(len(days)), avg_distance_task, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
@@ -281,10 +281,10 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), pairs, width,color='g')
-        p2 = plt.bar(np.arange(len(days)), dropoffs, width, color='cornflowerblue',
+        p1 = plt.bar(np.arange(len(days)), pairs, width)
+        p2 = plt.bar(np.arange(len(days)), dropoffs, width,
                      bottom=pairs)
-        p3 = plt.bar(np.arange(len(days)), pickups, width, color='grey',
+        p3 = plt.bar(np.arange(len(days)), pickups, width,
                      bottom=combined)
 
         plt.ylabel('Tasks')
