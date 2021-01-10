@@ -188,8 +188,8 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='fuchsia' )
-        p2 = plt.bar(np.arange(len(days)), pickups, width,
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width,color='royalblue')
+        p2 = plt.bar(np.arange(len(days)), pickups, width, color = 'grey',
                      bottom=dropoffs)
 
         plt.ylabel('Tasks')
@@ -224,14 +224,14 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='tab:red' )
-        p2 = plt.bar(np.arange(len(days)), pickups, width,
+        p1 = plt.bar(np.arange(len(days)), dropoffs, width, color='royalblue' )
+        p2 = plt.bar(np.arange(len(days)), pickups, width, color='grey'
                      bottom=dropoffs)
 
         plt.ylabel('Proportion of tasks')
         plt.xlabel('Days from Day 0')
         plt.title('Proportion of Tasks per Day')
-        plt.yticks(np.arange(0, 1.05, 0.2))
+        plt.yticks(np.arange(0, 1.05, 0.1))
         plt.xticks(np.arange(0, len(days), 100))
         plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
 
@@ -248,7 +248,7 @@ class Solution:
         fig, ax1 = plt.subplots(figsize=(16,12),dpi=160, facecolor='w', edgecolor='k')
         #p1 = plt.bar(np.arange(len(days)), distances, width)
 
-        color = 'tab:blue'
+        color = 'royalblue'
         ax1.set_xlabel('Days from Day 0')
         ax1.set_ylabel('Tour Distance', color=color)
         ax1.bar(np.arange(len(days)), distances, width)
@@ -258,7 +258,7 @@ class Solution:
 
         ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
-        color = 'tab:red'
+        color = 'grey'
         ax2.set_ylabel('Avg. Distance per Task', color=color)  # we already handled the x-label with ax1
         ax2.plot(np.arange(len(days)), avg_distance_task, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
@@ -288,10 +288,10 @@ class Solution:
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
-        p1 = plt.bar(np.arange(len(days)), pairs, width)
-        p3 = plt.bar(np.arange(len(days)), pickups, width,
+        p1 = plt.bar(np.arange(len(days)), pairs, width), color='g',
+        p3 = plt.bar(np.arange(len(days)), pickups, width, color='royalblue',
                      bottom=pairs)
-        p2 = plt.bar(np.arange(len(days)), dropoffs,  width,
+        p2 = plt.bar(np.arange(len(days)), dropoffs,  width, color='grey',
                      bottom=combined)
 
         plt.ylabel('Tasks')
