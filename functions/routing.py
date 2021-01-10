@@ -377,7 +377,7 @@ def routing_extended(tour: cl.Tour):
     tour.routing_sequence = routing_sequence
     tour.total_distance = distance
     tour.distance_uptodate = True
-    tour.worst_edge_distance = worst_edge_distance
+    tour.worst_edge_pair_distance = worst_edge_distance
     tour.worst_edge_pickup = worst_edge_pickup
     tour.worst_edge_dropoff = worst_edge_dropoff
 

@@ -68,7 +68,7 @@ class Tour:
         self.dict_worst_edge_pair = {}
         self.worst_edge_pickup = ''
         self.worst_edge_dropoff = ''
-        self.worst_edge_distance = 0
+        self.worst_edge_pair_distance = 0
         self.worst_edge_pickup_distance = 0
         self.worst_edge_dropoff_distance = 0
         self.edges = 0
@@ -89,9 +89,9 @@ class Tour:
 
     def get_all_values(self):
         return [self.day, self.depot,
-               self.list_plants, self.list_pickups,  self.list_dropoffs, self.total_pickups, self.total_dropoffs, self.total_tasks,
-               self.distance, self.routing_sequence, self.worst_edge_pickup, self.worst_edge_dropoff ,
-                self.worst_edge_distance, self.edges,self.distance_uptodate]
+                self.list_plants, self.list_pickups, self.list_dropoffs, self.total_pickups, self.total_dropoffs, self.total_tasks,
+                self.distance, self.routing_sequence, self.worst_edge_pickup, self.worst_edge_dropoff ,
+                self.worst_edge_pair_distance, self.edges, self.distance_uptodate]
 
     def get_all_value_readable(self):
 
@@ -126,7 +126,7 @@ class Tour:
         return [self.day, self.depot.name,
                 read_plants, read_pickups, read_dropoffs, self.total_pickups, self.total_dropoffs, self.total_tasks,
                 self.distance, read_routing, read_worst_edge_pickup, read_worst_edge_dropoff,
-                self.worst_edge_distance, self.edges, self.distance_uptodate]
+                self.worst_edge_pair_distance, self.edges, self.distance_uptodate]
 
 ###############################################################################
 class Worknode:
@@ -142,27 +142,45 @@ class Solution:
         self.depot = depot
         self.dict_tours = dict_tours
         self.list_days = list_days
-
+        #distance
         self.total_distance = 0
         self.dict_distance_daily = {}
+        self.dict_avg_distance_per_task = {}
+        #tasks
         self.total_tasks = 0
         self.dict_tasks_daily = {}
         self.dict_dropoffs_daily = {}
         self.dict_pickups_daily = {}
-
+        # worst edges
+        self.dict_worst_edge_distance = {}
+        self.dict_worst_edge_pickup_distance = {}
+        self.dict_worst_edge_dropoff_distance = {}
+        #update
         self.update_values()
 
 
     def update_values(self):
         for day in self.list_days:
+            #distance
             self.total_distance += self.dict_tours[self.depot.name][day].distance
             self.dict_distance_daily[day] = self.dict_tours[self.depot.name][day].distance
+            #tasks
             self.total_tasks += self.dict_tours[self.depot.name][day].total_tasks
             self.dict_tasks_daily[day] = self.dict_tours[self.depot.name][day].total_tasks
             self.dict_dropoffs_daily[day] = self.dict_tours[self.depot.name][day].total_dropoffs
             self.dict_pickups_daily[day] = self.dict_tours[self.depot.name][day].total_pickups
+            #avg distance per task
+            if self.dict_tasks_daily[day] > 0:
+                self.dict_avg_distance_per_task[day] = self.dict_distance_daily[day] /self.dict_tasks_daily[day]
+            else:
+                self.dict_avg_distance_per_task[day] = 0
+                #worst edges
+            self.dict_worst_edge_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_pair_distance
+            self.dict_worst_edge_pickup_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_pickup_distance
+            self.dict_worst_edge_dropoff_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_dropoff_distance
 
     def plot_tasks(self):
+        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
 
         days = self.list_days
         dropoffs = [self.dict_dropoffs_daily[day] for day in days]
@@ -175,10 +193,76 @@ class Solution:
                      bottom=dropoffs)
 
         plt.ylabel('Tasks')
+        plt.xlabel('Days from Day 0')
         plt.title('Tasks per day')
         plt.xticks(np.arange(0, len(days), 100))
         plt.yticks(np.arange(0, 100, 10))
         plt.legend((p1[0], p2[0]), ('Pickups', 'Dropoffs'))
 
-        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
         plt.show()
+
+    def plot_distances(self):
+        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
+
+        days = self.list_days
+        distances = [self.dict_distance_daily[day] for day in days]
+        avg_distance_task = [self.dict_avg_distance_per_task[day] for day in days]
+
+        width = 1  # the width of the bars: can also be len(x) sequence
+
+        fig, ax1 = plt.subplots()
+
+        #p1 = plt.bar(np.arange(len(days)), distances, width)
+
+        color = 'tab:blue'
+        ax1.set_xlabel('Days from Day 0')
+        ax1.set_ylabel('Tour Distance', color=color)
+        ax1.bar(np.arange(len(days)), distances, width)
+        ax1.tick_params(axis='y', labelcolor=color)
+
+        ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+
+        color = 'tab:red'
+        ax2.set_ylabel('Avg. Distance per Task', color=color)  # we already handled the x-label with ax1
+        ax2.plot(np.arange(len(days), avg_distance_task, color=color))
+        ax2.tick_params(axis='y', labelcolor=color)
+
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        plt.show()
+
+        """
+        plt.ylabel('Tour Distance')
+        plt.xlabel('Days from Day 0')
+        plt.title('Tour Distances per day')
+        plt.xticks(np.arange(0, len(days), 100))
+        plt.yticks(np.arange(0, 20000, 1000))
+
+        plt.show()
+        """
+    def plot_worst_edges(self):
+        figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
+
+        days = self.list_days
+        pickups = [self.dict_worst_edge_pickup_distance[day] for day in days]
+        dropoffs = [self.dict_worst_edge_dropoff_distance[day] for day in days]
+        combined = [self.dict_worst_edge_pickup_distance[day] + self.dict_worst_edge_distance[day] for day in days]
+        pairs = [self.dict_worst_edge_distance[day] for day in days]
+
+        width = 1  # the width of the bars: can also be len(x) sequence
+
+        p1 = plt.bar(np.arange(len(days)), pairs, width)
+        p3 = plt.bar(np.arange(len(days)), pickups, width,
+                     bottom=pairs)
+        p2 = plt.bar(np.arange(len(days)), dropoffs,  width,
+                     bottom=combined)
+
+        plt.ylabel('Tasks')
+        plt.xlabel('Days from Day 0')
+        plt.title('Tasks per day')
+        plt.xticks(np.arange(0, len(days), 100))
+        plt.yticks(np.arange(0, 500, 50))
+        plt.legend((p1[0], p2[0], p3[0]), ('Dropoffs', 'Pickups','Pairs'))
+
+        plt.show()
+
+
