@@ -157,7 +157,7 @@ class Solution:
         self.dict_worst_edge_pickup_distance = {}
         self.dict_worst_edge_dropoff_distance = {}
         #statistics
-        self.dict_development_current = dev
+        self.dict_development_current = dev_curr
         self.dict_development_total = dev_tot
         #update
         self.update_values()
