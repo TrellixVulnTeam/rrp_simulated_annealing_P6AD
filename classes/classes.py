@@ -75,6 +75,29 @@ class Tour:
         self.edges = 0
         self.distance_uptodate = True
 
+    def hardcopy(self):
+        new_tour = Tour(self.depot,self.day)
+
+        new_tour.list_plants = copy.copy(self.list_plants)
+        new_tour.list_pickups = copy.copy(self.list_pickups)
+        new_tour.list_dropoffs = copy.copy(self.list_dropoffs)
+        new_tour.total_pickups = copy.copy(self.total_pickups)
+        new_tour.total_dropoffs = copy.copy(self.total_dropoffs)
+        new_tour.total_tasks = copy.copy(self.total_tasks)
+        new_tour.distance = copy.copy(self.distance)
+        #new_tour.routing_sequence = copy.copy(self.routing_sequence)
+        #new_tour.dict_worst_edge_pair = copy.copy(self.dict_worst_edge_pair)
+        #new_tour.worst_edge_pickup = copy.copy(self.worst_edge_pickup)
+        #new_tour.worst_edge_dropoff = copy.copy(self.worst_edge_dropoff)
+        #new_tour.worst_edge_pair_distance = copy.copy(self.worst_edge_pair_distance)
+        #new_tour.worst_edge_pickup_distance = copy.copy(self.worst_edge_pickup_distance)
+        #new_tour.worst_edge_dropoff_distance = copy.copy(self.worst_edge_dropoff_distance)
+        #new_tour.edges = copy.copy(self.edges)
+        #new_tour.distance_uptodate = copy.copy(self.distance_uptodate)
+
+        return new_tour
+
+
     def update_totals(self):
         self.total_pickups = len(self.list_pickups)
         self.total_dropoffs = len(self.list_dropoffs)
@@ -161,6 +184,7 @@ class Solution:
         self.dict_developement_total = dev_tot_old
         #update
         self.update_values()
+
 
 
     def update_values(self):

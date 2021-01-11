@@ -26,7 +26,7 @@ class Geometric_Schedule:
 
 #################################################################################
 class NormalizedExponentialAcceptance:
-    def __innit__(self,distance_inital: float):
+    def __init__(self,distance_inital: float):
         self.distance_inital = distance_inital
 
     def get_acc(self,temperature: float, distance_delta):
@@ -90,13 +90,13 @@ def reassign_dropoff(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
 #################################################################################
 def evaluate_move(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
     #copy tours
-    tour_org_copy = copy.copy(tour_org)
-    tour_new_copy = copy.copy(tour_new)
+    tour_org_copy = tour_org.hardcopy()
+    tour_new_copy = tour_new.hardcopy()
 
     #retrieve distance values from old tours
     old_distance_tour_org = tour_org_copy.distance
     old_distance_tour_new = tour_new_copy.distance
-    day_new = tour_new_copy.day
+    #day_new = tour_new_copy.day
 
     # move job to new tour
     if job_type == "dropoff":
@@ -118,8 +118,8 @@ def evaluate_move(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: 
     rt.routing(tour_new_copy)
 
     # retrieve distance values from new tours
-    new_distance_tour_org = tour_org.distance
-    new_distance_tour_new = tour_new.distance
+    new_distance_tour_org = tour_org_copy.distance
+    new_distance_tour_new = tour_new_copy.distance
     distance_delta = new_distance_tour_org + new_distance_tour_new \
                      - old_distance_tour_org - old_distance_tour_new
 
