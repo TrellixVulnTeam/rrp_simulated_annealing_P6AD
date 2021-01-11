@@ -342,3 +342,52 @@ INFO:root:Starting initiation
 INFO:root:Starting initiation at 03:25:20
 INFO:root:Done with initiation
 INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Moves
+INFO:root:Final: Loop: 22 - Moves: 1290
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Start with Stage 1b
+INFO:root:Start Moves
+INFO:root:Final: Loop: 3 - Moves: 123
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1b
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 03:30:34
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Moves
+INFO:root:Final: Loop: 22 - Moves: 1276
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Start with Stage 1b
+INFO:root:Start Moves
+INFO:root:Final: Loop: 5 - Moves: 134
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1b
+INFO:root:Start Moves
+INFO:root:Final: Loop: 1 - Moves: 0
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1b
+INFO:root:Start Moves
+INFO:root:Final: Loop: 1 - Moves: 0
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1b
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 03:36:07
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Moves
+INFO:root:Final: Loop: 22 - Moves: 1278
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Start with Stage 1b
+INFO:root:Start Moves
+INFO:root:Final: Loop: 3 - Moves: 130
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1b

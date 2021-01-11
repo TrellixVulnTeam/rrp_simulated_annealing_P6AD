@@ -317,8 +317,6 @@ class Solution:
             temps = [self.dict_developement_curr[i][1] for i in steps]
 
         width = 1  # the width of the bars: can also be len(x) sequence
-        print(steps)
-        print(values)
 
         fig, ax1 = plt.subplots(figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
         # p1 = plt.bar(np.arange(len(days)), distances, width)
@@ -329,7 +327,7 @@ class Solution:
         ax1.bar(steps, values, width, color=color)
         ax1.tick_params(axis='y', labelcolor=color)
         ax1.set_yticks(np.arange(0, 3000000, 300000))
-        plt.xticks(np.arange(0, len(steps), 10))
+        plt.xticks(np.arange(0, len(steps), len(steps)/10))
 
         ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
