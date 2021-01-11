@@ -139,7 +139,7 @@ class Worknode:
 #################################################################################
 
 class Solution:
-    def __init__(self,depot,dict_tours: dict, list_days, dev_curr='', dev_tot = ''):
+    def __init__(self,depot,dict_tours: dict, list_days, dev_curr='', dev_tot_old = ''):
         self.depot = depot
         self.dict_tours = dict_tours
         self.list_days = list_days
@@ -158,7 +158,7 @@ class Solution:
         self.dict_worst_edge_dropoff_distance = {}
         #statistics
         self.dict_development_current = dev_curr
-        self.dict_development_total = dev_tot
+        self.dict_development_total = dev_tot_old
         #update
         self.update_values()
 
