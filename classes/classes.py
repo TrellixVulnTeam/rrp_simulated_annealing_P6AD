@@ -307,10 +307,12 @@ class Solution:
     def plot_developement(self, total= False):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
-        steps = [i for i in self.dict_developement_curr]
+
         if total:
+            steps = [i for i in self.dict_developement_curr]
             values = [self.dict_developement_curr[i] for i in steps]
         else:
+            steps = [i for i in self.dict_developement_total]
             values = [self.dict_developement_total[i] for i in steps]
 
         width = 1  # the width of the bars: can also be len(x) sequence
