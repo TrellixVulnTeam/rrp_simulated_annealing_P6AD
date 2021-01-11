@@ -7,7 +7,22 @@ from classes import classes as cl
 from functions import functions as fc
 from functions import routing as rt
 import copy
+import math
 import plotly.graph_objects as go
+
+#################################################################################
+class Geometric_Schedule:
+    def __init__(self,temp_initial: int, q: float, l: int):
+     self.temp_initial = temp_initial
+     self.q = q
+     self.l = l
+     self.dict_development = {0: temp_initial}
+
+    def get_temp(self, step: int):
+     temp_new = self.temp_initial * self.q ** math.floor(step/self.l)
+     self.dict_development[step] = temp_new
+     return temp_new
+
 
 #################################################################################
 def reassign_job(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
