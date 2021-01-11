@@ -157,8 +157,8 @@ class Solution:
         self.dict_worst_edge_pickup_distance = {}
         self.dict_worst_edge_dropoff_distance = {}
         #statistics
-        self.dict_development_current = dev_curr
-        self.dict_development_total = dev_tot_old
+        self.dict_developement_curr = dev_curr
+        self.dict_developement_total = dev_tot_old
         #update
         self.update_values()
 
@@ -304,3 +304,24 @@ class Solution:
         plt.show()
 
 
+    def plot_developement(self, total= False):
+        figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
+
+        steps = [i for i in self.dict_developement_curr]
+        if total:
+            values = [self.dict_developement_curr[i] for i in steps]
+        else:
+            values = [self.dict_developement_total[i] for i in steps]
+
+        width = 1  # the width of the bars: can also be len(x) sequence
+
+        p_dist = plt.bar(np.arange(len(steps)), values, width)
+
+        plt.ylabel('Distance')
+        plt.xlabel('Steps')
+        plt.title('Distances at step')
+        plt.xticks(np.arange(0, len(steps), 100))
+        plt.yticks(np.arange(0, 2500000, 250000))
+        plt.legend((p_dist[0]), ('Distance'))
+
+        plt.show()
