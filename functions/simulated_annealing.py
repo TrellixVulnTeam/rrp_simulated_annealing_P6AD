@@ -4,6 +4,7 @@ import logging
 import sys
 import pandas as pd
 from classes import classes as cl
+import numpy as np
 from functions import functions as fc
 from functions import routing as rt
 import copy
@@ -24,6 +25,16 @@ class Geometric_Schedule:
      return temp_new
 
 #################################################################################
+class NormalizedExponentialAcceptance:
+    def __innit__(self,distance_inital: float):
+        self.distance_inital = distance_inital
+
+    def get_acc(self,temperature: float, distance_delta):
+        #negative delta -> better solution -> accept
+        if distance_delta < 0:
+            return True
+        else:
+            return np.random.uniform() < math.exp(distance_delta/(self.distance_inital * temperature))
 
 
 #################################################################################
@@ -113,3 +124,12 @@ def evaluate_move(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: 
                      - old_distance_tour_org - old_distance_tour_new
 
     return distance_delta
+
+#################################################################################
+def evaluate_pickup(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
+    #just call right reassign_job function
+    return evaluate_move('pickup',tour_org,tour_new, move_job)
+
+def evaluate_dropoff(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
+    #just call right reassign_job function
+    return evaluate_move('dropoff',tour_org,tour_new, move_job)

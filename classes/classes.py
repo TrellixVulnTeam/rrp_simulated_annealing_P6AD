@@ -183,7 +183,7 @@ class Solution:
             self.dict_worst_edge_pickup_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_pickup_distance
             self.dict_worst_edge_dropoff_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_dropoff_distance
 
-    def plot_tasks(self,y_max: int):
+    def plot_tasks(self,y_max: int, exp_prefix = ''):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
@@ -203,10 +203,14 @@ class Solution:
         plt.yticks(np.arange(0, y_max, y_max/10))
         plt.legend((p_pi[0], p_do[0]), ('Pickups', 'Dropoffs'))
 
+        #export graph
+        if exp_prefix != '':
+            plt.savefig(exp_prefix + 'plot_tasks.png')
+
         plt.show()
 
 
-    def plot_task_proportion(self):
+    def plot_task_proportion(self, exp_prefix = ''):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
@@ -239,13 +243,15 @@ class Solution:
         plt.xticks(np.arange(0, len(days), 100))
         plt.legend((p_pi[0], p_do[0]), ('Pickups', 'Dropoffs'))
 
-        img_exp_path = 'output/graphs/sa1/'
-        plt.savefig(img_exp_path + 'solution_inital_plot_tasks1.png')
+        #export graph
+        if exp_prefix != '':
+            plt.savefig(exp_prefix + 'plot_task_proportion.png')
+
         plt.show()
 
 
 
-    def plot_distances(self,y_tot_max: int, y_avg_max: int):
+    def plot_distances(self,y_tot_max: int, y_avg_max: int, exp_prefix = ''):
         days = self.list_days
         distances = [self.dict_distance_daily[day] for day in days]
         avg_distance_task = [self.dict_avg_distance_per_task[day] for day in days]
@@ -257,7 +263,7 @@ class Solution:
 
         color = 'tab:blue'
         ax1.set_xlabel('Days from Day 0')
-        ax1.set_ylabel('Tour Distance', color=color)
+        ax1.set_ylabel('Tour Distance in km ', color=color)
         ax1.bar(np.arange(len(days)), distances, width, color=color)
         ax1.tick_params(axis='y', labelcolor=color)
         ax1.set_yticks(np.arange(0, y_tot_max, y_tot_max/10))
@@ -266,7 +272,7 @@ class Solution:
         ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
         color = 'tab:orange'
-        ax2.set_ylabel('Avg. Distance per Task', color=color)  # we already handled the x-label with ax1
+        ax2.set_ylabel('Avg. Distance per Task in km ', color=color)  # we already handled the x-label with ax1
         ax2.plot(np.arange(len(days)), avg_distance_task, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
         ax2.set_yticks(np.arange(0, y_avg_max, y_avg_max/10))
@@ -276,10 +282,13 @@ class Solution:
 
         ax2.set_ylim(0, y_avg_max)
 
+        if exp_prefix != '':
+            plt.savefig(exp_prefix + 'plot_distances.png')
+
         plt.show()
 
 
-    def plot_worst_edges(self,y_max: int):
+    def plot_worst_edges(self,y_max: int, exp_prefix = ''):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
@@ -303,10 +312,13 @@ class Solution:
         plt.yticks(np.arange(0, y_max, y_max/10))
         plt.legend((p_pi[0], p_do[0], p_pa[0]), ('Worst Pickups', 'Worst Dropoffs','Worst Pairs'))
 
+        if exp_prefix != '':
+            plt.savefig(exp_prefix + 'plot_worst_edges.png')
+
         plt.show()
 
 
-    def plot_developement(self, total= False):
+    def plot_developement(self, total= False, exp_prefix = ''):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         if total:
@@ -325,7 +337,7 @@ class Solution:
 
         color = 'tab:blue'
         ax1.set_xlabel('Steps')
-        ax1.set_ylabel('Total Distance', color=color)
+        ax1.set_ylabel('Total Distance in km ', color=color)
         ax1.bar(steps, values, width, color=color)
         ax1.tick_params(axis='y', labelcolor=color)
         ax1.set_yticks(np.arange(0, 3000000, 300000))
@@ -344,5 +356,7 @@ class Solution:
 
         ax2.set_ylim(0, 1.1)
 
+        if exp_prefix != '':
+            plt.savefig(exp_prefix + 'plot_developement.png')
         plt.show()
 
