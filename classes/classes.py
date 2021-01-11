@@ -239,6 +239,8 @@ class Solution:
         plt.xticks(np.arange(0, len(days), 100))
         plt.legend((p_pi[0], p_do[0]), ('Pickups', 'Dropoffs'))
 
+        img_exp_path = 'output/graphs/sa1/'
+        plt.savefig(img_exp_path + 'solution_inital_plot_tasks1.png')
         plt.show()
 
 
