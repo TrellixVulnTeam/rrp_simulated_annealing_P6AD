@@ -308,27 +308,28 @@ class Solution:
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         if total:
-            steps = [i for i in self.dict_developement_curr]
-            values = [self.dict_developement_curr[i][0] for i in steps]
-            temps = [self.dict_developement_curr[i][1] for i in steps]
-        else:
             steps = [i for i in self.dict_developement_total]
             values = [self.dict_developement_total[i][0] for i in steps]
             temps = [self.dict_developement_total[i][1] for i in steps]
+        else:
+            steps = [i for i in self.dict_developement_curr]
+            values = [self.dict_developement_curr[i][0] for i in steps]
+            temps = [self.dict_developement_curr[i][1] for i in steps]
 
         width = 1  # the width of the bars: can also be len(x) sequence
+        print(steps)
+        print(values)
 
-
-        fig, ax1 = plt.subplots(figsize=(16,12),dpi=160, facecolor='w', edgecolor='k')
-        #p1 = plt.bar(np.arange(len(days)), distances, width)
+        fig, ax1 = plt.subplots(figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
+        # p1 = plt.bar(np.arange(len(days)), distances, width)
 
         color = 'tab:blue'
         ax1.set_xlabel('Steps')
         ax1.set_ylabel('Total Distance', color=color)
-        ax1.bar(np.arange(len(steps)), values, width, color=color)
+        ax1.bar(steps, values, width, color=color)
         ax1.tick_params(axis='y', labelcolor=color)
         ax1.set_yticks(np.arange(0, 3000000, 300000))
-        plt.xticks(np.arange(0, len(steps), 200))
+        plt.xticks(np.arange(0, len(steps), 10))
 
         ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
@@ -336,12 +337,12 @@ class Solution:
         ax2.set_ylabel('Temperature', color=color)  # we already handled the x-label with ax1
         ax2.plot(np.arange(len(steps)), temps, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
-        ax2.set_yticks(np.arange(0, 1, 0.1))
+        ax2.set_yticks(np.arange(0, 1.1, 0.1))
 
         plt.title('Distances and Temperature per Step')
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
 
-        ax2.set_ylim(0, 1)
+        ax2.set_ylim(0, 1.1)
 
         plt.show()
 
