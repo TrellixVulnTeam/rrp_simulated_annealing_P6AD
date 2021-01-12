@@ -16,3 +16,40 @@ INFO:root:logging at 3501
 INFO:root:logging at 4001
 INFO:root:logging at 4501
 INFO:root:logging at 5001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:38:22
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:55:35
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 17:00:35
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:logging at 2001
+INFO:root:logging at 3001
+INFO:root:logging at 4001
+INFO:root:logging at 5001
+INFO:root:logging at 6001
+INFO:root:logging at 7001
+INFO:root:logging at 8001
+INFO:root:logging at 9001
+INFO:root:Loopcount exit
+INFO:root:Final: Loop: 10000 - Moves: 10000
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a

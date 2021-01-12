@@ -284,6 +284,7 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
                         worst_distance_day = day
             # if still inital, try again
             if worst_distance_day == 0:
+                pickup_found = False
                 continue
             else:
                 day_new_pickup = worst_distance_day
@@ -307,6 +308,7 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
                         worst_distance_day = day
             # if still inital, try again
             if worst_distance_day == 0:
+                dropoff_found = False
                 continue
             else:
                 day_new_dropoff = worst_distance_day
