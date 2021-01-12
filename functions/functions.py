@@ -5,6 +5,7 @@ import sys
 import pandas as pd
 from classes import classes as cl
 import plotly.graph_objects as go
+import csv
 
 import networkx as nx
 
@@ -136,8 +137,17 @@ def get_time():
     return current_time
 
 
+#######################################################################
+def dict_to_csv(dict_to_write: dict, path: str, name: str):
+    file = path + name + ".csv"
+    with open(file, 'w', newline='') as f:
+        writer = csv.writer(f)
+        for i in dict_to_write:
+            writer.writerow(dict_to_write[i])
+
 ########################################################################
 # adapted from https://stackoverflow.com/questions/39155206/nameerror-global-name-path-is-not-defined
+
 
 def save_object(obj, filename) -> object:
     with open(filename, 'wb') as output:  # Overwrites any existing file.

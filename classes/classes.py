@@ -85,15 +85,15 @@ class Tour:
         new_tour.total_dropoffs = copy.copy(self.total_dropoffs)
         new_tour.total_tasks = copy.copy(self.total_tasks)
         new_tour.distance = copy.copy(self.distance)
-        #new_tour.routing_sequence = copy.copy(self.routing_sequence)
-        #new_tour.dict_worst_edge_pair = copy.copy(self.dict_worst_edge_pair)
-        #new_tour.worst_edge_pickup = copy.copy(self.worst_edge_pickup)
-        #new_tour.worst_edge_dropoff = copy.copy(self.worst_edge_dropoff)
-        #new_tour.worst_edge_pair_distance = copy.copy(self.worst_edge_pair_distance)
-        #new_tour.worst_edge_pickup_distance = copy.copy(self.worst_edge_pickup_distance)
-        #new_tour.worst_edge_dropoff_distance = copy.copy(self.worst_edge_dropoff_distance)
-        #new_tour.edges = copy.copy(self.edges)
-        #new_tour.distance_uptodate = copy.copy(self.distance_uptodate)
+        new_tour.routing_sequence = copy.copy(self.routing_sequence)
+        new_tour.dict_worst_edge_pair = copy.copy(self.dict_worst_edge_pair)
+        new_tour.worst_edge_pickup = copy.copy(self.worst_edge_pickup)
+        new_tour.worst_edge_dropoff = copy.copy(self.worst_edge_dropoff)
+        new_tour.worst_edge_pair_distance = copy.copy(self.worst_edge_pair_distance)
+        new_tour.worst_edge_pickup_distance = copy.copy(self.worst_edge_pickup_distance)
+        new_tour.worst_edge_dropoff_distance = copy.copy(self.worst_edge_dropoff_distance)
+        new_tour.edges = copy.copy(self.edges)
+        new_tour.distance_uptodate = copy.copy(self.distance_uptodate)
 
         return new_tour
 
@@ -159,6 +159,7 @@ class Worknode:
         self.lat = object.lat
         self.lon = object.lon
 
+
 #################################################################################
 
 class Solution:
@@ -207,7 +208,7 @@ class Solution:
             self.dict_worst_edge_pickup_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_pickup_distance
             self.dict_worst_edge_dropoff_distance[day] = self.dict_tours[self.depot.name][day].worst_edge_dropoff_distance
 
-    def plot_tasks(self,y_max: int, exp_prefix = ''):
+    def plot_tasks(self,y_max: int, exp_prefix = '', plot=True):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
@@ -231,10 +232,11 @@ class Solution:
         if exp_prefix != '':
             plt.savefig(exp_prefix + 'plot_tasks.png')
 
-        plt.show()
+        if plot:
+            plt.show()
 
 
-    def plot_task_proportion(self, exp_prefix = ''):
+    def plot_task_proportion(self, exp_prefix = '',plot =True):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
@@ -271,11 +273,12 @@ class Solution:
         if exp_prefix != '':
             plt.savefig(exp_prefix + 'plot_task_proportion.png')
 
-        plt.show()
+        if plot:
+            plt.show()
 
 
 
-    def plot_distances(self,y_tot_max: int, y_avg_max: int, exp_prefix = ''):
+    def plot_distances(self,y_tot_max: int, y_avg_max: int, exp_prefix = '',plot =True):
         days = self.list_days
         distances = [self.dict_distance_daily[day] for day in days]
         avg_distance_task = [self.dict_avg_distance_per_task[day] for day in days]
@@ -300,19 +303,21 @@ class Solution:
         ax2.plot(np.arange(len(days)), avg_distance_task, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
         ax2.set_yticks(np.arange(0, y_avg_max, y_avg_max/10))
+        ax2.set_ylim(0, y_avg_max)
 
         plt.title('Distances per Day day')
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
 
-        ax2.set_ylim(0, y_avg_max)
+
 
         if exp_prefix != '':
             plt.savefig(exp_prefix + 'plot_distances.png')
 
-        plt.show()
+        if plot:
+            plt.show()
 
 
-    def plot_worst_edges(self,y_max: int, exp_prefix = ''):
+    def plot_worst_edges(self,y_max: int, exp_prefix = '',plot =True):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         days = self.list_days
@@ -338,11 +343,11 @@ class Solution:
 
         if exp_prefix != '':
             plt.savefig(exp_prefix + 'plot_worst_edges.png')
+        if plot:
+            plt.show()
 
-        plt.show()
 
-
-    def plot_developement(self, total= False, exp_prefix = ''):
+    def plot_developement(self, total= False, exp_prefix = '',plot =True, temp=True):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         if total:
@@ -367,20 +372,26 @@ class Solution:
         ax1.set_yticks(np.arange(0, 3000000, 300000))
         plt.xticks(np.arange(0, len(steps), len(steps)/10))
 
-        ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
-        color = 'tab:orange'
-        ax2.set_ylabel('Temperature', color=color)  # we already handled the x-label with ax1
-        ax2.plot(np.arange(len(steps)), temps, color=color)
-        ax2.tick_params(axis='y', labelcolor=color)
-        ax2.set_yticks(np.arange(0, 1.1, 0.1))
+        if temp:
+            ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+
+            color = 'tab:orange'
+            ax2.set_ylabel('Temperature', color=color)  # we already handled the x-label with ax1
+            ax2.plot(np.arange(len(steps)), temps, color=color)
+            ax2.tick_params(axis='y', labelcolor=color)
+            ax2.set_yticks(np.arange(0, 1.1, 0.1))
+            ax2.set_ylim(0, 1.1)
+
 
         plt.title('Distances and Temperature per Step')
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
 
-        ax2.set_ylim(0, 1.1)
+
 
         if exp_prefix != '':
             plt.savefig(exp_prefix + 'plot_developement.png')
-        plt.show()
+
+        if plot:
+            plt.show()
 
