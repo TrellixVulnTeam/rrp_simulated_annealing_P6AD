@@ -237,7 +237,7 @@ def find_pair_move_worst(depot: str,dict_tours_temp: dict, list_days: list):
         #restrict number of total loops
         try_count_total += 1
         if try_count_total > 1000:
-            fc.printlog("trycount exit")
+            fc.print_log("trycount exit")
             return '', '', ''
 
 
@@ -256,6 +256,12 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
         try_count = 0
         pickup_found = False
         dropoff_found = False
+
+        #restrict number of total loops
+        try_count_total += 1
+        if try_count_total > 500:
+            fc.print_log("trycount exit")
+            return '', '', ''
 
         # retrieve random days
         day_org = random.choice(list_days)
@@ -326,11 +332,7 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
             pickup_found = False
             dropoff_found = False
 
-        #restrict number of total loops
-        try_count_total += 1
-        if try_count_total > 1000:
-            fc.printlog("trycount exit")
-            return '', '', ''
+
 
 
 
@@ -343,6 +345,13 @@ def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, li
 
     while job_found == False:
         try_count = 0
+
+        # restrict number of total loops
+        try_count_total += 1
+        if try_count_total > 500:
+            fc.print_log("trycount exit")
+            return '', '', ''
+
         #retrieve random days
         day_org = random.choice(list_days)
         day_new = random.choice(list_days)
@@ -387,11 +396,8 @@ def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, li
         if try_count > 500:
             job_found = False
 
-        #restrict number of total loops
-        try_count_total += 1
-        if try_count_total > 1000:
-            fc.printlog("trycount exit")
-            return '', '', ''
+
+
 
     return tour_org, move_job, tour_new
 
@@ -406,6 +412,12 @@ def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict,
         # retrieve random days
         day_org = random.choice(list_days)
         day_new = random.choice(list_days)
+
+        # restrict number of total loops
+        try_count_total += 1
+        if try_count_total > 500:
+            fc.print_log("trycount exit for {}".format(move_type))
+            return '', '', ''
 
         # read random tour and move_job into local variables
         tour_org = dict_tours_temp[depot][day_org]
@@ -470,11 +482,7 @@ def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict,
         if try_count > 500:
             job_found = False
 
-        #restrict number of total loops
-        try_count_total += 1
-        if try_count_total > 1000:
-            fc.printlog("trycount exit")
-            return '', '', ''
+
 
     return tour_org, move_job, tour_new
 
@@ -486,6 +494,12 @@ def find_single_move_random(move_type: str, depot: str, dict_tours_temp: dict, l
 
     while job_found == False:
         try_count = 0
+        # restrict number of total loops
+        try_count_total += 1
+        if try_count_total > 500:
+            fc.print_log("trycount exit")
+            return '', '', ''
+
         #retrieve random days
         day_org = random.choice(list_days)
         day_new = random.choice(list_days)
@@ -526,11 +540,6 @@ def find_single_move_random(move_type: str, depot: str, dict_tours_temp: dict, l
         if not tour_new.list_plants:
             job_found = False
 
-        #restrict number of total loops
-        try_count_total += 1
-        if try_count_total > 1000:
-            fc.printlog("trycount exit")
-            return '', '', ''
 
 
     return tour_org, move_job, tour_new
@@ -544,3 +553,4 @@ def find_pickup_move_random(depot: str, dict_tours_temp: dict, list_days: list):
 def find_dropoff_move_random(depot: str, dict_tours_temp: dict, list_days: list):
     return find_single_move_random('dropoff', depot, dict_tours_temp, list_days)
 
+#################################################################################

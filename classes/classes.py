@@ -302,7 +302,7 @@ class Solution:
         ax2.set_ylabel('Avg. Distance per Task in km ', color=color)  # we already handled the x-label with ax1
         ax2.plot(np.arange(len(days)), avg_distance_task, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
-        ax2.set_yticks(np.arange(0, y_avg_max, y_avg_max/10))
+        ax2.set_yticks(np.arange(y_avg_max/2, y_avg_max, y_avg_max/10))
         ax2.set_ylim(0, y_avg_max)
 
         plt.title('Distances per Day day')
@@ -369,7 +369,7 @@ class Solution:
         ax1.set_ylabel('Total Distance in km ', color=color)
         ax1.bar(steps, values, width, color=color)
         ax1.tick_params(axis='y', labelcolor=color)
-        ax1.set_yticks(np.arange(0, 3000000, 300000))
+        ax1.set_yticks(np.arange(1500000, 3000000, 500000))
         plt.xticks(np.arange(0, len(steps), len(steps)/10))
 
 
@@ -386,7 +386,7 @@ class Solution:
 
         plt.title('Distances and Temperature per Step')
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
-
+        ax1.set_ylim(1500000,3000000)
 
 
         if exp_prefix != '':
