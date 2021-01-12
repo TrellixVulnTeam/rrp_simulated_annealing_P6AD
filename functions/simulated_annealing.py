@@ -246,6 +246,95 @@ def find_pair_move_worst(depot: str,dict_tours_temp: dict, list_days: list):
 
 
 #################################################################################
+def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
+    pickup_found = False
+    dropoff_found = False
+    try_count_total = 0
+
+
+    while pickup_found == False or dropoff_found == False:
+        try_count = 0
+        pickup_found = False
+        dropoff_found = False
+
+        # retrieve random days
+        day_org = random.choice(list_days)
+        day_new_pickup = random.choice(list_days)
+        day_new_dropoff = random.choice(list_days)
+
+        # read random tour and move_job into local variables
+        tour_org = dict_tours_temp[depot][day_org]
+
+        #check if worst edge pair is filled
+        if tour_org.dict_worst_edge_pair:
+            # find a fitting dropoff job
+            if tour_org.dict_worst_edge_pair['pickup']:
+                move_job_pickup = tour_org.dict_worst_edge_pair['pickup']
+                pickup_found = True
+            else:
+                continue
+
+            # find the opposite worst edge and move it there
+            worst_distance_value = 0
+            worst_distance_day = 0
+            for day in list_days:
+                if day < move_job_pickup.end:
+                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance:
+                        worst_distance_value = dict_tours_temp[depot][day].worst_edge_dropoff_distance
+                        worst_distance_day = day
+            # if still inital, try again
+            if worst_distance_day == 0:
+                continue
+            else:
+                day_new_pickup = worst_distance_day
+
+
+
+            # check if there is a dropoff job
+            if tour_org.dict_worst_edge_pair['dropoff']:
+                move_job_dropoff = tour_org.dict_worst_edge_pair['dropoff']
+                dropoff_found = True
+            else:
+                continue
+
+            # find the opposite worst edge and move it there
+            worst_distance_value = 0
+            worst_distance_day = 0
+            for day in list_days:
+                if day > move_job_dropoff.start:
+                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance:
+                        worst_distance_value = dict_tours_temp[depot][day].worst_edge_dropoff_distance
+                        worst_distance_day = day
+            # if still inital, try again
+            if worst_distance_day == 0:
+                continue
+            else:
+                day_new_dropoff = worst_distance_day
+
+        # retrieve new tours
+        pickup_tour_new = dict_tours_temp[depot][day_new_pickup]
+        dropoff_tour_new = dict_tours_temp[depot][day_new_dropoff]
+        # check if list_plants is filled otherwise repeat
+        if not pickup_tour_new.list_plants:
+            pickup_found = False
+        if not dropoff_tour_new.list_plants:
+            dropoff_found = False
+            # check for try count exit
+        if try_count > 500:
+            pickup_found = False
+            dropoff_found = False
+
+        #restrict number of total loops
+        try_count_total += 1
+        if try_count_total > 1000:
+            fc.printlog("trycount exit")
+            return '', '', ''
+
+
+
+    return tour_org, move_job_pickup, move_job_dropoff, pickup_tour_new, dropoff_tour_new
+
+#################################################################################
 def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, list_days: list):
     job_found = False
     try_count_total = 0
@@ -331,8 +420,8 @@ def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict,
             worst_distance_day = 0
             for day in list_days:
                 if day < move_job.end:
-                   if worst_distance_value < dict_tours_temp[depot][day_new].worst_edge_dropoff_distance:
-                        worst_distance_value = dict_tours_temp[depot][day_new].worst_edge_dropoff_distance
+                   if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance:
+                        worst_distance_value = dict_tours_temp[depot][day].worst_edge_dropoff_distance
                         worst_distance_day = day
 
             # if still inital, try again
@@ -359,8 +448,8 @@ def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict,
             worst_distance_day = 0
             for day in list_days:
                 if day > move_job.start:
-                    if worst_distance_value < dict_tours_temp[depot][day_new].worst_edge_pickup_distance:
-                        worst_distance_value = dict_tours_temp[depot][day_new].worst_edge_pickup_distance
+                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_pickup_distance:
+                        worst_distance_value = dict_tours_temp[depot][day].worst_edge_pickup_distance
                         worst_distance_day = day
 
             #if still inital, try again
