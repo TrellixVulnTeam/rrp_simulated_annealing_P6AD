@@ -37,7 +37,11 @@ class NormalizedExponentialAcceptance:
         if distance_delta < 0:
             return True
         else:
-            bol_curr = np.random.uniform() < math.exp(-distance_delta / (self.distance_inital * temperature))
+            random = np.random.uniform()
+            val = math.exp(-distance_delta / (self.distance_inital * temperature))
+
+            bol_curr = random < val
+            print("{} < {} : {}".format(round(random,4), round(val,4), bol_curr))
             return bol_curr
 
 
