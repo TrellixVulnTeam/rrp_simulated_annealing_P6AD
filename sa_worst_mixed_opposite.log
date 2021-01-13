@@ -86,3 +86,5220 @@ INFO:root:Starting initiation
 INFO:root:Starting initiation at 22:10:31
 INFO:root:Done with initiation
 INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 22:16:21
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 22:22:49
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:logging at 2001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 22:36:25
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:logging at 2001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 22:55:21
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:logging at 2001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 23:12:21
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:logging at 2001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 23:33:52
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 1001
+INFO:root:logging at 2001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 23:52:46
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 23:54:31
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 23:56:20
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:00:33
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:02:55
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:04:32
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:06:05
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:07:44
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:10:33
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:11:27
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:11:59
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:12:58
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:logging at 3001
+INFO:root:logging at 3501
+INFO:root:logging at 4001
+INFO:root:logging at 4501
+INFO:root:Final: Loop: 5000 - Moves: 1880
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:39:57
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:40:55
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:41:34
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:43:35
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:44:00
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:46:26
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:50:08
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 01:04:00
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 01:10:13
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:logging at 3001
+INFO:root:logging at 3501
+INFO:root:logging at 4001
+INFO:root:logging at 4501
+INFO:root:Final: Loop: 5000 - Moves: 1890
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 01:36:38
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:trycount exit
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 01:55:00
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:trycount exit
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 02:06:54
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 02:23:02
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 02:34:30
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:logging at 3001
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:logging at 3501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:logging at 4001
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:logging at 4501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:Final: Loop: 5000 - Moves: 1928
+INFO:root:Done with Moves
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 02:46:50
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2659 - Moves: 1909
+INFO:root:Done with Moves
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 03:02:44
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2820 - Moves: 1897
+INFO:root:Done with Moves
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 03:19:48
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2497 - Moves: 1874
+INFO:root:Done with Moves
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:15:35
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff
+INFO:root:logging at 2501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2654 - Moves: 1882
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:36:06
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:42:05
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:47:03
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:47:39
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:49:00
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:50:21
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:52:10
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:55:29
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 10:58:41
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:00:52
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:02:06
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:03:07
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:04:29
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:08:44
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:09:18
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:16:30
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:17:32
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:20:34
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:22:21
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:31:39
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:33:33
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:34:17
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:34:27
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:36:12
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:37:08
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:37:58
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:46:26
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:50:59
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:55:30
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:56:59
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 11:58:25
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:03:47
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:15:37
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:19:35
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:20:18
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:23:06
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:32:15
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:35:13
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:36:08
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:42:46
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 12:43:33
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1

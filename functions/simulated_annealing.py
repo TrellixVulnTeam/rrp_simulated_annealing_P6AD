@@ -12,49 +12,51 @@ import math
 import random
 import plotly.graph_objects as go
 
+
 #################################################################################
 class Geometric_Schedule:
-    def __init__(self,temp_initial: int, q: float, l: int):
-     self.temp_initial = temp_initial
-     self.q = q
-     self.l = l
-     self.dict_development = {0: temp_initial}
+    def __init__(self, temp_initial: int, q: float, l: int):
+        self.temp_initial = temp_initial
+        self.q = q
+        self.l = l
+        self.dict_development = {0: temp_initial}
 
     def get_temp(self, step: int):
-     temp_new = self.temp_initial * self.q ** math.floor(step/self.l)
-     self.dict_development[step] = temp_new
-     return temp_new
+        temp_new = self.temp_initial * self.q ** math.floor(step / self.l)
+        self.dict_development[step] = temp_new
+        return temp_new
+
 
 #################################################################################
 class NormalizedExponentialAcceptance:
-    def __init__(self,distance_inital: float):
+    def __init__(self, distance_inital: float):
         self.distance_inital = distance_inital
 
-    def get_acc(self,temperature: float, distance_delta):
-        #negative delta -> better solution -> accept
+    def get_acc(self, temperature: float, distance_delta):
+        # negative delta -> better solution -> accept
         if distance_delta < 0:
             return True
         else:
-            bol_curr = np.random.uniform() < math.exp(-distance_delta/(self.distance_inital * temperature))
+            bol_curr = np.random.uniform() < math.exp(-distance_delta / (self.distance_inital * temperature))
             return bol_curr
 
+
 class ExponentialAcceptance:
-    def __init__(self,distance_inital: float):
+    def __init__(self, distance_inital: float):
         self.distance_inital = distance_inital
 
-    def get_acc(self,temperature: float, distance_delta):
-        #negative delta -> better solution -> accept
+    def get_acc(self, temperature: float, distance_delta):
+        # negative delta -> better solution -> accept
         if distance_delta < 0:
             return True
         else:
-            bol_curr = np.random.uniform() < math.exp(-distance_delta/temperature)
+            bol_curr = np.random.uniform() < math.exp(-distance_delta / temperature)
             return bol_curr
 
 
 #################################################################################
-def reassign_job(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
-
-    #retrieve distance values from old tours
+def reassign_job(job_type: str, tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
+    # retrieve distance values from old tours
     old_distance_tour_org = tour_org.distance
     old_distance_tour_new = tour_new.distance
     day_new = tour_new.day
@@ -66,7 +68,8 @@ def reassign_job(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: c
     elif job_type == "pickup":
         tour_org.list_pickups.remove(move_job)
         tour_new.list_pickups.append(move_job)
-    else: raise ValueError('Job type: {} not recognized.'.format(job_type))
+    else:
+        raise ValueError('Job type: {} not recognized.'.format(job_type))
 
     # adjust values in Tour class
     tour_org.update_totals()
@@ -78,13 +81,17 @@ def reassign_job(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: c
     rt.routing(tour_org)
     rt.routing(tour_new)
 
+    # adjust values in Tour class
+    tour_org.update_totals()
+    tour_new.update_totals()
+
     # adjust values in Job class
     if job_type == "dropoff":
         move_job.dropoff_day = day_new
     elif job_type == "pickup":
         move_job.pickup_day = day_new
-    else: raise ValueError('Job type: {} not recognized.'.format(job_type))
-
+    else:
+        raise ValueError('Job type: {} not recognized.'.format(job_type))
 
     # retrieve distance values from new tours
     new_distance_tour_org = tour_org.distance
@@ -94,10 +101,10 @@ def reassign_job(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: c
 
     return distance_delta
 
+
 #################################################################################
-def reassign_job_min(job_type: str, tour_org: cl.Tour, copy_org: cl.Tour, tour_new: cl.Tour, copy_new: cl.Tour, move_job: cl.Job):
-
-
+def reassign_job_min(job_type: str, tour_org: cl.Tour, copy_org: cl.Tour, tour_new: cl.Tour, copy_new: cl.Tour,
+                     move_job: cl.Job):
     day_new = tour_new.day
 
     # overwrite values in Tour class
@@ -115,25 +122,29 @@ def reassign_job_min(job_type: str, tour_org: cl.Tour, copy_org: cl.Tour, tour_n
     # retrieve distance values from new tours
 
     return None
+
+
 #################################################################################
 def reassign_pickup(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
-    #just call right reassign_job function
-    return reassign_job('pickup',tour_org,tour_new, move_job)
+    # just call right reassign_job function
+    return reassign_job('pickup', tour_org, tour_new, move_job)
+
 
 def reassign_dropoff(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
-    #just call right reassign_job function
-    return reassign_job('dropoff',tour_org,tour_new, move_job)
+    # just call right reassign_job function
+    return reassign_job('dropoff', tour_org, tour_new, move_job)
+
 
 #################################################################################
-def evaluate_move(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
-    #copy tours
+def evaluate_move(job_type: str, tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
+    # copy tours
     tour_org_copy = tour_org.hardcopy()
     tour_new_copy = tour_new.hardcopy()
 
-    #retrieve distance values from old tours
+    # retrieve distance values from old tours
     old_distance_tour_org = tour_org_copy.distance
     old_distance_tour_new = tour_new_copy.distance
-    #day_new = tour_new_copy.day
+    # day_new = tour_new_copy.day
 
     # move job to new tour
     if job_type == "dropoff":
@@ -142,7 +153,8 @@ def evaluate_move(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: 
     elif job_type == "pickup":
         tour_org_copy.list_pickups.remove(move_job)
         tour_new_copy.list_pickups.append(move_job)
-    else: raise ValueError('Job type: {} not recognized.'.format(job_type))
+    else:
+        raise ValueError('Job type: {} not recognized.'.format(job_type))
 
     # adjust values in Tour class
     tour_org_copy.update_totals()
@@ -162,23 +174,24 @@ def evaluate_move(job_type: str,tour_org: cl.Tour, tour_new: cl.Tour, move_job: 
 
     return distance_delta
 
+
 #################################################################################
 def evaluate_pickup(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
-    #just call right reassign_job function
-    return evaluate_move('pickup',tour_org,tour_new, move_job)
+    # just call right reassign_job function
+    return evaluate_move('pickup', tour_org, tour_new, move_job)
+
 
 def evaluate_dropoff(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
-    #just call right reassign_job function
-    return evaluate_move('dropoff',tour_org,tour_new, move_job)
+    # just call right reassign_job function
+    return evaluate_move('dropoff', tour_org, tour_new, move_job)
 
 
 #################################################################################
 
-def find_pair_move_worst(depot: str,dict_tours_temp: dict, list_days: list):
+def find_pair_move_worst(depot: str, dict_tours_temp: dict, list_days: list):
     pickup_found = False
     dropoff_found = False
     try_count_total = 0
-
 
     while pickup_found == False or dropoff_found == False:
         try_count = 0
@@ -193,7 +206,7 @@ def find_pair_move_worst(depot: str,dict_tours_temp: dict, list_days: list):
         # read random tour and move_job into local variables
         tour_org = dict_tours_temp[depot][day_org]
 
-        #check if worst edge pair is filled
+        # check if worst edge pair is filled
         if tour_org.dict_worst_edge_pair:
             # find a fitting dropoff job
             if tour_org.dict_worst_edge_pair['pickup']:
@@ -234,34 +247,31 @@ def find_pair_move_worst(depot: str,dict_tours_temp: dict, list_days: list):
             pickup_found = False
             dropoff_found = False
 
-        #restrict number of total loops
+        # restrict number of total loops
         try_count_total += 1
         if try_count_total > 1000:
             fc.print_log("trycount exit")
-            return '', '', ''
-
-
+            return '', '', '','',''
 
     return tour_org, move_job_pickup, move_job_dropoff, pickup_tour_new, dropoff_tour_new
 
 
 #################################################################################
-def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
+def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
     pickup_found = False
     dropoff_found = False
     try_count_total = 0
-
 
     while pickup_found == False or dropoff_found == False:
         try_count = 0
         pickup_found = False
         dropoff_found = False
 
-        #restrict number of total loops
+        # restrict number of total loops
         try_count_total += 1
         if try_count_total > 500:
             fc.print_log("trycount exit")
-            return '', '', ''
+            return '', '', '','',''
 
         # retrieve random days
         day_org = random.choice(list_days)
@@ -271,13 +281,14 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
         # read random tour and move_job into local variables
         tour_org = dict_tours_temp[depot][day_org]
 
-        #check if worst edge pair is filled
+        # check if worst edge pair is filled
         if tour_org.dict_worst_edge_pair:
             # find a fitting dropoff job
             if tour_org.dict_worst_edge_pair['pickup']:
                 move_job_pickup = tour_org.dict_worst_edge_pair['pickup']
                 pickup_found = True
             else:
+                pickup_found = False
                 continue
 
             # find the opposite worst edge and move it there
@@ -285,7 +296,8 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
             worst_distance_day = 0
             for day in list_days:
                 if day < move_job_pickup.end:
-                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance:
+                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance and \
+                            dict_tours_temp[depot][day].total_tasks < 50:
                         worst_distance_value = dict_tours_temp[depot][day].worst_edge_dropoff_distance
                         worst_distance_day = day
             # if still inital, try again
@@ -295,13 +307,12 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
             else:
                 day_new_pickup = worst_distance_day
 
-
-
             # check if there is a dropoff job
             if tour_org.dict_worst_edge_pair['dropoff']:
                 move_job_dropoff = tour_org.dict_worst_edge_pair['dropoff']
                 dropoff_found = True
             else:
+                dropoff_found = False
                 continue
 
             # find the opposite worst edge and move it there
@@ -309,7 +320,8 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
             worst_distance_day = 0
             for day in list_days:
                 if day > move_job_dropoff.start:
-                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance:
+                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance and \
+                            dict_tours_temp[depot][day].total_tasks < 50:
                         worst_distance_value = dict_tours_temp[depot][day].worst_edge_dropoff_distance
                         worst_distance_day = day
             # if still inital, try again
@@ -332,18 +344,16 @@ def find_pair_move_opposite(depot: str,dict_tours_temp: dict, list_days: list):
             pickup_found = False
             dropoff_found = False
 
-
-
-
-
     return tour_org, move_job_pickup, move_job_dropoff, pickup_tour_new, dropoff_tour_new
+
 
 #################################################################################
 def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, list_days: list):
     job_found = False
     try_count_total = 0
 
-    while job_found == False:
+    while not job_found:
+        job_found = False
         try_count = 0
 
         # restrict number of total loops
@@ -352,11 +362,11 @@ def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, li
             fc.print_log("trycount exit")
             return '', '', ''
 
-        #retrieve random days
+        # retrieve random days
         day_org = random.choice(list_days)
         day_new = random.choice(list_days)
 
-        #read random tour and move_job into local variables
+        # read random tour and move_job into local variables
         tour_org = dict_tours_temp[depot][day_org]
 
         if move_type == 'pickup':
@@ -364,6 +374,7 @@ def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, li
                 move_job = tour_org.worst_edge_pickup
                 job_found = True
             else:
+                job_found = False
                 continue
 
             while day_new < move_job.end:
@@ -378,6 +389,7 @@ def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, li
                 move_job = tour_org.worst_edge_dropoff
                 job_found = True
             else:
+                job_found = False
                 continue
 
             while day_new < move_job.end:
@@ -386,28 +398,24 @@ def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, li
                 # if not possible break after 500 tries
                 if try_count > 500: break
 
-
-        #retrieve new tour
+        # retrieve new tour
         tour_new = dict_tours_temp[depot][day_new]
-        #check if list_plants is filled otherwise repeat
+        # check if list_plants is filled otherwise repeat
         if not tour_new.list_plants:
             job_found = False
-        #check for try count exit
+        # check for try count exit
         if try_count > 500:
             job_found = False
-
-
-
 
     return tour_org, move_job, tour_new
 
 
 #################################################################################
 def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict, list_days: list):
-    job_found = False
     try_count_total = 0
-
-    while job_found == False:
+    job_found = False
+    while not job_found:
+        job_found = False
         try_count = 0
         # retrieve random days
         day_org = random.choice(list_days)
@@ -427,64 +435,68 @@ def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict,
                 move_job = tour_org.worst_edge_pickup
                 job_found = True
             else:
+                job_found = False
                 continue
 
-            #find the opposite worst edge and move it there
+            # find the opposite worst edge and move it there
             worst_distance_value = 0
             worst_distance_day = 0
             for day in list_days:
                 if day < move_job.end:
-                   if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance:
+                    # check if tour fits constraints
+                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_dropoff_distance and \
+                            dict_tours_temp[depot][day].total_tasks < 50:
                         worst_distance_value = dict_tours_temp[depot][day].worst_edge_dropoff_distance
                         worst_distance_day = day
 
-            # if still inital, try again
-            if worst_distance_day == 0:
-                continue
-            else:
+            if worst_distance_day != 0:
                 day_new = worst_distance_day
+            # if still inital, try again
+            else:
+                job_found = False
+                continue
 
         elif move_type == 'dropoff':
             if tour_org.worst_edge_dropoff:
                 move_job = tour_org.worst_edge_dropoff
                 job_found = True
             else:
+                job_found = False
                 continue
-
-            while day_new < move_job.end:
-                day_new = random.choice(list_days)
-                try_count += 1
-                # if not possible break after 500 tries
-                if try_count > 500: break
 
             # find the opposite worst edge and move it there
             worst_distance_value = 0
             worst_distance_day = 0
             for day in list_days:
                 if day > move_job.start:
-                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_pickup_distance:
+                    if worst_distance_value < dict_tours_temp[depot][day].worst_edge_pickup_distance and \
+                            dict_tours_temp[depot][day].total_tasks < 50:
                         worst_distance_value = dict_tours_temp[depot][day].worst_edge_pickup_distance
                         worst_distance_day = day
 
-            #if still inital, try again
+            # if still inital, try again
             if worst_distance_day == 0:
+                job_found = False
                 continue
             else:
                 day_new = worst_distance_day
 
 
         # retrieve new tour
-        tour_new = dict_tours_temp[depot][day_new]
-        # check if list_plants is filled otherwise repeat
-        if not tour_new.list_plants:
-            job_found = False
-        # check for try count exit
-        if try_count > 500:
-            job_found = False
+        tour_new: cl.Tour = dict_tours_temp[depot][day_new]
+        if tour_new:
+            # check if list_plants is filled otherwise repeat
+            if not tour_new.list_plants:
+                job_found = False
+            # check for try count exit
+            if try_count > 500:
+                job_found = False
 
 
-
-    return tour_org, move_job, tour_new
+    if tour_new:
+        return tour_org, move_job, tour_new
+    else:
+        return '', '', ''
 
 
 #################################################################################
@@ -500,47 +512,47 @@ def find_single_move_random(move_type: str, depot: str, dict_tours_temp: dict, l
             fc.print_log("trycount exit")
             return '', '', ''
 
-        #retrieve random days
+        # retrieve random days
         day_org = random.choice(list_days)
         day_new = random.choice(list_days)
 
-        #read random tour and move_job into local variables
+        # read random tour and move_job into local variables
         tour_org = dict_tours_temp[depot][day_org]
 
         if move_type == 'pickup':
 
-            #check if there is a job
+            # check if there is a job
             if tour_org.list_pickups:
                 move_job = random.choice(tour_org.list_pickups)
                 job_found = True
-            else: continue
+            else:
+                continue
 
             while day_new < move_job.end:
                 day_new = random.choice(list_days)
-                try_count +=1
-                #if not possible break after 1000 tries
+                try_count += 1
+                # if not possible break after 1000 tries
                 if try_count > 500: break
 
         elif move_type == 'dropoff':
-            #check if there is a job
+            # check if there is a job
             if tour_org.list_dropoffs:
                 move_job = random.choice(tour_org.list_dropoffs)
                 job_found = True
-            else: continue
+            else:
+                continue
 
             while day_new > move_job.start:
                 day_new = random.choice(list_days)
-                try_count +=1
-                #if not possible break after 1000 tries
+                try_count += 1
+                # if not possible break after 1000 tries
                 if try_count > 500: break
 
-        #retrieve new tour
+        # retrieve new tour
         tour_new = dict_tours_temp[depot][day_new]
-        #check if list_plants is filled otherwise repeat
+        # check if list_plants is filled otherwise repeat
         if not tour_new.list_plants:
             job_found = False
-
-
 
     return tour_org, move_job, tour_new
 
@@ -548,6 +560,7 @@ def find_single_move_random(move_type: str, depot: str, dict_tours_temp: dict, l
 #################################################################################
 def find_pickup_move_random(depot: str, dict_tours_temp: dict, list_days: list):
     return find_single_move_random('pickup', depot, dict_tours_temp, list_days)
+
 
 #################################################################################
 def find_dropoff_move_random(depot: str, dict_tours_temp: dict, list_days: list):

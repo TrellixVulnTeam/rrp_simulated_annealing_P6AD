@@ -227,6 +227,7 @@ class Solution:
         plt.xticks(np.arange(0, len(days), 100))
         plt.yticks(np.arange(0, y_max, y_max/10))
         plt.legend((p_pi[0], p_do[0]), ('Pickups', 'Dropoffs'))
+        plt.grid(axis = 'y')
 
         #export graph
         if exp_prefix != '':
@@ -268,6 +269,7 @@ class Solution:
         plt.yticks(np.arange(0, 1.05, 0.1))
         plt.xticks(np.arange(0, len(days), 100))
         plt.legend((p_pi[0], p_do[0]), ('Pickups', 'Dropoffs'))
+        plt.grid(axis='y')
 
         #export graph
         if exp_prefix != '':
@@ -302,12 +304,12 @@ class Solution:
         ax2.set_ylabel('Avg. Distance per Task in km ', color=color)  # we already handled the x-label with ax1
         ax2.plot(np.arange(len(days)), avg_distance_task, color=color)
         ax2.tick_params(axis='y', labelcolor=color)
-        ax2.set_yticks(np.arange(y_avg_max/2, y_avg_max, y_avg_max/10))
+        ax2.set_yticks(np.arange(y_avg_max, y_avg_max, y_avg_max/10))
         ax2.set_ylim(0, y_avg_max)
 
         plt.title('Distances per Day day')
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
-
+        plt.grid()
 
 
         if exp_prefix != '':
@@ -340,6 +342,7 @@ class Solution:
         plt.xticks(np.arange(0, len(days), 100))
         plt.yticks(np.arange(0, y_max, y_max/10))
         plt.legend((p_pi[0], p_do[0], p_pa[0]), ('Worst Pickups', 'Worst Dropoffs','Worst Pairs'))
+        plt.grid()
 
         if exp_prefix != '':
             plt.savefig(exp_prefix + 'plot_worst_edges.png')
@@ -348,16 +351,86 @@ class Solution:
 
 
     def plot_developement(self, total= False, exp_prefix = '',plot =True, temp=True):
+
+        if total:
+            steps = [i for i in self.dict_developement_total]
+            values = [self.dict_developement_total[i][0] for i in steps]
+            temps = [self.dict_developement_total[i][1] for i in steps]
+            acc = [(self.dict_developement_total[i][2]/i) if i>0 else 1 for i in steps ]
+        else:
+            steps = [i for i in self.dict_developement_curr]
+            values = [self.dict_developement_curr[i][0] for i in steps]
+            temps = [self.dict_developement_curr[i][1] for i in steps]
+            acc = [(self.dict_developement_curr[i][2]/i) if i>0 else 1 for i in steps]
+
+        import matplotlib.pyplot as plt
+
+        fig = plt.figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
+        host = fig.add_subplot(111)
+
+        par1 = host.twinx()
+        #par2 = host.twinx()
+
+        host.set_xlim(0, len(steps))
+        host.set_ylim(1500000, 2500000)
+        par1.set_ylim(0, 1.1)
+        #par2.set_ylim(0, 1.1)
+
+        host.set_xlabel("Steps")
+        host.set_ylabel("Distance")
+        par1.set_ylabel("Temperature/Acceptance")
+        #par2.set_ylabel("Acceptance")
+
+        color1 = 'tab:blue'
+        color2 = 'orange'
+        color3 = 'g'
+
+        p1, = host.plot(steps, values, color=color1, label="Distance", linewidth = 5)
+        if temp:
+            p2, = par1.plot(steps, temps, color=color2, label="Temperature", linewidth = 5)
+        p3, = par1.plot(steps, acc, color=color3, label="Acceptance", linewidth = 5)
+
+        if temp:
+            lns = [p1, p2, p3]
+        else:
+            lns = [p1, p3]
+        host.legend(handles=lns, loc='lower right')
+
+        # right, left, top, bottom
+        #par2.spines['right'].set_position(('outward', 60))
+        # no x-ticks
+        #par2.xaxis.set_ticks([])
+        # Sometimes handy, same for xaxis
+        # par2.yaxis.set_ticks_position('right')
+
+
+
+        plt.title('Distances and Temperature per Step')
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+
+
+
+        if exp_prefix != '':
+            plt.savefig(exp_prefix + 'plot_developement.png')
+
+        if plot:
+            plt.show()
+
+
+    def plot_developement2(self, total= False, exp_prefix = '',plot =True, temp=True):
         figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
 
         if total:
             steps = [i for i in self.dict_developement_total]
             values = [self.dict_developement_total[i][0] for i in steps]
             temps = [self.dict_developement_total[i][1] for i in steps]
+            acc = [(self.dict_developement_total[i][2]/i) if i>0 else 1 for i in steps ]
         else:
             steps = [i for i in self.dict_developement_curr]
             values = [self.dict_developement_curr[i][0] for i in steps]
             temps = [self.dict_developement_curr[i][1] for i in steps]
+            acc = [(self.dict_developement_curr[i][2]/i) if i>0 else 1 for i in steps]
+
 
         width = 1  # the width of the bars: can also be len(x) sequence
 
@@ -369,24 +442,29 @@ class Solution:
         ax1.set_ylabel('Total Distance in km ', color=color)
         ax1.bar(steps, values, width, color=color)
         ax1.tick_params(axis='y', labelcolor=color)
-        ax1.set_yticks(np.arange(1500000, 3000000, 500000))
-        plt.xticks(np.arange(0, len(steps), len(steps)/10))
+        ax1.set_yticks(np.arange(1500000, 2500000, 100000))
+        ax1.set_ylim(1500000, 2500000)
+        plt.xticks(np.arange(0, len(steps), (len(steps)-1)/10))
+        plt.grid()
 
 
         if temp:
-            ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+            ax2 = ax1.twinx()
+            #ax2 = ax1.twinx()# instantiate a second axes that shares the same x-axis
 
             color = 'tab:orange'
             ax2.set_ylabel('Temperature', color=color)  # we already handled the x-label with ax1
-            ax2.plot(np.arange(len(steps)), temps, color=color)
+            ax2.plot(np.arange(len(steps)), acc, color=color)
+            #temp_plot = ax2.plot(np.arange(len(steps)), temp, color=color)
             ax2.tick_params(axis='y', labelcolor=color)
             ax2.set_yticks(np.arange(0, 1.1, 0.1))
             ax2.set_ylim(0, 1.1)
 
 
+
         plt.title('Distances and Temperature per Step')
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
-        ax1.set_ylim(1500000,3000000)
+
 
 
         if exp_prefix != '':
@@ -394,4 +472,3 @@ class Solution:
 
         if plot:
             plt.show()
-
