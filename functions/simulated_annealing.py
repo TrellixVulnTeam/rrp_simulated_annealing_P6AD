@@ -34,6 +34,7 @@ class NormalizedExponentialAcceptance:
 
     def get_acc(self, temperature: float, distance_delta):
         # negative delta -> better solution -> accept
+        print("get_acc:")
         if distance_delta < 0:
             return True
         else:
