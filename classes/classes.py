@@ -395,7 +395,7 @@ class Solution:
         else:
             lns = [p1, p3]
         host.legend(handles=lns, loc='lower right')
-
+        plt.grid()
         # right, left, top, bottom
 
 
