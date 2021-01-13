@@ -378,7 +378,7 @@ class Solution:
 
         host.set_xlabel("Steps")
         host.set_ylabel("Distance")
-        par1.set_ylabel("Temperature/Acceptance")
+        par1.set_ylabel("Temperature/Acceptance Rate")
         #par2.set_ylabel("Acceptance")
 
         color1 = 'tab:blue'
@@ -387,8 +387,8 @@ class Solution:
 
         p1, = host.plot(steps, values, color=color1, label="Distance", linewidth = 5)
         if temp:
-            p2, = par1.plot(steps, temps, color=color2, label="Temperature", linewidth = 5)
-        p3, = par1.plot(steps, acc, color=color3, label="Acceptance", linewidth = 5)
+            p2, = par1.plot(steps, temps, color=color2, label="Temperature", linewidth = 2.5)
+        p3, = par1.plot(steps, acc, color=color3, label="Acceptance Rate", linewidth = 2.5)
 
         if temp:
             lns = [p1, p2, p3]
@@ -397,17 +397,10 @@ class Solution:
         host.legend(handles=lns, loc='lower right')
 
         # right, left, top, bottom
-        #par2.spines['right'].set_position(('outward', 60))
-        # no x-ticks
-        #par2.xaxis.set_ticks([])
-        # Sometimes handy, same for xaxis
-        # par2.yaxis.set_ticks_position('right')
-
 
 
         plt.title('Distances and Temperature per Step')
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
-
 
 
         if exp_prefix != '':
@@ -417,58 +410,3 @@ class Solution:
             plt.show()
 
 
-    def plot_developement2(self, total= False, exp_prefix = '',plot =True, temp=True):
-        figure(num=None, figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
-
-        if total:
-            steps = [i for i in self.dict_developement_total]
-            values = [self.dict_developement_total[i][0] for i in steps]
-            temps = [self.dict_developement_total[i][1] for i in steps]
-            acc = [(self.dict_developement_total[i][2]/i) if i>0 else 1 for i in steps ]
-        else:
-            steps = [i for i in self.dict_developement_curr]
-            values = [self.dict_developement_curr[i][0] for i in steps]
-            temps = [self.dict_developement_curr[i][1] for i in steps]
-            acc = [(self.dict_developement_curr[i][2]/i) if i>0 else 1 for i in steps]
-
-
-        width = 1  # the width of the bars: can also be len(x) sequence
-
-        fig, ax1 = plt.subplots(figsize=(16, 12), dpi=160, facecolor='w', edgecolor='k')
-        # p1 = plt.bar(np.arange(len(days)), distances, width)
-
-        color = 'tab:blue'
-        ax1.set_xlabel('Steps')
-        ax1.set_ylabel('Total Distance in km ', color=color)
-        ax1.bar(steps, values, width, color=color)
-        ax1.tick_params(axis='y', labelcolor=color)
-        ax1.set_yticks(np.arange(1500000, 2500000, 100000))
-        ax1.set_ylim(1500000, 2500000)
-        plt.xticks(np.arange(0, len(steps), (len(steps)-1)/10))
-        plt.grid()
-
-
-        if temp:
-            ax2 = ax1.twinx()
-            #ax2 = ax1.twinx()# instantiate a second axes that shares the same x-axis
-
-            color = 'tab:orange'
-            ax2.set_ylabel('Temperature', color=color)  # we already handled the x-label with ax1
-            ax2.plot(np.arange(len(steps)), acc, color=color)
-            #temp_plot = ax2.plot(np.arange(len(steps)), temp, color=color)
-            ax2.tick_params(axis='y', labelcolor=color)
-            ax2.set_yticks(np.arange(0, 1.1, 0.1))
-            ax2.set_ylim(0, 1.1)
-
-
-
-        plt.title('Distances and Temperature per Step')
-        fig.tight_layout()  # otherwise the right y-label is slightly clipped
-
-
-
-        if exp_prefix != '':
-            plt.savefig(exp_prefix + 'plot_developement.png')
-
-        if plot:
-            plt.show()

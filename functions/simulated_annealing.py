@@ -53,6 +53,18 @@ class ExponentialAcceptance:
             bol_curr = np.random.uniform() < math.exp(-distance_delta / temperature)
             return bol_curr
 
+class NormalizedExponentialAcceptance:
+    def __init__(self, distance_inital: float):
+        self.distance_inital = distance_inital
+
+    def get_acc(self, temperature: float, distance_delta):
+        # negative delta -> better solution -> accept
+        if distance_delta < 0:
+            return True
+        else:
+            bol_curr = np.random.uniform() < math.exp(-distance_delta / (self.distance_inital*temperature))
+            return bol_curr
+
 
 #################################################################################
 def reassign_job(job_type: str, tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
@@ -188,7 +200,7 @@ def evaluate_dropoff(tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
 
 #################################################################################
 
-def find_pair_move_worst(depot: str, dict_tours_temp: dict, list_days: list):
+def find_pair_move_worst_random(depot: str, dict_tours_temp: dict, list_days: list):
     pickup_found = False
     dropoff_found = False
     try_count_total = 0
@@ -348,7 +360,7 @@ def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
 
 
 #################################################################################
-def find_single_move_worst(move_type: str, depot: str, dict_tours_temp: dict, list_days: list):
+def find_single_move_worst_random(move_type: str, depot: str, dict_tours_temp: dict, list_days: list):
     job_found = False
     try_count_total = 0
 
