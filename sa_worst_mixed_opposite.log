@@ -5485,3 +5485,114 @@ INFO:root:No more movetypes
 INFO:root:Final: Loop: 2013 - Moves: 1969
 INFO:root:Done with Moves
 INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:07:05
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:10:13
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 1915
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 1916
+INFO:root:logging at 2001
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2032
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2033 - Moves: 1992
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:24:22
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:28:02
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:28:25
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:38:47
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 1867
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 1948
+INFO:root:logging at 2001
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2003
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2004 - Moves: 1966
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:59:55
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 16:59:58
+INFO:root:Done with initiation
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 17:08:44
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 1914
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 1915
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 1984
+INFO:root:No more movetypes
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2002
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2003
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2066
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2067 - Moves: 2031
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
