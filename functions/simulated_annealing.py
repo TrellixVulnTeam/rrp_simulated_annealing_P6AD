@@ -37,14 +37,15 @@ class NormalizedExponentialAcceptance:
         # negative delta -> better solution -> accept
         print("get_acc:")
         if distance_delta < 0:
-            return True
+            return True, "Negativve"
         else:
             random = np.random.uniform()
             val = math.exp(-distance_delta / (self.distance_inital * temperature))
 
             bol_curr = random < val
-            print("{} < {} : {}".format(round(random,4), round(val,4), bol_curr))
-            return bol_curr
+            fc.print_log("{} < {} : {}".format(round(random,4), round(val,4), bol_curr))
+            str = "{} < {} : {}".format(round(random,4), round(val,4), bol_curr)
+            return bol_curr, str
 
 
 class ExponentialAcceptance:
@@ -59,17 +60,6 @@ class ExponentialAcceptance:
             bol_curr = np.random.uniform() < math.exp(-distance_delta / temperature)
             return bol_curr
 
-class NormalizedExponentialAcceptance:
-    def __init__(self, distance_inital: float):
-        self.distance_inital = distance_inital
-
-    def get_acc(self, temperature: float, distance_delta):
-        # negative delta -> better solution -> accept
-        if distance_delta < 0:
-            return True
-        else:
-            bol_curr = np.random.uniform() < math.exp(-distance_delta / (self.distance_inital*temperature))
-            return bol_curr
 
 
 #################################################################################
