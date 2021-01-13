@@ -41,7 +41,7 @@ class NormalizedExponentialAcceptance:
             val = math.exp(-distance_delta / (self.distance_inital * temperature))
 
             bol_curr = random < val
-            fc.print_log("{} < {} : {}".format(round(random,4), round(val,4), bol_curr))
+            #fc.print_log("{} < {} : {}".format(round(random,4), round(val,4), bol_curr))
             return bol_curr
 
 
