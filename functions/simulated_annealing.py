@@ -30,7 +30,7 @@ class Geometric_Schedule:
 #################################################################################
 class NormalizedExponentialAcceptance:
     def __init__(self, distance_inital: float):
-        self.distance_inital = distance_inital/4
+        self.distance_inital = (distance_inital/10)
 
     def get_acc(self, temperature: float, distance_delta):
         # negative delta -> better solution -> accept

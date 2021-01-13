@@ -205,3 +205,17 @@ INFO:root:logging at 3001
 INFO:root:logging at 3501
 INFO:root:logging at 4001
 INFO:root:logging at 4501
+INFO:root:logging at 5001
+INFO:root:logging at 5501
+INFO:root:logging at 6001
+INFO:root:logging at 6501
+INFO:root:logging at 7001
+INFO:root:logging at 7501
+INFO:root:logging at 8001
+INFO:root:logging at 8501
+INFO:root:logging at 9001
+INFO:root:logging at 9501
+INFO:root:Loopcount exit
+INFO:root:Final: Loop: 10000 - Moves: 9010
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
