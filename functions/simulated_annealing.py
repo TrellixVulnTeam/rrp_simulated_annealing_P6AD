@@ -31,21 +31,18 @@ class Geometric_Schedule:
 class NormalizedExponentialAcceptance:
     def __init__(self, distance_inital: float):
         self.distance_inital = (distance_inital/10)
-        print("Init NEA")
 
     def get_acc(self, temperature: float, distance_delta):
         # negative delta -> better solution -> accept
-        print("get_acc:")
         if distance_delta < 0:
-            return True, "Negativve"
+            return True
         else:
             random = np.random.uniform()
             val = math.exp(-distance_delta / (self.distance_inital * temperature))
 
             bol_curr = random < val
             fc.print_log("{} < {} : {}".format(round(random,4), round(val,4), bol_curr))
-            str = "{} < {} : {}".format(round(random,4), round(val,4), bol_curr)
-            return bol_curr, str
+            return bol_curr
 
 
 class ExponentialAcceptance:
