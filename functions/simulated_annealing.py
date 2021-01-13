@@ -29,15 +29,15 @@ class Geometric_Schedule:
 
 #################################################################################
 class NormalizedExponentialAcceptance:
-    def __init__(self, distance_inital: float):
-        self.distance_inital = distance_inital/4
+    def __init__(self, distance_initial: float):
+        self.distance_initial = distance_initial/10
 
     def get_acc(self, temperature: float, distance_delta):
         # negative delta -> better solution -> accept
         if distance_delta < 0:
             return True
         else:
-            bol_curr = np.random.uniform() < math.exp(-distance_delta / (self.distance_inital * temperature))
+            bol_curr = np.random.uniform() < math.exp(-distance_delta / (self.distance_initial * temperature))
             return bol_curr
 
 
@@ -520,8 +520,11 @@ def find_single_move_random(move_type: str, depot: str, dict_tours_temp: dict, l
         try_count = 0
         # restrict number of total loops
         try_count_total += 1
-        if try_count_total > 500:
-            fc.print_log("trycount exit")
+
+        print(try_count, end='\r')
+        if try_count_total > 1000:
+
+            fc.print_log("total trycount exit")
             return '', '', ''
 
         # retrieve random days
@@ -544,7 +547,7 @@ def find_single_move_random(move_type: str, depot: str, dict_tours_temp: dict, l
                 day_new = random.choice(list_days)
                 try_count += 1
                 # if not possible break after 1000 tries
-                if try_count > 500: break
+                if try_count > 1000: break
 
         elif move_type == 'dropoff':
             # check if there is a job
@@ -558,7 +561,7 @@ def find_single_move_random(move_type: str, depot: str, dict_tours_temp: dict, l
                 day_new = random.choice(list_days)
                 try_count += 1
                 # if not possible break after 1000 tries
-                if try_count > 500: break
+                if try_count > 1000: break
 
         # retrieve new tour
         tour_new = dict_tours_temp[depot][day_new]
