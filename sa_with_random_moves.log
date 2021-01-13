@@ -239,3 +239,12 @@ INFO:root:Loopcount exit
 INFO:root:Final: Loop: 10000 - Moves: 8535
 INFO:root:Done with Moves
 INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 21:04:29
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves
+INFO:root:logging at 1
+INFO:root:logging at 1001
