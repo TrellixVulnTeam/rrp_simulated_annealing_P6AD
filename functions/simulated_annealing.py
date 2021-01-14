@@ -62,8 +62,8 @@ class ExponentialAcceptance:
 #################################################################################
 def reassign_job(job_type: str, tour_org: cl.Tour, tour_new: cl.Tour, move_job: cl.Job):
     # retrieve distance values from old tours
-    old_distance_tour_org = tour_org.distance
-    old_distance_tour_new = tour_new.distance
+    old_distance_tour_org = copy.copy(tour_org.distance)
+    old_distance_tour_new = copy.copy(tour_new.distance)
     day_new = tour_new.day
 
     # move job to new tour
@@ -77,8 +77,6 @@ def reassign_job(job_type: str, tour_org: cl.Tour, tour_new: cl.Tour, move_job: 
         raise ValueError('Job type: {} not recognized.'.format(job_type))
 
     # adjust values in Tour class
-    tour_org.update_totals()
-    tour_new.update_totals()
     tour_org.distance_uptodate = False
     tour_new.distance_uptodate = False
 
