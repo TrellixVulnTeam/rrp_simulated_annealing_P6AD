@@ -605,7 +605,7 @@ def find_single_move_worst_cluster(move_type: str, depot: str, dict_tours_temp: 
             best_location_distance_day = 0
 
             for day in list_days:
-                if day < move_job.end:
+                if day > move_job.end:
                     # check if tour fits constraints and find the closest opposit spot
                     tour_temp = dict_tours_temp[depot][day]
                     for j in tour_temp.list_dropoffs:
@@ -635,7 +635,7 @@ def find_single_move_worst_cluster(move_type: str, depot: str, dict_tours_temp: 
             best_location_distance_day = 0
 
             for day in list_days:
-                if day < move_job.end:
+                if day < move_job.start:
                     # check if tour fits constraints and find the closest opposit spot
                     tour_temp = dict_tours_temp[depot][day]
                     for j in tour_temp.list_pickups:
@@ -670,7 +670,7 @@ def find_single_move_worst_cluster(move_type: str, depot: str, dict_tours_temp: 
 
 #################################################################################
 
-def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
+def find_pair_move_worst_cluster(depot: str, dict_tours_temp: dict, list_days: list):
     pickup_found = False
     dropoff_found = False
     try_count_total = 0
@@ -696,7 +696,7 @@ def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
 
         # check if worst edge pair is filled
         if tour_org.dict_worst_edge_pair:
-            # find a fitting dropoff job
+            # find a fitting pickup job
             if tour_org.dict_worst_edge_pair['pickup']:
                 move_job_pickup = tour_org.dict_worst_edge_pair['pickup']
                 pickup_found = True
@@ -704,12 +704,12 @@ def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
                 pickup_found = False
                 continue
 
-            # find the opposite closest feasible opposite job type
+            # find the opposite closest feasible job
             best_location_distance = 99999999999
             best_location_distance_day = 0
 
             for day in list_days:
-                if day < move_job_pickup.end:
+                if day > move_job_pickup.end:
                     # check if tour fits constraints and find the closest opposit spot
                     tour_temp = dict_tours_temp[depot][day]
                     for j in tour_temp.list_dropoffs:
@@ -738,7 +738,7 @@ def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
             best_location_distance_day = 0
 
             for day in list_days:
-                if day < move_job_dropoff.end:
+                if day < move_job_dropoff.start:
                     # check if tour fits constraints and find the closest opposit spot
                     tour_temp = dict_tours_temp[depot][day]
                     for j in tour_temp.list_pickups:
