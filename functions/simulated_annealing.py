@@ -274,7 +274,7 @@ def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
 
         # restrict number of total loops
         try_count_total += 1
-        if try_count_total > 500:
+        if try_count_total > 10000:
             fc.print_log("trycount exit")
             return '', '', '','',''
 
@@ -345,7 +345,7 @@ def find_pair_move_opposite(depot: str, dict_tours_temp: dict, list_days: list):
         if not dropoff_tour_new.list_plants:
             dropoff_found = False
             # check for try count exit
-        if try_count > 500:
+        if try_count > 10000:
             pickup_found = False
             dropoff_found = False
 
@@ -428,7 +428,7 @@ def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict,
 
         # restrict number of total loops
         try_count_total += 1
-        if try_count_total > 500:
+        if try_count_total > 10000:
             fc.print_log("trycount exit for {}".format(move_type))
             return '', '', ''
 
@@ -494,7 +494,7 @@ def find_single_move_opposite(move_type: str, depot: str, dict_tours_temp: dict,
             if not tour_new.list_plants:
                 job_found = False
             # check for try count exit
-            if try_count > 500:
+            if try_count > 10000:
                 job_found = False
 
 

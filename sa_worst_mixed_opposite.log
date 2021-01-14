@@ -5596,3 +5596,119 @@ INFO:root:No more movetypes
 INFO:root:Final: Loop: 2067 - Moves: 2031
 INFO:root:Done with Moves
 INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:03:59
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2129
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2132
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2165
+INFO:root:No more movetypes
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2167
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2168
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2201
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2202 - Moves: 1949
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 00:19:26
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2143
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2144
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2170
+INFO:root:No more movetypes
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2177
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2210
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2212
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2213 - Moves: 1947
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 15:13:26
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2105
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2109
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2144
+INFO:root:No more movetypes
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2145
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2153
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2168
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2169 - Moves: 1926
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a
+INFO:root:Starting initiation
+INFO:root:Starting initiation at 15:40:52
+INFO:root:Done with initiation
+INFO:root:Start Inital Solution Plot
+INFO:root:Done with  Inital Solution Plot
+INFO:root:Start with Stage 1a
+INFO:root:Start Random Moves with heuristics
+INFO:root:logging at 1
+INFO:root:logging at 501
+INFO:root:logging at 1001
+INFO:root:logging at 1501
+INFO:root:logging at 2001
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2096
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2097
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2160
+INFO:root:No more movetypes
+INFO:root:trycount exit for dropoff
+INFO:root:Trycount Exit for dropoff - it: 2161
+INFO:root:trycount exit for pickup
+INFO:root:Trycount Exit for pickup - it: 2163
+INFO:root:trycount exit
+INFO:root:Trycount Exit for pair - it: 2193
+INFO:root:No more movetypes
+INFO:root:Final: Loop: 2194 - Moves: 1950
+INFO:root:Done with Moves
+INFO:root:Done with Stage 1a

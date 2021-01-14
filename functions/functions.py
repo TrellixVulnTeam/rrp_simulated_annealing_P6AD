@@ -139,6 +139,7 @@ def get_time():
 
 #######################################################################
 def dict_to_csv(dict_to_write: dict, path: str, name: str):
+    sys.setrecursionlimit(100000)
     file = path + name + ".csv"
     with open(file, 'w', newline='') as f:
         writer = csv.writer(f)
