@@ -1,0 +1,752 @@
+\documentclass[12pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Zusaetzliche Pakete  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{enumerate}  
+\usepackage{fancyhdr}
+\usepackage{a4wide}
+\usepackage{graphicx}
+\usepackage{palatino}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\usepackage{multirow}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{acronym}
+
+%\usepackage[defaultlines=5,all]{nowidow}
+\usepackage{times}
+\usepackage{fancyhdr,graphicx,amsmath,amssymb}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{acronym}
+\include{pythonlisting}
+%\usepackage{hyperref}
+%\renewcommand{\subsectionautorefname}{section}
+%\renewcommand{\subsubsectionautorefname}{section}
+ 
+
+
+
+%blackmode remove later
+\usepackage{xcolor}
+\pagecolor[rgb]{0.2,0.2,0.2}
+\color[rgb]{0.8,0.8,0.8}
+
+
+%folgende Zeile auskommentieren für englische Arbeiten
+%\usepackage[ngerman]{babel}
+%folgende Zeile auskommentieren für deutsche Arbeiten
+\usepackage[ngerman, english]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bookmarks]{hyperref}
+\usepackage[justification=centering]{caption}
+\usepackage[style=authoryear,natbib=true,backend=biber,maxbibnames=20]{biblatex}
+\usepackage{csquotes}
+\bibliography{literatur}
+
+
+\setlength{\parindent}{0em} 
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Definition der Kopfzeile %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\setlength{\headheight}{16pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Definition des Deckblattes und der Titelseite  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\JMUTitle}[9]{
+
+  \thispagestyle{empty}
+  \vspace*{\stretch{1}}
+  {\parindent0cm
+  \rule{\linewidth}{.7ex}}
+  \begin{flushright}
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\Huge
+    #1\\
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\large
+    #2\\
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\small
+    #3
+  \end{flushright}
+  \rule{\linewidth}{.7ex}
+
+  \vspace*{\stretch{1}}
+  \begin{center}
+    \includegraphics[width=2in]{siegel} \\
+    \vspace*{\stretch{1}}
+    \Large Seminar Paper  \\
+
+    \vspace*{\stretch{2}}
+   \large Chair for Information Systems  \\
+    \large and Business Analytics\\
+    \large University of Würzburg\\
+    \vspace*{\stretch{1}}
+    \large Supervisor:  #8 \\[1mm]
+    
+    \vspace*{\stretch{1}}
+    \large W\"urzburg, den #7
+  \end{center}
+}
+
+\titlespacing*{\section}
+{0pt}{3.5ex plus 1ex minus .2ex}{.2ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{1.5ex plus 1ex minus .2ex}{.2ex plus .2ex}
+\titlespacing*{\subsubsection}
+{0pt}{1.5ex plus 1ex minus .2ex}{.2ex plus .2ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Beginn des Dokuments  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+  \JMUTitle
+      {Solution Approach to a Repositioning Routing Problem Based on Simulated Annealing}        
+      % Titel der Arbeit
+      {Nico Elbert}                       
+      % Vor- und Nachname des Autors
+      {2389895}   
+      
+      {Wirtschaftswissenschaftlichen Fakultät}  
+      % Name der Fakultaet
+      {W"urzburg 2018}                          
+      % Ort und Jahr der Erstellung
+      {15.01.2020}                             
+      % Tag der Abgabe
+      {Prof. Dr. Christoph Flath}              
+      % Name des Erstgutachters
+      {Toni Greif}                          %
+      %Name des Zweitgutachters
+      
+  \clearpage
+
+\lhead{}
+\pagenumbering{Roman} 
+    \setcounter{page}{1}
+
+\tableofcontents
+\clearpage
+
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+
+\addcontentsline{toc}{section}{\listtablename}
+\listoftables
+
+\section*{Acronyms}
+\input{acro}
+\listofalgorithms
+\clearpage
+
+\setlength{\parskip}{0.5em} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Kurzzusammenfassung   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Einstellungen  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagenumbering{arabic}  
+    \setcounter{page}{1}
+\lhead{\nouppercase{\leftmark}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Hauptteil  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Relevance and Scope}
+Vehicle routing and tour allocation are central tasks in a growing number of private and public organizations. Unnecessarily long and inefficient routes can become a huge cost factor and are economically and ecologically unsustainable. These potential cost can grow even further, when it comes to larger vehicles, like the ones transporting bulk material silos. Since these combinatorial problems are hard to oversee, an inefficient routing and allocation is often not instantly visible and the actual potential in optimizing such a process therefore hidden \citep{Bott1986}.
+In the scope of this work, solution approaches to find an optimal tour composition for the repositioning of bulk material silos between plants and construction sites shall be worked out and evaluated . Since the size of the given problem is too large to compute every possible solution with a reasonable effort in material and time, this approach needs to be based on a local search method. As explained later in this work, the concept of \ac{SA} allows to explore a large range of possible solutions, while heading towards the apparently best one. Therefore these approaches will be based on \acs{SA}. At the end of this work it should be evaluated, whether the concept of \acs{SA}  is a good fit for this specific type of problem.\newline 
+Over the course of this work, knowledge about central concepts of local search, vehicle routing and \acs{SA} shall obtained by analysing and briefly summarizing related works in published academic literature. Based on these findings, a given data of an existing repositioning routing problem   will be introduced. With gathered information from related works, multiple approaches to find an optimal solution to this problem based on \acs{SA} will be worked out. These shall then be implemented and executed on the given data set. To evaluated the specific effects of \acs{SA} in this context, all approaches will be also implemented with another simple meta heuristic, functioning as a metric. Finally the overall result will be analysed to evaluated the success of the introduced approaches. The purpose of this work is to evaluated whether \acs{SA} as metaheuristic is a good fit to tackle this kind of routing and allocation problems and what the key elements for such an approach are. Although these types of problems are a well researched field, the specific conditions for every individual problems vary and need to elaborated. Therefore a focus of this work is not only to evaluated the \acs{SA} approaches in the context of this problem, but to clearly and thoroughly document the given situation, used parameters and implementation methods to be able to use this so gathered knowledge for further research and application in this the context of this type of repositioning and routing.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Theoretical and Conceptual Fundamentals} \label{sec:b}
+In the following the central concepts of vehicle routing, local search in general and specifically simulated annealing shall be summarized  and later applied to sustain the conceptions of the  solution approaches.
+\subsection{Vehicle Routing Problems}
+
+\acp{VRP} are a well-known and explored type of combinatorial and integer programming problems. They can be generally summarized as the problem of creating the optimal pickup or delivery routes between different locations nodes such as customers, depots, plants, etc.. A route in this context can be understood as a series of nodes which are connected with directed or undirected edges. Optimality is usually reached by designing for example the cheapest, shortest or most profitable routes under given constraints \citep{Laporte1992}. A simple and popular example is the \ac{TSP} which describes the problem of a Salesman that needs to visit a number of $n$ customers in $n$ different locations. He needs to visit each customer exactly once and return to his starting point in the end \citep{Repoussis2009}.  \newline
+Although each individual \acs{VRP} comes with its own constraints and objective, most of the variations can be categorized into several categories such as capacitated \acsp{VRP}, \acsp{VRP} with time windows, site dependent \acsp{VRP}, multi depot \acsp{VRP} or open \acsp{VRP}, just to name a few. Most of these categories can be combined with others to determine the nature of a problem, such as a multi depot vehicle routing problem with time constraints to name an example \citep{Pisinger2007,Regue2014}. 
+
+
+\subsection{Local Search}
+Since the number of of possible combinations in large combinatorial optimization problems such as large \acsp{VRP} are growing exponentially with the size of the problem, it may not be possible to evaluate every possible combination for a given problem. For example the number of possible routes for \acs{TSP} with $n$ nodes to visit would be $n!$. For \acs{TSP} with 15 nodes to visit, there would be $1.3076744 \cdot 10^{12}$ different possible routes to be calculated. To tackle larger problems it is useful to use metaheuristics like local search strategies. Essentially local search strategies can be summarized as starting from one initial solution and exploring the solutions in the neighbourhood of the initial one until the best reachable solution is found \citep{Pirlot1996}.  In the following multiple local search strategies and approaches are explained, for convenience reasons this will be formulated for maximization problems, although everything mentioned can also be used for minimization.A simple example for a local search strategy is the \textbf{hill climbing algorithm} Starting from a initial solution, for example $x=3$ the solutions neighbourhood (in this case $x=2$ and $x=4$) are evaluated. If one of these objective values is better then the original one, this solution is adopted and process repeats for the neighbourhood  of the new solution. This continues until there are no more better objective values in the neighbourhood. This strategy works well to find a local maximum but can't guarantee reaching the global one. To improve the chance of finding these, the hill climbing algorithm can be extended to \textbf{random restart hill climbing}, where the original algorithm is repeated from several random initial solutions or starting points. This increases the probability to find the global maximum in one of the approaches \citep{Benlic2013}. 
+
+\subsection{Simulated Annealing} \label{sec:b_sa}
+\acs{SA} is a probabilistic non-greedy algorithm, developed by \citet{Kirkpatrick1983}, that decreases the chance of getting stuck in a local maximum as shown in \autoref{fig:sim_anealing_steps} . As \citet{Hammouri2020} describe, its name roots from the physical process of metal annealing from which \acs{SA} builds a bridge to the optimization process through exploring the search space of a problem by annealing from a high to a low temperature. Non-greedy in this context means, that the algorithm, while moving through the solution space, always accepts a better solution. But in contrast to the climbing algorithm, \acs{SA} also allows to move to a worse solution state to escape local maxima. Whether a worse solution state is accepted or not is probabilistically determined by an acceptance function which is usually depend on the current temperature. This temperature decreases over the iterations, so that in earlier iterations the chance of accepting a worse solution is much higher than in later stages \citep{Orsila2008}.  
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=10cm]{Grafiken/sim_annealing_steps.jpg}
+    \caption{Seven iterations of simulated annealing algorithm convergence from large values of T in iterations 1–3 for global optimal exploration to low T values in iterations 5–6 for accurate minima computation as shown by \citet{Martinez2019}. Source: \citet{Martinez2019}}
+    \label{fig:sim_anealing_steps}
+\end{figure}
+
+\subsubsection{Temperature Schedules} \label{sec:b_sa_temp}
+The \textbf{temperature $T$} is determined by a temperature function like $Temp(i)$ in which the temperature decreases over the number of iterations $i$. The function may also contain other annealing metrics such as historic objective values from already visited states, although $Temp(i)$ then stops to be a pure function. This history can be used for intelligent annealing schedules. \citet{Orsila2008} therefore present three common schedules for the annealing temperature:
+
+\begin{itemize}
+    \item In \textbf{fractional temperature schedules} the initial temperature is divided by the number of iterations $+ 1$. Similar to a $\frac{1}{x}$ function it distributes the majority of the iterations to lower temperature as illustrated in \autoref{fig:temperature_schedules}. Hereby covering a wide temperature range becomes cost intensive.
+    \begin{equation}\label{eq:b_temp_1}
+    Temp(i) = \frac{T_0}{i + 1} 
+    \end{equation}
+    \item In \textbf{geometric temperature schedules} the initial temperatures is multiplied by a factor $0 < q < 1$ which is raised to the power of the rounded down fraction $\frac{i}{L}$ of the iterations $i$ and the number of iterations on each temperature level $L$. This allows to do $L$ iterations on the same temperature level before decreasing the temperature to the next stage. As shown in \autoref{fig:temperature_schedules}, a value for $q$ and $L$ that is set to low in the geometric temperature schedule will terminate \acs{SA} quickly and likely cause sub-optimal results
+    \begin{equation}  \label{eq:b_temp_2}
+        Temp(i) = T_0 \cdot q^{\left \lfloor{\frac{i}{L}}\right \rfloor} 
+    \end{equation}
+    \item In \textbf{Koch temperature schedules} the temperature is decreased in respect to the cost standard deviation for the latest $L$ iterations on each temperature level. The higher the standard deviation or the more chaotic the annealing, the less the temperature between each level decreases. Similar to the geometric temperature schedule in \autoref{eq:b_temp_2}, the temperature is only lowered if a number of iterations is reached. 
+    
+    \begin{equation}\label{eq:b_temp_1}
+    Temp(i) =
+    \begin{cases}
+      \frac{Temp(i-1}{1+\delta \frac{Temp(i-1)}{\sigma_{i-L,i}}} & \text{if } mod(i,L) = 0\\
+      Temp(i-1) & \text{if } mod(i,L) \neq 0\\
+      T_0 & \text{if } i = 0
+    \end{cases}
+    \end{equation}
+    where  $\sigma_{i-L,i} = stddev(Cost(S_k) | i-L\leq k < i)$
+\end{itemize}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=12cm]{Grafiken/temperature_schedules.png}
+    \caption{Examples of fractional and geometric annealing schedules with arbitrary scaling coefficients. According to \citet{Orsila2013}  Source:  own representation adapted from \citet{Orsila2013}}
+    \label{fig:temperature_schedules}
+\end{figure}
+
+
+
+\subsubsection{Acceptance Functions} \label{sec:b_sa_acc}
+Whether worse solutions are accepted or declined is probabilistically determined by an acceptance function which is usually dependent on the difference between the old and the new objective value of the solution state, as well as the current temperature of the search process. The function $Accept(\DeltaC,T)$ returns True, if a worsening move with an objective delta of $\Delta C$ between the old and the new objective value at a temperature $T$ should be accepted. This also ensures that better solutions (with $\DeltaC < 0$ are always accepted. \citet{Orsila2008} therefore present five different forms of acceptance functions:
+
+\begin{itemize}
+    \item The \textbf{inverse exponential form} creates a 50\% probability to move to a solution with an equal objective value. Significantly worse solutions are only accepted at high temperatures, at lower temperatures only slight decreases in the objective value will be accepted.
+    \begin{equation}{}
+    Accept(\Delta C, T) = True \iff random () < \frac{1}{1 + exp(\frac{\Delta C }{T})} \label{eq:b_ac_1}
+    \end{equation}
+    \item The \textbf{normalized inverse exponential form} includes all properties of the inverse exponential form, but normalizes the $\Delta C$ with the initial objective value to ease the selection of the temperature range using a constant scale as shown in \autoref{fig:acceptance_prob_functions}.
+    \begin{equation}{}% ggf images from file:///C:/Users/Nutzer/Downloads/4633.pdf p.13
+    Accept(\Delta C, T) = True \iff random () < \frac{1}{1 + exp(\frac{\Delta C }{C_0 T})} \label{eq:b_ac_2}
+    \end{equation}
+    \item The \textbf{exponential form} is similar to the inverse exponential form, but it encourages random walks even further, since any solution with a equal objective value is accepted at any temperature, which allows the algorithm to shift between equally good solutions to find a point from where a better solution is reachable.
+    \begin{equation}{}
+    Accept(\Delta C, T) = True \iff random () < exp(\frac{-\Delta C }{T}) \label{eq:b_ac_3}
+    \end{equation}
+    \item The \textbf{normalized exponential form} brings all properties of the exponential form, implying that the temperature lies in range $0<T \leq 1$ through normalization.
+    \begin{equation}{}
+    Accept(\Delta C, T) = True \iff random () < exp(\frac{-\Delta C }{C_0T}) \label{eq:b_ac_4}
+    \end{equation}
+\end{itemize}
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=12cm]{Grafiken/acceptance_prob_ne_nie.png}
+    \caption{Probabilities of Normalized Exponential (NE) and Normalized Inverse Exponential (NIE) acceptance function. Source:  own representation adapted from \citet{Orsila2013}}
+    \label{fig:acceptance_prob_functions}
+\end{figure}
+
+Since $\frac{\Delta C}{T}$ is a substantial measure in the mentioned acceptance functions, the temperature range needs to be adjusted to the range of the objective value deltas, or vice versa \citep{Orsila2008}.
+
+
+\subsubsection{Initiation}
+To initiate a simulated annealing algorithm, an initial solution and a initial temperature need to be set besides the decision for temperature schedule and acceptance function.
+
+The \textbf{initial temperature $T_0$} needs to be large enough, to allow the algorithm to accept worsening moves with a given probability of $p_0$. To obtain this value a simulation with a "sufficient number of moves in the optimization space"\citep{Orsila2008} can be made. Either for the neighbourhood of a single point or over several random points in the solution space. The resulting $C_avg$ can be used in order for $Accept(\Delta C_avg,T_0) = p_0$ \citep{Orsila2008}.
+
+Similar to any local search method, \acs{SA} can be initiated with a random \textbf{initial solution}. \cite{Alvarez2018} According to \citet{Szabo2016} several approaches like mathematical programming, heuristic methods or other metaheuristic methods might be used, dependent on the problem. 
+
+\subsubsection{Movement}
+In simulated annealing the $Move(S, T)$ function returns a new state based on the application specific heuristics and the
+current state $S$ and temperature $T$ . Move heuristics vary significantly. The simple ones are
+purely random. The complex ones analyze the structure of problem and find the heuristically most promising one.
+Given a current state value, randomizing a new state value should
+exclude the current value, i.e. current PE of the moved task in this case, for randomization
+process. For example, for n possible tour configurations, there is a 1/n probability of selecting the
+same configuration again, which means that $\frac{1}{n}$ of the iterations are wasted  \citep{Orsila2008}.
+
+
+\section{The Repositioning Routing Problem} \label{sec:rrp}
+
+
+\subsection{Database and Preparation} \label{sec:rrp_data}
+The repositioning routing problem is based on a dataset consisting of two tables. The first table with 53.178 rows, each representing one job, among other fields consisting of the ones shown in \autoref{tab:job_table}. The other table contains the master data for the depots, from where the jobs can be handled. Consisting of \textit{depot name}, \textit{depot lon} and \textit{depot lat}, with lon and lat as location longitude and latitude.
+
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{ID} &
+  \textbf{Plant} &
+  \textbf{Plant Lon} &
+  \textbf{Plant Lat} &
+  \textbf{Start} &
+  \textbf{End} &
+  \textbf{Workdays} &
+  \textbf{Site Zip} &
+  \textbf{Site Lon} &
+  \textbf{Site Lat} \\ \hline
+... &
+  \multicolumn{3}{l|}{--- plant infos---} &
+  \multicolumn{3}{l|}{---time infos---} &
+  \multicolumn{3}{l|}{---site infos---} \\ \hline
+\end{tabular}
+\caption{Table Structure Jobs Table}
+\label{tab:job_table}
+\end{table}
+
+Besides the 53178 jobs, the data can be aggregated into 8 plants, 6166 construction site locations (sites in the following) and 15 depots. Each element is handled as an own entity, containing a unique name, as well as longitude and latitude information. This results in a distribution of sites, depots and plants over the longitude and latitude coordinates as it is shown in \autoref{fig:ov_map}. For each job, a proximate depot is determined through calculating the smallest sum of the distance from a depot to the job site and the distance from the depot to the plant. This depot is added to the job information. Also 895 relevant days were extracted from the job information, since these are the days where either a silo has to be dropped off or picked up. In the process these will be used as the available days, since holidays and weekends are already excluded. To the available days 10 additional days are appended on each side, to increase movement possibilities in the solution space. Finally for each of the depots and each of the days a tour is created which results in 13425 tours.
+
+
+%descripe proximate depot %introduce task
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=12cm]{Grafiken/ov_map_sites.png}
+    \caption{Overview over the Location of the Sites, Depots and Plants in the Given Data Set Source: own research based on the given dataset}
+    \label{fig:ov_map}
+\end{figure}
+
+\subsection{Initial Solution}
+To start with the optimization process, a proper initial solution was essential. Therefore the original initial solution was created through assigning the day before the start date and the date after the end date of each job as the respective dropoff and pickup days. So each silo would be dropped off the day before it is needed and picked up the day after the usage. This initial solution predefines the direction in which each move in the local search can be made, since dropoff days can only be moved to an earlier date and pickups vice versa. The depot handling those tasks was assigned to be the, already mentioned, proximate depot. Since each silo needs to be dropped off on one day and picked up on another one, these parts of a job will be handled as separate dropoff and pickup tasks in the following.
+
+%split the initial solution
+
+\subsection{Routing} \label{sec:rrp_sa_routin}
+Since the total distances of the different routes are used as heuristic to evaluate the found solutions, a proper routing for these tours is essential. 
+To solve this, every tour should be handled and calculated as a single \acs{VRP} with pickups, dropoffs and time windows. Based on given inputs, the routing is calculated based on the tour data, especially the depot, the plant as well as the pickup and dropoff tasks and their location coordinates. These lead to a distance matrix for all distances between nodes, whose generation is further described under section \ref{sec:rrp_imp_data}. In the initial approach the Miller-Tucker-Zemlin formulation of the \acs{TSP} \citep{Miller1960} was therefore extended, also using concepts from \citet{Dumitrescu2009}, to fit the purpose. In this initial approach, the solution of the \acs{VRP} also considered the order in which the different tasks were handled. Since this time dimension isn't relevant for distance and due to computation restrictions, the problem was reduced to the one found below, which returns the same distance value as the initial one but doesn't consider the time dimension. A routing example, solved by the presented approach is visualized in \autoref{fig:example_routing}. The computation restrictions are further explained in section \ref{sec:rrp_imp} and the original \acs{VRP} can be found in the appendix under section \ref{sec:app_routing}. \newline
+
+
+
+
+\textbf{Relevant Elements for the Optimization Problem:}
+\begin{itemize}
+    \item All visitable nodes $n \in N$ 
+    \item Depot $d \in D, D \subseteq N$
+    \item Plant $p \in P, P \subseteq N$
+    \item Sites with dropoff tasks $a \in A, A \subseteq N$
+    \item Sites with pickup tasks $b \in B, B \subseteq N$
+    \item Pickup and dropoff sites combined are $s \in S \subseteq N$
+\end{itemize}
+
+\textbf{Distance costs:}
+\begin{itemize}
+    \item Distance cost $c_{i,j}$ between nodes i and j, $(i,j) \in N$
+    \item Triangular distance cost $ct_{a,b}$ for connections between a pickup($a \in A$) and dropoff node($b \in B$) calculated from $c_{p,a} + c_{a,b} + c_p{b,p}$
+\end{itemize}
+
+\textbf{Variables:}
+\begin{itemize}
+    \item Decision variables $x_{i,j} \in \{0,1\}$ if i and j are a connected node pair
+    \item Decision variable $y_a \in \{0,1\}$ indicates if the depot has a direct edge to the plant or not
+    \item Decision variable $y_b \in \{0,1\}$ indicates if the depot has a direct edge to the plant or not
+\end{itemize}
+
+\textbf{Objective Function}
+\begin{eqnarray}{} 
+    \min \sum_{a \in A} \sum_{b \in B}  x_{a,b} * ct_{a,b} + \sum_{s \in S} (x_{s,p} \cdot 2c_{s,p}  + x_{s,d} \cdot (c_{s,p} + c_{s,d})) + (y_a + y_b) \cdot c_{d,p}
+    \end{eqnarray}
+    The objective function adds the triangular distance for all dropoff-pickup site edges that are used. In addition for all sites which only have an edge with the plant, the doubled distance between site and plant is added, since the route has to be covered twice. If nodes are assigned to the depot, the distance from the depot to the site and from the site to the plant is added. For every direct edge between plant and depot this distance is added as well.
+
+\textbf{Constraints}
+\begin{eqnarray}
+    %every node needs handled
+    \text { s.t. } \sum_{b \in B} x_{a,b} + x_{a,u} + x_{a,d} = 1 & \forall a \in A  \label{eq:cons1}\\
+    \sum_{a \in A} x_{a,b} + x_{b,p} + x_{b,d} = 1 & \forall b \in B   \label{eq:cons2}\\
+    %no edge with itself
+    \sum_{n \in N} x_{n,n} = 0 \label{eq:cons3}\\
+    %max one node can be assigned as start node
+    \sum_{a \in A} x_{n,d} <= 1 - y_a \label{eq:cons4}\\
+    %max one node can be assigned as end node
+    \sum_{b \in B} x_n{a,d} <= 1 - y_b \label{eq:cons5}
+\end{eqnarray}
+
+\begin{itemize}
+    \item Constraints (\ref{eq:cons1}) and (\ref{eq:cons2}) ensure that every task, so every site node is handled exactly once, either by assigning a dropoff site to a pickup site, to the plant, or the depot. Same goes for the pickups the other way around.
+    \item Constraint (\ref{eq:cons3}) forbids edges from a node to itself.
+    \item Constraint (\ref{eq:cons4}) (\ref{eq:cons5}) ensure that not more than one node can have a connection to the depot in the beginning and in the end of the route. If there is no connection between site and depot, the direct connections are noted by $y_a$ and $y_b$.
+\end{itemize}
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=16cm]{Grafiken/example_routing.png}
+    \caption{Routing Example for a Tour with 12 dropoffs, 17 Pickups and a Combined Location for Depot and Plant
+ Source: own research}
+    \label{fig:example_routing}
+\end{figure}
+
+%map
+\subsection{Simulated Annealing Approach}
+
+
+\subsubsection{Acceptance Function:} \label{sec:rrp_sa_acc}
+Given the large solution space, with a high number of possible tour allocations, the algorithm should be endorsed to explore as freely as possible, especially when no or only little changes in either direction are made. From the five presented forms in section \ref{sec:b_sa_acc}, this demand for random walks, shifts the focus to the exponential and the normalized exponential form. The algorithm will work on a tour level and the $\Delta C$ in this case would be the change in the length of two tours. In case of a normalization, this would divide a relatively small change in the length of two tours through the whole distance of the initial tour. In case of the normalized exponential form, this would result in a comparably high acceptance rate and a slower effective decrease of the temperature. Since this decrease should be adjusted through the temperature function, the exponential form was the original choice for this solution approach. This choice should be validated over multiple simulations, recreating changes in different tours. These simulations showed, that the worse changes were still so large, that the acceptance probability of a worse move, with the normalized temperature, was close to zero. Therefore it was decided to use the normalized exponential form for the acceptance function, but not to use the overall distance, but the average tour length for the normalization, since all moves and changes in distance happen on a tour level.
+
+\subsubsection{Temperature Schedule}
+As described in section \ref{sec:rrp_sa_acc} the algorithm should be able to explore the solution space as good as possible. From the three presented temperature schedules in section \ref{sec:b_sa_temp}, this shifts two in the focus, since the fractional schedule is directly divided by the iterations what makes the temperature decrease respectively  fast and pushes the majority of the iterations to lower temperatures. The two remaining schedules, geometric temperature and Koch temperature, are both better suited to endorse random walks through only decreasing the temperature every $L$ iterations. Since the Koch temperature schedule depends on the standard derivation $\sigma$ of the results for the last $k$ moves, and the small deltas described above, this would keep the temperature constantly high. The parameters $q$ and $L$ in the geometric temperature schedules allow to create a constant and recreateable decrease of temperature, therefore it was expected to be the best fit for the purpose of this problem.
+
+\subsubsection{Movement} \label{sec:rrp_sa_mov}
+To find new solutions the neighbourhood of the initial solution should be explored, the neighbourhoods of the new solutions afterwards and acting so repeatedly. Given the assumption, that the proximate depot is the best fit for each job, the reallocation of dropoff and pickup tasks will only take place between tours starting from the same depots, already assigned in the initial solution. In further research this assumption shall be reevaluated, for the focus of this work it'll be seen as given. This reduces the solution space to the time dimension. The restriction, that a silo has to be delivered one day earlier it is needed and picked up only after the usage, reduces the space of feasible solutions even further. 
+But even with the mentioned reductions, the available solution space is still quite huge. Hence, in order to get as close as possible to an optimal solution, a proper movement heuristic is necessary. Therefore multiple approaches were worked out to be implemented and evaluated, so the best approaches can be intensified: 
+
+\begin{itemize}
+    \item \textbf{Complete Random:} Randomly choose a task from a random tour and assign it to another random tour.
+    \item \textbf{Hard Leveling:} Pick all tours with more pickup then dropoff tasks, move the worst pickup to the next tour with a discrepancy the other way around and repeat this process until no more move can be made or are accepted. Then repeat the same for dropoffs.
+    \item \textbf{\ac{ROWTRD}:} Choose the worst task or task(s) from a randomly selected tour and move it to another randomly selected tour. This worst task can either be the worst pickup, dropoff, or a pair of pickup and dropoff. 
+    \item \textbf{\ac{ROWTWOD:}} Choose the worst task or task pair from a randomly selected tour and move it to the tour with the worst opposite task - so the worst pickup for dropoffs and vice versa.
+    \item \textbf{\ac{ROWTCOD}:} Choose the worst task or task pair from a randomly selected tour and move it to the tour with the closest worst opposite task - so the worst pickup for dropoffs and vice versa.
+    % ggf random choice wirst origin, shortest destination
+\end{itemize}
+
+As \citet{Bouhmala2019} states these movement heuristic should be too strong, since it is not the value of the solution after the next move, but the overall value that is relevant. It can be helpful to give a general movement direction, but not to over specify to leave room for random exploration, especially in case of \acs{SA}. The described movement heuristics were derivated from general principles of \acs{SA} and after evaluating multiple generated routes and the heuristics these vehicle routings are based on.
+
+\subsection{Implementation} \label{sec:rrp_imp}
+After the solution approaches were worked out in theory, it shall now be implemented to be able to evaluate the results. To keep the implementation reproduceable the implementation process, all specifications, inputs, restrictions and parameters shall also be described.
+
+\subsubsection{System Restrictions } \label{sec:rrp_imp_res}
+The described implementation was performed on a machine with a AMD Ryzen 5 3600X 6-Core processor and 16GB DDR3-RAM. The whole implementation was created in Python 3.9 as .py and .ipynb files and performed on a local jupyter notebook server, setup by the Py-Charm Jupyter package in the Version 1.0.0. The routing problem for the \acsp{VRP} was formulated using pulp in the version 2.4 and the default CBC solver in the version 2.9.0.
+
+As described in section \ref{sec:rrp_sa_routin} the original \textbf{routing solution} intended to provide a fully planned \acsp{VRP}, including the time window decision, which site is handled at which time. After implementing the first approach(which can be found under section \ref{sec:app_routing}) the calculations for the initially allocated tours were performed. For the earlier days in the spectrum the calculation went without any major disruptions. When calculating the tours with higher days, the calculation had to be aborted multiple times, because some of the routing took more than 8 hours to complete. After further evaluation of the data set it was clear that these long computations correlate directly with the number of tasks in a tour. To see if the routing algorithm could still be used, if the number of tasks per tour were reduced, an evaluation of the runtimes, as shown in \autoref{fig:calculation_time} was made. To keep the amount of computation handable, the maximum tasks in a tour would need to be lower than the value where the calculation time starts to grow exponentially, which would be around 25 in this evaluation. The reallocation of the tours to fit this constraint was implemented, but resulted in a cascading overflow since the available tours couldn't be reduced this much while following the other constraints. Therefore the new solution, described in section \ref{sec:rrp_sa_routin} was designed and implemented.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=10cm]{Grafiken/calculation_time.png}
+    \caption{Routing Calculation Time for a Sample of 15 Tours, made with the original routing algorithm on the given system
+ Source: own research}
+    \label{fig:calculation_time}
+\end{figure}
+
+Another constraint in the current solution is the fact, that only tours handling one plant in one tour are processed. Since the combination of multiple plants for one tour only occur twice in the 13425 tours of the initial solution with the current proximate depot configuration and the local moves in the optimization process are all on a one depot level, the decision was made to neglect these to outliers and route them with the majority in the same tour.
+
+
+\subsubsection{Structure} \label{sec:rrp_imp_data}
+The database for this implementation was already described in section \ref{sec:rrp_data}. For every object type mentioned, a single class was created with every single entity as a class object in the respective class. For convenience reasons, these objects were listed in python lists and dictionaries. Since the job table contains 6166 different zip codes but only 6158 different long/lat combinations - a unique key for these sites needed to be generated.\newline
+
+To evaluate the movement heuristics for the simulated annealing, described in section \ref{sec:rrp_sa_mov}, each of them was separately implemented. All the selection heuristics for the origin and destination tours from where or to where a task should be moved, were implemented as separate functions. Like this they could be switched conveniently to keep the framework as general as possible. Since the accceptance and temperature functions where also implemented in the same flexible manner, this allowed to create an exact copy of every implementation, with the acceptance function switched out for a \textbf{if}$delta < 0$ condition. The structure of the code was formulated in pseudo code in \autoref{alg:programm}.
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Returning final resultValue after $I_{max}$ iterations}
+ \While{i $<$ I_{max} }{
+  temperature = getTemp(i)\;
+  move = findMove(Heuristic,movetype)\;
+  delta = evaluate(move)\;
+  \If{Accept(delta,temperature)}{
+   performMove(move)\;
+   resultValue = oldResult + delta\;
+   }
+   movetype = getRandomMovetype()\;
+   i ++\;
+  }
+ \caption{General implementation of the Local Search} \label{alg:programm}
+\end{algorithm}\\
+
+
+\subsubsection{Movement} 
+Given this program structure, the presented movement heuristics where implemented as individual  
+$findMove(Heuristic,movetype)$  functions as shown in the following pseudocode examples in the algorithms 2-6. To not exceed the limits of this paper, the examples only show the heuristics for pickups. With movetype='dropoff' it works the same way, with "$day\_new >task.end\_day$"  replacing  "$day\_new < task.start\_day$" in the conditions. For the movetype 'pair' the same process is repeated twice with each node in a pair as the origins.\\\newline
+
+        \begin{algorithm}[H]
+        \SetAlgoLined
+        \KwResult{Returning a specified pickup move consisting of a task, its origin and new tour}
+          day\_origin = getRandomDay()\;
+          day\_new =  getRandomDay()\;
+          
+          tour\_origin = getTour(day\_origin)\;
+          task = tour\_origin.getRandomTask('pickup')
+          
+          \While{day\_new < task.end\_day)}{
+           day\_new =  getRandomDay()\;
+           }
+          tour\_new = getTour(day\_new)\;
+          return(task, tour\_origin, tour\_new) \;
+         
+         \caption{Complete Random Movement Heuristic Implementation} \label{alg:cr}
+        \end{algorithm} \bigskip
+    \begin{algorithm}[H]
+        \SetAlgoLined
+        \KwResult{Returning a specified pickup move consisting of a task, its origin and new tour}
+          \For{day\_origin \textbf{in} all\_days}{
+            tour\_origin = getTour(day\_origin)\;
+            task = tour\_origin.getWorstTask('pickup')
+            \If{tour\_origin.pickups > tour\_origin.dropoffs}{
+                \For{day\_new \textbf{in} all\_days}{
+                    tour\_new = getTour(day\_new)\;
+                    \If{day\_new > task.end\_day \& tour\_new.pickups < tour\_new.dropoffs}{
+                        return(task, tour\_origin, tour\_new)
+                    }
+            }}}
+            return(no more tasks)‚
+          
+         \caption{Hard Leveling Movement Heuristic - on the example pickup} \label{alg:hl}
+        \end{algorithm}\bigskip
+            \begin{algorithm}[H]
+        \SetAlgoLined
+        \KwResult{Returning a specified pickup move consisting of a task, its origin and new tour}
+          day\_origin = getRandomDay()\;
+          day\_new =  getRandomDay()\;
+          
+          tour\_origin = getTour(day\_origin)\;
+          task = tour\_origin.getWorstSingleTask('pickup')
+          
+          \While{day\_new < task.end\_day)}{
+           day\_new =  getRandomDay()\;
+           }
+          tour\_new = getTour(day\_new)\;
+          return(task, tour\_origin, tour\_new) \;
+         
+         \caption{\acs{ROWTRD}} \label{alg:rowtrd}
+        \end{algorithm} \bigskip
+        \begin{algorithm}[H]
+        \SetAlgoLined
+        \KwResult{Returning a specified pickup move consisting of a task, its origin and new tour}
+          day\_origin = getRandomDay()\;
+          
+          tour\_origin = getTour(day\_origin)\;
+          task = tour\_origin.getWorstTask('pickup')\;
+          closest\_distance = 0\;
+          
+          \For{day\_new \textbf{in} all\_days}{
+           tour\_new = getTour(day\_new)\;
+           opposite\_task = tour\_new.getWorstSingleTask('dropoff')
+           
+           \If{opposite\_task.distance > worst_value}{
+                worst\_value = opposite_task.distance \;
+                tour\_worst = tour\_new\;
+          }
+         }
+           return(task, tour\_origin, tour\_worst) \;
+     
+         \caption{Random Origin, Worst Task, Random Destination:} \label{alg:rowtrd}
+        \end{algorithm} \\
+    
+
+\subsubsection{Parameters} \label{sec:rrp_imp_parameter}
+As \citet{Orsila2013} showed, a too small $q$ or $L$ as parameters for a geometric temperature schedule results in a quick termination of the process, these numbers should be sufficently high. Given the large solution space and the compareably small moves, a steady decrease decrease was chosen. After multiple test runs with the implemented approach, $q=0.95$ and L$=200$ and 10000 iterations were set as parameters. This should ensure, that the temperature is kept high for a longer period, but still constantly decreasing. Considering, that some of the heuristics are stronger guiding than others and the expectation, that a complete unrestricted algorithm(not following any time constraints) would just pile up all the tasks into one tour,since this maximizes the chance to get tasks located close to each other, a maximum tour size of 50 tasks per tour was set. After multiple test runs with these configurations, the acceptance rate for bad moves still turned out to be constantly high over the whole schedule. Therefore the normalizing average tour length was multiplied with $0.1$ to allow the acceptance rate for bad moves to decrease over the iterations. 
+
+\begin{algorithm}[H]
+        \SetAlgoLined
+        \KwResult{Returning a specified pickup move consisting of a task, its origin and new tour}
+          day\_origin = getRandomDay()\;
+          
+          tour\_origin = getTour(day\_origin)\;
+          task = tour\_origin.getWorstTask('pickup')\;
+          closest\_distance = int\_max\;
+          
+          \For{day\_new \textbf{in} all\_days}{
+           tour\_new = getTour(day\_new)\;
+           opposite\_task = tour\_new.getWorstSingleTask('dropoff')\;
+           distance\_temp = getDistance(task.site,opposite\_task.site)\;
+           
+           \If{distance\_temp < closest\_distance}{
+                closest\_distance = distance\_temp \;
+                tour\_closest = tour\_new\;
+          }
+         }
+           return(task, tour\_origin, tour\_closest) \;
+     
+         \caption{Random Origin, Worst Task, Worst Opposite Destination (\acs{ROWTCOD})} \label{alg:rowtrd}
+        \end{algorithm} \\
+
+\subsection{Results} \label{sec:results}
+After the earlier mentioned approaches were implemented under the described conditions, they were be executed multiple times. These multiple executions are essential, since not only \acs{SA} is a probabilistic algorithm itself \citep{Kirkpatrick1983}, but also the chosen movement heuristics partly have a stochastic nature with random components.The predefined parameters $q$=0.95 and $L$=200 and 10000 iterations were used for these regular runs. In addition these parameters were adjusted and tested in multiple executions. Each of the regular runs was also started from the described initial solution. The runs were executed and evaluated for one exemplary depot. This decision was made to be able to create comparable and validated results. Although the heuristics were also validated on further depots, only the results for the selected one shall be visualized and discussed to not exceed the scope of this work. The overall results are summarized in \autoref{tab:results} Besides the development of the values over time, there are 2 further visualizations which will be used to evaluate the results, both presented in \autoref{fig:initial_solution}. The one on the left shows the proportion of tasks per day(which is equivalent to one tour), divided into pickups and dropoffs. The calmer this graph gets, the closer is the proportion of pickups and dropoffs over the tours, which increases the chances of creating pairs. The graph on the right shows the absolute distances per day in kilometer in blue and the average distance per task in a tour in orange. 
+
+\begin{table}[]
+\begin{tabular}{|l|r|r|r|r|r|}
+\hline
+\textbf{} & \multicolumn{1}{l|}{Complete Random} & \multicolumn{1}{l|}{Hard Leveling} & \multicolumn{1}{l|}{ROWTRD} & \multicolumn{1}{l|}{ROWTWOD} & \multicolumn{1}{l|}{ROWTCOD} \\ \hline
+SA        & -2.97                                & -13,83\%                           & -21,16\%                    & -16,78\%                     & -11,49\%                     \\ \hline
+HC        & -11,19\%                             & -13,81\%                           & -20,90\%                    & -16,78\%                     & -13,86\%                     \\ \hline
+\end{tabular}
+\caption{Average Results for the Change of the Overall Distance of the Proposed Solution Approaches for a Specific Depot in the Given Data Set under the defined parameters}
+\label{tab:results}
+\end{table}
+
+\subsubsection{Complete Random}
+Over the course of multiple runs with the given setup with the complete random movement heuristic, the simulated annealing algorithm only was able to reduce the overall distance by 3\% in average. Reducing the parameters $q$ and $L$ to 0.95 and 100 brought the reduction down to 8.9\%, which is still more than to points short of the 11.19\% that were in average achieved with the \ac{HC} meta heuristic. In the long run, over 100.000 iterations with $L$ also increased by the factor 10, the gap could be closed to 1 point with 16.46\% versus 17.44\%. Evaluating the proportion chart in \autoref{fig:random_prop} it is visible, that there are more peaks in either direction for \acs{SA}. This might be backtracked to the allowance of bad moves in the early stages, which settle down especially in the first and last thirds of the chart.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=16cm]{Grafiken/random_ov_prop.png}
+    \caption{Proportion of Tasks per Day for an Exemplary Solution of Complete Random Heuristic with \acs{SA}(left) and \acs{HC}(right) , Source: own Research}
+    \label{fig:random_prop}
+\end{figure}
+
+\subsubsection{Hard Leveling}
+After evaluating the hard leveling heuristic, its guiding nature is pretty visible. There was little to no difference of 0.04\% over the average of \acs{SA} versus \acs{HC}. Since no major difference is visible, only the charts for \acs{SA} are shown in \autoref{fig:hard_lvl_prop_dev}. With a reduction of 13.83\% the hard leveling outperforms the complete random heuristic and creates a calm and well leveled proportion graph. Although this success has to be put into perspective, since the algorithm proposes no worse solutions, since leveling out a delta by moving the worst single value, can never create a worse distance calculation. This keeps the acceptance rate for \acs{SA} and \acs{HC} constantly at 100\% and creates an almost linear decrease in overall distance until there are no further possible solution states after 1568 iterations. Thereafter the algorithm opts out, a continuing chart to 10.000 iterations would then stay constantly at the same distance level for the rest of the steps.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=16cm]{Grafiken/hard_lvl_prop_dev.png}
+    \caption{Proportion of Tasks per Day in an Exemplary Solution (left) and Development of Distances and Temperatures per Step(right) for the Hard Leveling Heuristic , Source: own Research}
+    \label{fig:hard_lvl_prop_dev}
+\end{figure}
+
+
+\subsubsection{\acs{ROWTRD}} \label{sec:ROWTRD}
+The heuristic in which the worst task or tasks of a random tour are moved to another random tour, delivered the overall best performance and was the only heuristic where the \acs{SA} approach was able outperform \acs{HC} in the basic configuration. With 21.16\% over 20.89\% a small gap between the two meta heuristics was created. Even though this gap isn't significant, the ways the results were reached, are. The first difference that comes into sight is huge difference in the acceptance rate, but roots from the different natures of the algorithm, since \acs{HC} denies every worsening solution state while \acs{SA} still considers them, especially on higher temperatures. To highlight is the clear change in the gradient of the acceptance graph, which indicates the point where the algorithms stopped to accept almost any further solutions and reached their final value. Since the acceptance rate is calculated as overall average, it doesn't decrease instantly, but constantly. The same change in gradient is therefore also visible in the overall distance value. While \acs{HC} already reached its final value after 7600 of 10000 iterations, it took \acs{SA} 800 iterations longer. While not reaching the target as fast, the \acs{SA} algorithm had more possibilities to explore the solution range and find the best reachable one.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=16cm]{Grafiken/random_worst_mixed_dev.png}
+    \caption{Development of Distances and Temperatures per Step of \acs{SA}(left) and \acs{HC}(right) for the \acs{ROWTRD} Heuristic , Source: own Research}
+    \label{fig:hard_lvl_prop_dev}
+\end{figure}
+
+
+\subsubsection{\acs{ROWTWOD}}   \label{sec:ROWTWOD}
+In this heavily guided movement heuristic, the results for both meta heuristics stayed close by with \acs{HC} beating \acs{SA} with 0.1\%. The average results of 16.68\% and 16.78\% is 4.45\% behind the similar movement heuristic with the random destination. This difference is visible as peaks in the first and last thirds in the proportion graph, especially when comparing it to the one of the heuristic with the random destination as shown in \autoref{fig:vgl_worst_opp}. These peaks result from outlying worst single nodes, which(in case of the dropoffs in the end), could only be handled by a small proportion of tasks, what allocated lots of potential leveling resources.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=16cm]{Grafiken/vgl_worst_oppsoite_rpop.png}
+    \caption{Comparison of the Proportion of Tasks per Day in Exemplary Solutions of \acs{ROWTRD}(left) and  Heuristic (left) and \acs{ROWTWOD} Heuristic (right) with a \acs{SA} Solution approach, Source: own Research}
+    \label{fig:vgl_worst_opp}
+\end{figure}
+
+\subsubsection{\acs{ROWTCOD}}  \label{sec:rowtcod}
+With 11.49\% reduction for \acs{SA} and 13.91\% for \acs{ROWTCOD} underperforms compared to the previous two algorithms and achieves similar results as the hard leveling. Not only the final values show differences, but also the development graphs remarkably different. As shown in \autoref{fig:vgl_cluster} \acs{HC} reaches its final value already at around 1150 iterations, while the \acs{SA} approach takes around 7000. This difference can be backtracked to dropoff jobs that were piled up over the first 50 days, right the early iterations, when worse decisions were still allowed, since technically any dropoff job can take place on the first day. This pile couldn't be cleared out fast enough, since the origins of the tasks to move are selected randomly, while the selection of the destinations follows a strong heuristic.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=16cm]{Grafiken/vgl_cluster.png}
+    \caption{Development of Distances and Temperatures per Step and Proportion of Tasks per Day in an Exemplary solution with a \acs{SA} Approach (left) and \acs{HC} Approach(right) for the \acs{ROWTCOD} movement heuristic, Source: own Research}
+    \label{fig:vgl_cluster}
+\end{figure}
+
+
+\section{Conclusion and Outlook}
+After implementing and evaluating the proposed heuristics, the results shall now be summarized. As shown over the course of this work, the approach of \acs{SA} is a useful meta heuristic to explore a given solution space further, than it would be possible with simpler local search algorithms such as \acs{HC}. As shown in Section \ref{sec:ROWTRD}, the worked out \acs{SA} approach showed it's potential to achieve these better results. But as also visible, this success is highly dependent on the utilized movement heuristic and the parameters given. A too lose heuristic such as "Complete Random" allows the algorithm to drift away from a potentially better solution without the possibility to return later. A too strong heuristic like the "Hard Leveling" might prevent the algorithm from actually exploring other possibilities, since it is strongly forced in one specific direction. Therefore \acs{SA}s ability to accept worse moves, will rather result in accepting a unnecessary worsening move close to the given path, than finding a potentially better solution space. Also unweighted movement heuristics like \acs{ROWTCOD} with stochastic and deterministic elements can cause a \acs{SA} approach to end in a significantly worse solution than the \acs{HC} algorithm, as shown in \ref{sec:rowtcod} . Although the \acs{SA} approach delivered the overall best result under the predefined conditions with a tight lead, it was outperformed by the \acs{HC} algorithm in the majority of the presented heuristics. To finally evaluate if \acs{SA} is a good fit for this specific problem repositioning routing problem, its potentials in this context shall be discussed and reevaluated with the collected information. As shown in \autoref{fig:example_routing} the presented routing algorithm urges to create the best possible pairs. A good possible pair is therefore a pair of dropoff and pickup task, with their locations as close by as possible and overlapping time constraints. For every single task, the \acs{HC} algorithm can only assign a partner, which is in a reachable Tour. A reachable tour in this context therefore needs to follow not only the time constraints, but also adding the task to the tour needs to immediately lead to a better solution. In case of \acs{SA} these constraints are weaker, since in early phases, a worse decision in the short term can be made, to achieve a better solution in the long term, e.g. by moving two nodes closer together, which would be a perfect fit location wise, but are not visible to each other through the time constraints yet.  Given these evaluations and the fact that the \acs{SA} was able to improve the solution by over 20\% and slightly outperform \acs{HC} under the given parameters, a \acs{SA} approach has great potential in the for finding the optimal solution for this problem. While the presented approach with the given movement heuristics was not the perfect fit for this specific problem, the won perceptions are leading the way of how to accomplish one. Not only the movement heuristic should be reevaluated and intensified, also the general search approach needs to be reviewed. The current heuristics all constantly operate in a feasible solution space. For further research it might be help full to allow the solution to start or become infeasible and be rendered feasible again over the process. This increases the "vision" from the perspective of a task, looking for a potential partner. Combined with a location based heuristic, closer oriented on the routing algorithm, this view on the bigger picture might have a great potential to be the perfect fit for this specific problem. 
+Also real live constraints, such as further constraining the maximum tour sizes and the number of available silos should be taken stronger into the equation. To conclude it can be said, that the acquired knowledge from this work can help to sustain further research tackling this kind of repositioning problem.
+
+
+\clearpage
+
+\DeclareDelimFormat[bib,biblist]{nametitledelim}{\addcolon\space}
+\DeclareFieldFormat
+  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {title}{\mkbibemph{#1}\isdot}
+\DeclareFieldFormat
+  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {journaltitle}{#1\isdot}
+\DeclareFieldFormat{pages}{#1}
+\DeclareFieldFormat
+  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {authortitle}{#1\isdot}
+
+\printbibliography[title= Literature]
+
+\newpage
+
+\appendix
+\section{Appendix}
+\subsection{Initial Routing} \label{sec:app_routing}
+%cite
+%http://www.bernabe.dorronsoro.es/vrp/data/articles/VRPTW.pdf
+%add flow ibn/out
+
+To formulated the initial optimization problem, the Miller-Tucker-Zemlin formulation of the \acs{TSP} \citep{Miller1960} was therefore extended, also using concepts from \citet{Dumitrescu2009}, to fit the purpose. Using these decision variables and indicators:
+
+\begin{itemize}
+    \item Nodes $n \in N$
+    \item Depot $d \in D, D \subseteq N$
+    \item Plant $p \in P, P \subseteq N$
+    \item Pickup and dropoff sites combined are $S \subseteq N$
+    \item Sites and plant combined are denoted as visitable locations $V$ with $S,P \subseteq V$
+    \item Sites with dropoffs $a \in A, A \subseteq S$
+    \item Sites with pickups $b \in B, B \subseteq S$
+    \item Timeslots $t \in T$
+    \item Distance cost $c_{i,j}$ between $i$ and $j$, $(i,j) \in N$
+\end{itemize}
+
+Variables:
+\begin{itemize}
+    \item Decision variable $x_{i,j,t} \in (0,1)$ indicates whether drive from $i$ to $j$ is made at timeslot $t$
+    \item truck capacity variable $y_{t} \in T$ indicates if truck is empty($y_t = 0$) or filled($y_t = 1$) at timeslot $t \in T$
+    \item silo capacity variable $z_{t} \in T$ indicates if the silo on the truck is empty($z_t = 0$) or filled($z_t = 1$) at timeslit $t \in T$
+\end{itemize}
+
+Objective Function: \newline
+\begin{eqnarray}{} 
+    \min \sum_{i \in N} \sum_{j \in N} \sum_{t \in T} x_{i,j,t} \cdot c_{i,j}
+\end{eqnarray}
+
+
+%cite
+%http://www.bernabe.dorronsoro.es/vrp/data/articles/VRPTW.pdf
+%add flow ibn/out
+
+
+Constraints: \newline
+\begin{eqnarray}
+    %basic constraints
+        % a node cannot have an edge with itself
+       \text { s.t. }  \sum_{t \in T} x_{i,i,t} = 0 & \forall i \in N \\
+       %every site node needs to be entered exactly once
+       \sum_{i \in N} \sum_{t \in T} x_{i,j,t} = 1 & \forall j \in S\\
+       %every site node needs to be left exactly once
+       \sum_{j \in N} \sum_{t \in T} x_{i,j,t} = 1 & \forall i \in S\\
+       %at every given time slot max one edge can be used
+        \sum_{i \in N} \sum_{j \in N} x_{i,j,t} \leq 1 & t \in T\\
+       %site and plants need to be left in subsequent timeslot after entering
+       \sum_{i \in N} x_{i,v,t} =  \sum_{j \in N} x_{v,j,t+1} & \forall v \in V, t \in T\\
+       %depot is first origin
+       \sum_{j \in N} x_{d,j,0} = 1  & \forall d \in D\\
+        %depot needs to be visited exactly once, so it needs to be the endpoint
+        \sum_{i \in V} \sum_{t \in T} x_{i,d,t} = 1 & \forall d \in D\\
+         %depot needs to be left exactly once, so it needs to be the endpoint
+        \sum_{i \in V} \sum_{t \in T} x_{d,j,t} = 1 & \forall d \in D\\
+    %%% capacity constraints
+        % a silo can only be full, if the silo spot on the truck is filled
+        z_t \leq y_t & \forall t \in T\\
+        % a dropoff location can only be visited with an full silo
+        \sum_{i \in N} x_{i,a,t} \leq z_t & \forall a \in A, t \in T \\
+        % when leaving a dropoff location, truck is empty again, which forces silo to be empty too
+        \sum_{j \in N} x_{a,j,t} \leq (1-y_{t}) & \forall a \in A, t \in T \\
+        % a pickup location can only be visited with an empty truck
+        \sum_{i \in N} x_{i,b,t} \leq (1-y_{t})  & \forall b \in B, t \in T \\
+        % a pickup location can only be left with a full truck
+        \sum_{j \in N} x_{b,j,t} \leq y_{t} & \forall b \in B, t \in T \\
+        %a pickup location can only be left with a empty silo(but still full truck)
+        \sum_{j \in N} x_{b,j,t} \leq (1-z_{t}) & \forall b \in B, t \in T \\
+        %the fact that y and z can change freeliy when visiting a plant should be considered by the other constraints and plants will interact as free
+        % the depot is left with an empty truck
+        y_0 = 0\\
+        % the depot can only be entered with an empty truck
+        \sum_{i \in N} x_{i,d,t} \leq (1-y_{t}  & \forall d \in D, t \in T 
+\end{eqnarray}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Eidesstattliche Erklärung
+%% muss angepasst werden 
+%% in Erklaerung.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Erklaerung.tex}
+
+
+\end{document}
